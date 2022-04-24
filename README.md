@@ -10,3 +10,5 @@ El público es joven, siendo estudiantes y trabajadores que tengan una atracció
 Descripción del equipo de desarrollo:
 
 Ramón López: Especialista en Infraestructura Cloud, con experiencia en scripting y un conocimiento fragmentario de programación web. Espero crecer en mi conocimiento de la misma con este proyecto.
+
+Johan Ledezma: Ingeniero de Mercados, con experiencia en analisis de bases de datos y visualizacion de datos, especialista en marketing estretegico. 

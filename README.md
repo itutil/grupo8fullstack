@@ -17,3 +17,5 @@ Johan Ledezma: Ingeniero de Mercados, con experiencia en analisis de bases de da
 Gretel Cortés: Actualmente estudio Ciencias de la Computación, y me gusta mucho escuchar musica y ver peliculas de Harry Potter.
 
 Guillermo Fontana: Deportista y Guardavidas, me gusta mucho la actividad física y la música.
+
+Acceso al Trello del Equipo: https://trello.com/b/y7KjcrWz/proyecto-equipo-8

@@ -2,14 +2,16 @@
   "name": "grupo-8-fullstack",
   "version": "1.0.0",
   "description": "proyecto integrador",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/itutil/grupo8fullstack.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/itutil/grupo8fullstack#readme",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.1"
   },
   "devDependencies": {

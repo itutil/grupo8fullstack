@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    border: dotted blue 2px;
+    padding: 10px;
+}
+
+.superior {
+    width: 100%;
+    height: 80px;
+    border: solid red 1px;
+}
+
+.izquierda {
+    width: 10%;
+    height: 500px;
+    border: solid red 1px;
+}
+
+.centro {
+    width: 70%;
+    border: solid red 1px;
+}
+
+.derecha {
+    width: 20%;
+    border: solid red 1px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.derechaArriba {
+    width: 100%;
+    border: red;
+}
+
+.derechaAbajo {
+    width: 100%;
+    border: red;
+}

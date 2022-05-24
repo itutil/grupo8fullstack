@@ -9,4 +9,4 @@ app.set('views', path.resolve(__dirname, './views'))
 app.use(express.static('public'));
 app.use('/', mainRouter)
 
-app.listen(3000, ()=>{ comsole.log('Servidor arriba en el puerto 3000');})
+app.listen(3000, ()=> {console.log('Servidor arriba en el puerto 3000');})

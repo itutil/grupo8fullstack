@@ -47,7 +47,7 @@ a.button-footer {
     line-height: normal;
     padding: 5px 10px 5px 10px;
     display: inline-block;
-    color: #333;
+    color: #556483;
     background-color: #fff;
     /*background-repeat: no-repeat;*/
     /*background-position: left center;*/
@@ -62,7 +62,7 @@ a.button-footer:hover {
 
 
 #nav-footer2 {
-    background-color: #333;
+    background-color: #556483;
     width: 100%;
     overflow: hidden;
     padding: 0px 0;

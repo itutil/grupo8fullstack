@@ -12,20 +12,81 @@
         <nav>
             <ul class="inicio">
                 <li>
-                    <a class="titulo" href="#">Inicio</a>
-                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <div class="dropdown tooltip">
+                    <span class="tooltiptext">Inicio</span>
+                    <button class="dropbtn">
+                    <a href="#"><i class="fa-solid fa-house"></i></a></button>
+                    </div> 
                 </li>
                 <li>
-                    <a class="titulo" href="#">Registrate</a>
-                    <a href="#"><i class="fa-solid fa-pen-clip"></i></a>
+                <div class="dropdown tooltip">
+                    <span class="tooltiptext">Registrarse</span>
+                    <button class="dropbtn">
+                    <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
+                    <div class="dropdown-content">
+                        <div class="login">    
+                            <form id="login" method="get" action="login.php">
+                                <label><b>E-Mail     
+                                </b>    
+                                </label>    
+                                <input type="text" name="Email" id="Email" placeholder="Email">    
+                                <br><br>    
+                                <label><b>Nombre de usuario     
+                                </b>    
+                                </label>    
+                                <input type="text" name="Uname" id="Uname" placeholder="Username">    
+                                <br><br>    
+                                <label><b>Contraseña    
+                                </b>    
+                                </label>    
+                                <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+                                <br><br>    
+                                <input type="button" name="log" id="log" value="Log In Here">       
+                                <br><br>    
+                                <input type="checkbox" id="check">    
+                                <span>Recordarme</span>    
+                                <br><br>    
+                                <a href="#">Recuperar contraseña</a>    
+                            </form>     
+                        </div> 
+                    </div>
+                </div>
                 </li>
                 <li>
-                    <a class="titulo" href="#">Logueate</a>
-                    <a href="#"><i class="fa-solid fa-laptop"></i></a>
+                <div class="dropdown tooltip">
+                    <span class="tooltiptext">Log in</span>
+                    <button class="dropbtn">
+                    <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
+                    <div class="dropdown-content">
+                        <div class="login">    
+                            <form id="login" method="get" action="login.php">    
+                                <label><b>Nombre de usuario    
+                                </b>    
+                                </label>    
+                                <input type="text" name="Uname" id="Uname" placeholder="Username">    
+                                <br><br>    
+                                <label><b>Contraseña   
+                                </b>    
+                                </label>    
+                                <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+                                <br><br>    
+                                <input type="button" name="log" id="log" value="Log In Here">       
+                                <br><br>    
+                                <input type="checkbox" id="check">    
+                                <span>Recordarme</span>    
+                                <br><br>    
+                                <a href="#">Recuperar contraseña</a>    
+                            </form>     
+                        </div> 
+                    </div>
+                </div>
                 </li>
-                <li class="carrito">
-                    <a class="titulo" href="#">Carrito</a>
-                    <a href="#"><i class="fa-solid fa-truck"></i></a>
+                <li>
+                    <div class="dropdown tooltip">
+                        <span class="tooltiptext">Carrito</span>
+                        <button class="dropbtn">
+                    <a href="#"><i class="fa-solid fa-truck"></i></a></button>
+                    </div> 
                 </li>
             </ul>
             <form class="barra">

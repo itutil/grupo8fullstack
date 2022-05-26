@@ -172,7 +172,7 @@ nav {
 @media (min-width: 1070px) {
 
     header div div{
-        width: 40%;
+        width: 35%;
 
     }
 
@@ -277,3 +277,141 @@ nav {
     }
 
 }
+
+
+.dropbtn {
+    background-color: rgb(1, 18, 44);
+    color: rgb(1, 18, 44);
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+  }
+  
+ 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+ 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(1, 18, 44);
+    min-width: 400px;
+    box-shadow: 0px 30px 30px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 30px 30px;
+    text-decoration: none;
+    display: block;
+  }
+  
+ 
+  .dropdown-content a:hover {background-color: rgb(1, 18, 44);}
+  
+ 
+  .dropdown:hover .dropdown-content {display: block;}
+  
+
+  .dropdown:hover .dropbtn {background-color: rgb(1, 18, 44);}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+Body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: pink;  
+  }  
+  
+
+
+  
+  .login{  
+    width: 382px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 40px;  
+    background: #23463f;  
+    border-radius: 0px ;  
+     
+}  
+h2{  
+text-align: center;  
+color: #277582;  
+padding: 20px;  
+}  
+label{  
+color: #08ffd1;  
+font-size: 17px;  
+}
+#Email{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    }    
+#Uname{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 3px;  
+padding-left: 8px;  
+}  
+#Pass{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 3px;  
+padding-left: 8px;  
+  
+}  
+#log{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 17px;  
+padding-left: 7px;  
+color: blue;  
+
+}  
+span{  
+color: white;  
+font-size: 17px;  
+}  
+a{  
+float: center;  
+background-color: grey;  
+}   
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

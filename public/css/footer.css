@@ -9,7 +9,7 @@
     overflow: hidden;
     padding: 20px 0;
 }
-#nav-footer .colum {
+#nav-footer .column {
     width: 25%;
     float: left;
 }
@@ -84,6 +84,7 @@ a.button-footer:hover {
     font-weight: 400;
     color: #999;
     padding: 5px 10px;
+    background-color: #556483;
 }
 
 #nav-footer2 a:hover {
@@ -125,6 +126,7 @@ ul#socialButtons {
     text-indent: -9999px;
     height: 35px;
     width: 35px;
+    background-color: #556483;
 }
 
 #email-ico, #email-ico a:hover, #facebook, #facebook a:hover, #twitter, #twitter a:hover, #instagram, #instagram a:hover, #youtube, #youtube a:hover, #googlemaps, #googlemaps a:hover {

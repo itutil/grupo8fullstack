@@ -33,6 +33,8 @@
     color: #999;
     padding-bottom: 20px;
     margin: 0;
+    display:flex;
+    justify-content:space-around;
 }
 a.button-footer {
     font-family: 'Fira Sans', sans-serif;
@@ -49,8 +51,6 @@ a.button-footer {
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 2px;
-    position: relative;
-    left: 138px;
 }
 a.button-footer:hover {
     color: #fff;

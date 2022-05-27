@@ -38,7 +38,8 @@
 }
 a.button-footer {
     font-family: 'Fira Sans', sans-serif;
-    text-decoration: none;
+    text-decoration: none; position: relative;
+    left: 138px;
     font-size: 13px;
     font-weight: 400;
     line-height: normal;

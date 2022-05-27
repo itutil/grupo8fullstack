@@ -38,13 +38,14 @@
 }
 a.button-footer {
     font-family: 'Fira Sans', sans-serif;
-    text-decoration: none; position: relative;
+    text-decoration: none; 
     left: 138px;
     font-size: 13px;
     font-weight: 400;
     line-height: normal;
     padding: 5px 10px 5px 10px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     color: #556483;
     background-color: #fff;
     /*background-repeat: no-repeat;*/

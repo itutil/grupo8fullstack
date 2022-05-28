@@ -9,14 +9,12 @@ body {
 }
 
 header {
-    border: dotted red;
     padding: 10px;
 }
 
 header div {
     display: flex;
     flex-wrap: wrap;
-    border: dotted red;
     padding: 5px;
     background-color: rgb(1, 18, 44);
 }
@@ -27,7 +25,6 @@ header div div{
 }
 
 .logo {
-    border: dotted red;
     width: 85%;
     justify-content: center;
 }
@@ -43,7 +40,6 @@ header div div{
     width: 15%;
     height: 100%;
     display: flex;
-    border: dotted red;
     justify-content: center;
     align-items: center;
 }
@@ -51,7 +47,6 @@ header div div{
 .banderas a img{
     width: 100%;
     max-width: 38px;
-    border: dotted red;
 }
 
 .fa-solid {
@@ -71,14 +66,12 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-    border: dotted red;
 }
 
 .inicio li {
     list-style: none;
     padding: 0px 10px;
     margin: 0px 5px;
-    border: dotted red;
 }
 
 .titulo {
@@ -92,7 +85,6 @@ nav {
 .barra {
     width: 100%;
     padding: 10px 50px;
-    border: dotted red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -104,13 +96,11 @@ nav {
     flex-grow: 1;
     width: 170px;
     color: black;
-    border: dotted red;
 }
 
 .barra button {
     background-color: rgb(1, 18, 44);
     padding: 6px;
-    border: dotted red;
 }
 
 .menu {
@@ -125,7 +115,6 @@ nav {
     }
 
     .logo {
-        border: dotted red;
         width: 85%;
         justify-content: center;
     }
@@ -142,7 +131,6 @@ nav {
         height: 100%;
         display: flex;
         margin: auto;
-        border: dotted red;
         justify-content: center;
         align-items: center;
     }
@@ -153,7 +141,6 @@ nav {
         height: 100%;
         display: flex;
         margin: auto;
-        border: dotted red;
         justify-content: center;
         align-items: center;
     }
@@ -161,7 +148,6 @@ nav {
     .banderas a img{
         width: 100%;
         max-width: 38px;
-        border: dotted red;
     }
 
     
@@ -177,7 +163,6 @@ nav {
     }
 
     .logo {
-        border: dotted red;
         width: 60%;
         justify-content: left;
     }
@@ -187,20 +172,17 @@ nav {
         height: 100%;
         display: flex;
         margin: auto;
-        border: dotted red;
         justify-content: flex-end;
         align-items: flex-start;
     }
 
     .banderas a{
-        border: dotted red;
         margin: 2px 5px;
     }
 
     .banderas a img{
         width: 100%;
         max-width: 38px;
-        border: dotted red;
     }
 
 
@@ -253,17 +235,14 @@ nav {
         display: block;
         margin: auto;
         text-align: center;
-        border: dotted red;
     }
 
     ul.desplegable {
         width: 100%;
-        border: dotted red;
         display: flex;
     }
 
     ul.desplegable li {
-        border: dotted red;
         text-align: center;
         display: none;
     }

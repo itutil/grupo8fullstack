@@ -4,19 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 20px;
+body{
+    background-color: rgb(1, 18, 44);
 }
 
 header {
-    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(1, 18, 44);
+    margin: 40px 10px;
 }
 
 header div {
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-    background-color: rgb(1, 18, 44);
 }
 
 header div div{
@@ -25,15 +26,32 @@ header div div{
 }
 
 .logo {
-    width: 85%;
+    width: 100%;
     justify-content: center;
+    display:flex;
+    justify-content: space-around;
 }
 
 .logo img {
-    width: 100%;
+    width: 80%;
     max-width: 220px;
     max-height: 170px;
-    border: solid white;
+    border: none
+}
+
+.banderas-inicio{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banderas-inicio a img{
+    width: 100%;
+    max-width: 38px;
+    background-color: rgb(1, 18, 44);
 }
 
 .banderas{
@@ -42,23 +60,29 @@ header div div{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
+    
 }
 
 .banderas a img{
     width: 100%;
     max-width: 38px;
+    background-color: rgb(1, 18, 44);
 }
 
 .fa-solid {
     color: white;
     font-size: 19px;
+    background-color: rgb(1, 18, 44);
 }
 
 nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .inicio {
@@ -104,6 +128,8 @@ nav {
 }
 
 .menu {
+    width: 100%;
+    background-color: rgb(1, 18, 44);
     display: none;
 }
 
@@ -115,65 +141,70 @@ nav {
     }
 
     .logo {
-        width: 85%;
-        justify-content: center;
+        justify-content: space-around;
     }
     
     .logo img {
         width: 100%;
         max-width: 220px;
         max-height: 170px;
-        border: solid white;
+        border: none
     }
-    
-    .banderas{
-        width: 1%;
-        height: 100%;
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-    }
-    
 
-    .banderas{
+    .inicio {
+        flex-wrap: nowrap;
+    }
+    
+    .banderas-inicio{
         width: 15%;
         height: 100%;
         display: flex;
-        margin: auto;
         justify-content: center;
         align-items: center;
+        
     }
 
-    .banderas a img{
+    .banderas-inicio a img{
         width: 100%;
         max-width: 38px;
     }
-
     
 }
 
 
 
-@media (min-width: 1070px) {
+@media (min-width:600px){
 
-    header div div{
-        width: 35%;
+    .logo{
+        justify-content: space-evenly  
+    }   
 
+    .banderas-inicio a{
+        padding: 10px;
+        background-color: rgb(1, 18, 44);
     }
 
+}
+
+
+@media (min-width: 1070px) {
+
     .logo {
-        width: 60%;
+        width: 20%;
         justify-content: left;
     }
     
     .banderas{
-        width: 40%;
+        width: 20%;
         height: 100%;
         display: flex;
         margin: auto;
         justify-content: flex-end;
         align-items: flex-start;
+    }
+
+    .banderas-inicio{
+        display: none;
     }
 
     .banderas a{
@@ -192,6 +223,7 @@ nav {
 
     nav {
         width: 60%;
+
     }
 
     .inicio {
@@ -222,12 +254,14 @@ nav {
     .menu {
         width: 100%;
         display: block;
+        
     }
 
     .menu li {
         width: 100%;
-        margin: auto;
         list-style: none;
+
+        
     }
 
     .icono {

@@ -102,7 +102,7 @@ a.button-line {
     border-color: #ccc;
     margin: 10px 0;
     display: inline-block;
-    float: right
+    float: none;
 }
 a.button-line:hover {
     border-color: #999;
@@ -860,7 +860,7 @@ a.button-comprar:hover {
     margin: 5px;
     border: 0px solid #ccc;
     padding: 10px;
-	webkit-transition: box-shadow 0.3s ease-out;
+	-webkit-transition: box-shadow 0.3s ease-out;
     -o-transition: box-shadow 0.3s ease-out;
     transition: box-shadow 0.3s ease-out;
     -webkit-transition: all box-shadow 0.3s ease-out ease;
@@ -874,7 +874,7 @@ a.button-comprar:hover {
 .columnaproductos-content:hover {
     margin: 5px;
     padding: 10px;
-    webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
 }
 

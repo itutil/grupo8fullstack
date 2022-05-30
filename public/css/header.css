@@ -403,7 +403,7 @@ font-size: 17px;
 }  
 a{  
 float: center;  
-background-color: grey;  
+background-color: transparent;  
 }   
 .tooltip {
     position: relative;

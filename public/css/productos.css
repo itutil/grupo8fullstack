@@ -1,33 +1,152 @@
-main {
-    display: flex;
-    flex-wrap: wrap;
-    border: dotted blue 2px;
-    padding: 10px;
+body{
+    background-color: rgb(1, 18, 44);
 }
 
-.superior {
+main {
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.acordeon{
     width: 100%;
-    height: 80px;
-    border: solid red 1px;
+    height: auto;
+    background-color: gray;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px silver;
+}
+
+.acordeon .btn{
+    color: white;
+    display: block;
+    padding: 1rem;
+    border-top: solid 1px black;
+    border-bottom: solid 1px white;
+    position: relative;
+    text-align: center;
+}
+
+.acordeon .submenu{
+    background: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .8s ease-out;
+}
+
+.acordeon .submenu a{
+    color: black;
+    display: block;
+    padding: 1rem;
+    position: relative;
+
+}
+
+.acordeon .submenu a::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 5px;
+    background: black;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.acordeon .submenu a:hover{
+    padding-left: calc(1rem + 5px);
+}
+
+.acordeon .submenu a:hover::before{
+    opacity: 1;
+}
+
+.item:target .submenu{
+    max-height: 20rem;
+}
+
+
+
+.superior {
+    display: none;
+    width: 100%;
 }
 
 .izquierda {
+    display: none;
     width: 10%;
-    height: 500px;
-    border: solid red 1px;
+    height: auto;
 }
 
 .centro {
-    width: 70%;
-    border: solid red 1px;
+    width: 100%;
 }
 
-.derecha {
-    width: 20%;
-    border: solid red 1px;
-    display: flex;
-    flex-wrap: wrap;
+.productos {
+    background-color: white;
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 15px 0px;
+}
 
+.productos img{
+    margin: auto;
+}
+
+.descripcion{
+    font-size: 20px;
+}
+
+.enlaces{
+    display: block;
+    padding: 5px 0px;
+}
+
+.detalle{
+    border: solid rgb(1, 18, 44);
+    width: 30%;
+    margin: 10px auto;
+}
+
+.detalle a{
+    color: black;
+    text-decoration: none;
+}
+
+.detalle:hover {
+    background-color: rgb(1, 18, 44);
+    transition: all 1s;
+}
+
+.detalle:hover a{
+    color: white;
+    transition: all 1s;
+}
+
+.carrit{
+    border:solid  rgb(1, 18, 44);
+    background-color: rgb(1, 18, 44);
+    width: 30%;
+    margin: 10px auto;
+}
+
+.carrit a{
+    color: white;
+    text-decoration: none;
+}
+
+.carrit:hover {
+    background-color: red;
+    border: solid red;
+    transition: all 1s;
+}
+
+.carrit:hover a{
+    color: white;
+    transition: all 1s;
 }
 
 .derechaArriba {
@@ -38,4 +157,121 @@ main {
 .derechaAbajo {
     width: 100%;
     border: red;
+}
+
+
+@media (min-width: 700px) {
+
+    .centro {
+        width: 100%;
+    }
+
+    .productos {
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+    }
+
+    .productos img{
+        width: 20%;
+        display: block;
+    }
+
+    .descripcion{
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: auto;
+    }
+
+    .descripcion h4{
+        width: 100%;
+    }
+
+    .descripcion p{
+        width: 100%;
+    }
+
+    .enlaces{
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px 5px;
+        margin: 40px 0px;
+    }
+
+    .detalle{
+        width: 70%;
+        margin: auto;
+    }
+
+    .carrit{
+        width: 70%;
+        margin: auto;
+    }
+
+    .izquierda {
+        width: 10%;
+        height: auto;
+        border: solid red 1px;
+    }
+
+    .derecha {
+        width: 20%;
+        border: solid red 1px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .derechaArriba {
+        width: 100%;
+        border: red;
+    }
+
+    .derechaAbajo {
+        width: 100%;
+        border: red;
+    }
+
+}
+
+@media (min-width: 1070px) {
+
+    .centro {
+        width: 70%;
+        border: solid red 1px;
+    }
+
+    .productos {
+        padding: 80px;
+        display: flex;
+        border: dotted red;
+    }
+
+    .izquierda {
+        width: 10%;
+        height: auto;
+        border: solid red 1px;
+    }
+
+    .derecha {
+        width: 20%;
+        border: solid red 1px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .derechaArriba {
+        width: 100%;
+        border: red;
+    }
+
+    .derechaAbajo {
+        width: 100%;
+        border: red;
+    }
+
 }

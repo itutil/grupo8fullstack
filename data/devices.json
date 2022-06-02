@@ -1,108 +1,12 @@
-[
-	{
-		"type": "mobile",
-		"model": "Versions: A2403 (International)- A2172 (USA)- A2402 (Canada, Japan)- A2404 (China, Hong Kong)",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg",
-		"features": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
-		"dateManufactured": "44117",
-		"price": "436630"
-	},
-	{
-		"type": "mobile",
-		"model": "Versions: A2399 (International)- A2176 (USA)- A2398 (Canada, Japan)- A2400 (China)",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-mini.jpg",
-		"features": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
-		"dateManufactured": "44117",
-		"price": "278590"
-	},
-	{
-		"type": "mobile",
-		"model": "Versions: A2407 (International)- A2341 (USA)- A2406 (Canada, Japan)- A2408 (China, Hong Kong)",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg",
-		"features": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
-		"dateManufactured": "44117",
-		"price": "373052"
-	},
-	{
-		"type": "mobile",
-		"model": "Versions: A2411 (International)- A2342 (USA)- A2410 (Canada, Japan)- A2412 (China, Hong Kong)",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg",
-		"features": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
-		"dateManufactured": "44117",
-		"price": "320599"
-	},
-	{
-		"type": "mobile",
-		"model": "GPS + Cellular versions: A2156 40mm, A2157 44mm (Global)- A2094 40mm, A2095 44mm (USA, LATAM, Canada)",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-edition-series-5.jpg",
-		"features": "GSM / HSPA / LTE",
-		"dateManufactured": "44075",
-		"price": "194968"
-	}, {
-		"type": "mobile",
-		"model": "GPS + Cellular versions: A2375 40mm, A2376 44mm (Global)- A2293 40mm, A2294 44mm (USA, LATAM, Canada) - GPS versions: N/A",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-s6-titanium.jpg",
-		"features": "GSM / HSPA / LTE",
-		"dateManufactured": "44075",
-		"price": "155763"
-	}, {
-		"type": "mobile",
-		"model": "GPS + Cellular versions: A2156 40mm, A2157 44mm (Global)- A2094 40mm, A2095 44mm (USA, LATAM, Canada) - GPS versions: A2092 40mm, A2093 44mm",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-aluminum-series-5.jpg",
-		"features": "GSM / HSPA / LTE",
-		"dateManufactured": "44075",
-		"price": "244058"
-	}, {
-		"type": "mobile",
-		"model": "GPS + Cellular versions: A2375 40mm, A2376 44mm (Global)- A2293 40mm, A2294 44mm (USA, LATAM, Canada) - GPS versions: N/A",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-s6-steel.jpg",
-		"features": "GSM / HSPA / LTE",
-		"dateManufactured": "44075",
-		"price": "250152"
-	}, {
-		"type": "mobile",
-		"model": "GPS + Cellular versions: A2375 40mm, A2376 44mm (Global)- A2293 40mm, A2294 44mm (USA, LATAM, Canada) - GPS versions: A2291 40mm, A2292 44mm (Global)",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-s6.jpg",
-		"features": "GSM / HSPA / LTE",
-		"dateManufactured": "44075",
-		"price": "295080"
-	}, {
-		"type": "mobile",
-		"model": "Also available with 5G",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-5g-r.jpg",
-		"features": "GSM / CDMA / HSPA / EVDO / LTE",
-		"dateManufactured": "44017",
-		"price": "124359"
-	}, {
-		"type": "mobile",
-		"model": "Also available with 4G/LTE only Versions: SM-N981B (International)- SM-N981U (USA)- SM-N981U1 (USA unlocked)- SM-N981W (Canada)",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-5g-r.jpg",
-		"features": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
-		"dateManufactured": "44017",
-		"price": "447191"
-	}, {
-		"type": "mobile",
-		"model": "Also available with 5G",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-ultra-.jpg",
-		"features": "GSM / CDMA / HSPA / EVDO / LTE",
-		"dateManufactured": "44017",
-		"price": "490168"
-	}, {
-		"type": "mobile",
-		"model": "Also available with 4G/LTE only - Versions: SM-N986B (International)- SM-N986U (USA)- SM-N986U1 (USA unlocked)- SM-N986W (Canada)- SM-N9860 (China)- SM-N986N (Korea)",
-		"picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-ultra-.jpg",
-		"features": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
-		"dateManufactured": "44017",
-		"price": "418878"
-	}, {
+[{
 		"type": "Notebook",
 		"tradeMark": "Acer",
 		"model": "Aspire 3",
 		"details": "1366x768 AMD A9-Series 9420 3GHz 4GB 500GB HDD AMD Radeon R5",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44105",
-		"price": "122836"
+		"dateManufactured": "1601510400",
+		"price": "436630"
 	},
 	{
 		"type": "Notebook",
@@ -111,8 +15,8 @@
 		"details": "1366x768 Intel Celeron Dual Core N3060 1.6GHz 4GB 500GB HDD Intel HD Graphics 400",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44105",
-		"price": "214018"
+		"dateManufactured": "1601510400",
+		"price": "278590"
 	},
 	{
 		"type": "Ultrabook",
@@ -121,8 +25,8 @@
 		"details": "IPS Panel Retina Display 2560x1600 Intel Core i5 2.3GHz 8GB 128GB SSD Intel Iris Plus Graphics 640",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "IPS Panel Retina Display 2560x1600",
-		"dateManufactured": "44105",
-		"price": "183913"
+		"dateManufactured": "1601510400",
+		"price": "373052"
 	},
 	{
 		"type": "Ultrabook",
@@ -131,8 +35,8 @@
 		"details": "1440x900 Intel Core i5 1.8GHz 8GB 128GB Flash Storage Intel HD Graphics 6000",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "1440x900",
-		"dateManufactured": "44105",
-		"price": "206411"
+		"dateManufactured": "1601510400",
+		"price": "320599"
 	},
 	{
 		"type": "Ultrabook",
@@ -141,28 +45,28 @@
 		"details": "1366x768 Intel Core i5 1.6GHz 4GB 256GB Flash Storage Intel HD Graphics 6000",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44105",
-		"price": "440369"
+		"dateManufactured": "1601510400",
+		"price": "194968"
 	},
 	{
 		"type": "2 in 1 Convertible",
 		"tradeMark": "Asus",
 		"model": "ZenBook Flip",
-		"details": "Full HD / Touchscreen 1920x1080 Intel Core i5 8250U 1.6GHz 8GB 256GB SSD Intel HD Graphics 620",
+		"details": "Full HD - Touchscreen 1920x1080 Intel Core i5 8250U 1.6GHz 8GB 256GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
-		"features": "Full HD / Touchscreen 1920x1080",
-		"dateManufactured": "44105",
-		"price": "182748"
+		"features": "Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1601510400",
+		"price": "155763"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "Asus",
-		"model": "X555BP-XX180T (A9-9420/4GB/1TB/Radeon",
+		"model": "X555BP-XX180T -A9-9420/4GB/1TB/Radeon",
 		"details": "1366x768 AMD A9-Series 9420 3GHz 4GB 1TB HDD AMD Radeon R5 M420",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44105",
-		"price": "452653"
+		"dateManufactured": "1601510400",
+		"price": "244058"
 	},
 	{
 		"type": "Ultrabook",
@@ -171,18 +75,18 @@
 		"details": "IPS Panel Full HD 1920x1080 Intel Core M 6Y30 0.9GHz 8GB 512GB SSD Intel HD Graphics 515",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "44105",
-		"price": "303208"
+		"dateManufactured": "1601510400",
+		"price": "250152"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "Asus",
-		"model": "X553SA-XX031T (N3050/4GB/500GB/W10)",
+		"model": "X553SA-XX031T -N3050/4GB/500GB/W10-",
 		"details": "1366x768 Intel Celeron Dual Core N3050 1.6GHz 4GB 500GB HDD Intel HD Graphics",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44105",
-		"price": "246475"
+		"dateManufactured": "1601510400",
+		"price": "295080"
 	},
 	{
 		"type": "Notebook",
@@ -191,8 +95,8 @@
 		"details": "Full HD 1920x1080 Intel Atom x5-Z8300 1.44GHz 4GB 64GB Flash Storage Intel HD Graphics",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "44105",
-		"price": "319861"
+		"dateManufactured": "1601510400",
+		"price": "124359"
 	},
 	{
 		"type": "Notebook",
@@ -201,8 +105,8 @@
 		"details": "IPS Panel Retina Display 2736x1824 Intel Celeron Quad Core N3450 1.1GHz 6GB 64GB Flash Storage Intel HD Graphics 500",
 		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=100",
 		"features": "IPS Panel Retina Display 2736x1824",
-		"dateManufactured": "44105",
-		"price": "131052"
+		"dateManufactured": "1601510400",
+		"price": "447191"
 	},
 	{
 		"type": "Notebook",
@@ -211,8 +115,8 @@
 		"details": "Full HD 1920x1080 Intel Atom x5-Z8350 1.44GHz 4GB 64GB Flash Storage Intel HD Graphics",
 		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=101",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "44105",
-		"price": "327498"
+		"dateManufactured": "1601510400",
+		"price": "490168"
 	},
 	{
 		"type": "Notebook",
@@ -221,18 +125,18 @@
 		"details": "Full HD 1920x1080 Intel Core i5 7200U 2.5GHz 8GB 1TB HDD Intel HD Graphics 620",
 		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=102",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "44105",
-		"price": "159678"
+		"dateManufactured": "1601510400",
+		"price": "418878"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "Dell",
 		"model": "Inspiron 5570",
-		"details": "Full HD 1920x1080 Intel Core i7 8550U 1.8GHz 16GB 256GB SSD +  2TB HDD AMD Radeon 530",
+		"details": "Full HD 1920x1080 Intel Core i7 8550U 1.8GHz 16GB 256GB SSD and 2TB HDD AMD Radeon 530",
 		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=103",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "44105",
-		"price": "157922"
+		"dateManufactured": "1601510400",
+		"price": "122836"
 	},
 	{
 		"type": "Notebook",
@@ -241,18 +145,18 @@
 		"details": "Full HD 1920x1080 Intel Core i5 8250U 1.6GHz 8GB 256GB SSD AMD Radeon 530",
 		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=104",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "44105",
-		"price": "285334"
+		"dateManufactured": "1601510400",
+		"price": "214018"
 	},
 	{
 		"type": "Ultrabook",
 		"tradeMark": "Dell",
 		"model": "XPS 13",
-		"details": "Quad HD+ / Touchscreen 3200x1800 Intel Core i7 8550U 1.8GHz 8GB 256GB SSD Intel UHD Graphics 620",
+		"details": "Quad HDand - Touchscreen 3200x1800 Intel Core i7 8550U 1.8GHz 8GB 256GB SSD Intel UHD Graphics 620",
 		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=105",
-		"features": "Quad HD+ / Touchscreen 3200x1800",
-		"dateManufactured": "44105",
-		"price": "304544"
+		"features": "Quad HDand - Touchscreen 3200x1800",
+		"dateManufactured": "1601510400",
+		"price": "183913"
 	},
 	{
 		"type": "Notebook",
@@ -261,8 +165,8 @@
 		"details": "1366x768 Intel Core i5 7200U 2.5GHz 8GB 1TB HDD Intel HD Graphics 620",
 		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=106",
 		"features": "1366x768",
-		"dateManufactured": "44105",
-		"price": "289023"
+		"dateManufactured": "1601510400",
+		"price": "206411"
 	},
 	{
 		"type": "Notebook",
@@ -271,8 +175,8 @@
 		"details": "1366x768 Intel Core i5 7200U 2.5GHz 8GB 256GB SSD Intel HD Graphics 620",
 		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=107",
 		"features": "1366x768",
-		"dateManufactured": "44105",
-		"price": "134983"
+		"dateManufactured": "1601510400",
+		"price": "440369"
 	},
 	{
 		"type": "Notebook",
@@ -281,38 +185,38 @@
 		"details": "1366x768 Intel Core i5 6200U 2.3GHz 4GB 256GB SSD Intel HD Graphics 520",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44105",
-		"price": "275749"
+		"dateManufactured": "1601510400",
+		"price": "182748"
 	},
 	{
 		"type": "Ultrabook",
 		"tradeMark": "Google",
-		"model": "Pixelbook (Core",
+		"model": "Pixelbook -Core",
 		"details": "Touchscreen 2400x1600 Intel Core i7 7Y75 1.3GHz 16GB 512GB SSD Intel HD Graphics 615",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "Touchscreen 2400x1600",
-		"dateManufactured": "44013",
-		"price": "484222"
+		"dateManufactured": "1593561600",
+		"price": "452653"
 	},
 	{
 		"type": "Ultrabook",
 		"tradeMark": "Google",
-		"model": "Pixelbook (Core",
+		"model": "Pixelbook -Core",
 		"details": "Touchscreen 2400x1600 Intel Core i5 7Y57 1.2GHz 8GB 128GB SSD Intel HD Graphics 615",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "Touchscreen 2400x1600",
-		"dateManufactured": "44013",
-		"price": "441696"
+		"dateManufactured": "1593561600",
+		"price": "303208"
 	},
 	{
 		"type": "Ultrabook",
 		"tradeMark": "Google",
-		"model": "Pixelbook (Core",
+		"model": "Pixelbook -Core",
 		"details": "Touchscreen 2400x1600 Intel Core i5 7Y57 1.2GHz 8GB 256GB SSD Intel HD Graphics 615",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "Touchscreen 2400x1600",
-		"dateManufactured": "44013",
-		"price": "409822"
+		"dateManufactured": "1593561600",
+		"price": "246475"
 	},
 	{
 		"type": "Notebook",
@@ -321,8 +225,8 @@
 		"details": "Full HD 1920x1080 AMD A9-Series 9410 2.9GHz 6GB 1TB Hybrid AMD Radeon R7 M440",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "44013",
-		"price": "289782"
+		"dateManufactured": "1593561600",
+		"price": "319861"
 	},
 	{
 		"type": "Netbook",
@@ -331,18 +235,18 @@
 		"details": "1366x768 Intel Celeron Dual Core N3060 1.6GHz 2GB 32GB Flash Storage Intel HD Graphics 400",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44013",
-		"price": "450717"
+		"dateManufactured": "1593561600",
+		"price": "131052"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "HP",
-		"model": "15-AC110nv (i7-6500U/6GB/1TB/Radeon",
+		"model": "15-AC110nv -i7-6500U/6GB/1TB/Radeon",
 		"details": "1366x768 Intel Core i7 6500U 2.5GHz 6GB 1TB HDD AMD Radeon R5 M330",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44013",
-		"price": "315080"
+		"dateManufactured": "1593561600",
+		"price": "327498"
 	},
 	{
 		"type": "Ultrabook",
@@ -351,8 +255,8 @@
 		"details": "IPS Panel Full HD 2160x1440 Intel Core i5 7200U 2.5GHz 8GB 256GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
 		"features": "IPS Panel Full HD 2160x1440",
-		"dateManufactured": "44013",
-		"price": "227480"
+		"dateManufactured": "1593561600",
+		"price": "159678"
 	},
 	{
 		"type": "Ultrabook",
@@ -361,8 +265,8 @@
 		"details": "IPS Panel Full HD 2160x1440 Intel Core i7 7500U 2.7GHz 8GB 512GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
 		"features": "IPS Panel Full HD 2160x1440",
-		"dateManufactured": "44013",
-		"price": "290310"
+		"dateManufactured": "1593561600",
+		"price": "157922"
 	},
 	{
 		"type": "Notebook",
@@ -371,18 +275,18 @@
 		"details": "Full HD 1920x1080 Intel Core i3 7100U 2.4GHz 8GB 1TB HDD Nvidia GeForce 940MX",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "44013",
-		"price": "286600"
+		"dateManufactured": "1593561600",
+		"price": "285334"
 	},
 	{
 		"type": "Gaming",
 		"tradeMark": "Lenovo",
 		"model": "Legion Y520-15IKBN",
-		"details": "IPS Panel Full HD 1920x1080 Intel Core i5 7300HQ 2.5GHz 8GB 128GB SSD +  1TB HDD Nvidia GeForce GTX 1050",
+		"details": "IPS Panel Full HD 1920x1080 Intel Core i5 7300HQ 2.5GHz 8GB 128GB SSD and 1TB HDD Nvidia GeForce GTX 1050",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "44013",
-		"price": "497096"
+		"dateManufactured": "1593561600",
+		"price": "304544"
 	},
 	{
 		"type": "Notebook",
@@ -391,8 +295,8 @@
 		"details": "1366x768 Intel Celeron Dual Core N3350 1.1GHz 4GB 64GB Flash Storage Intel HD Graphics 500",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44013",
-		"price": "253479"
+		"dateManufactured": "1593561600",
+		"price": "289023"
 	},
 	{
 		"type": "Notebook",
@@ -401,8 +305,8 @@
 		"details": "1366x768 Intel Core i3 6006U 2GHz 4GB 128GB SSD Intel HD Graphics 520",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44013",
-		"price": "100235"
+		"dateManufactured": "1593561600",
+		"price": "134983"
 	},
 	{
 		"type": "Ultrabook",
@@ -411,38 +315,38 @@
 		"details": "IPS Panel Full HD 1920x1080 Intel Core i7 8550U 1.8GHz 8GB 512GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "44013",
-		"price": "127077"
+		"dateManufactured": "1593561600",
+		"price": "275749"
 	},
 	{
 		"type": "Ultrabook",
 		"tradeMark": "LG",
 		"model": "Gram 15Z970",
-		"details": "IPS Panel Full HD / Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 16GB 512GB SSD Intel HD Graphics 620",
+		"details": "IPS Panel Full HD - Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 16GB 512GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
-		"features": "IPS Panel Full HD / Touchscreen 1920x1080",
-		"dateManufactured": "44013",
-		"price": "154772"
+		"features": "IPS Panel Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1593561600",
+		"price": "484222"
 	},
 	{
 		"type": "Ultrabook",
 		"tradeMark": "LG",
 		"model": "Gram 14Z970",
-		"details": "IPS Panel Full HD / Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 8GB 512GB SSD Intel HD Graphics 620",
+		"details": "IPS Panel Full HD - Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 8GB 512GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
-		"features": "IPS Panel Full HD / Touchscreen 1920x1080",
-		"dateManufactured": "43952",
-		"price": "363287"
+		"features": "IPS Panel Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "441696"
 	},
 	{
 		"type": "2 in 1 Convertible",
 		"tradeMark": "Mediacom",
 		"model": "FlexBook Edge",
-		"details": "IPS Panel Full HD / Touchscreen 1920x1080 Intel Celeron Dual Core N3350 1.1GHz 4GB 32GB SSD Intel HD Graphics 500",
+		"details": "IPS Panel Full HD - Touchscreen 1920x1080 Intel Celeron Dual Core N3350 1.1GHz 4GB 32GB SSD Intel HD Graphics 500",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
-		"features": "IPS Panel Full HD / Touchscreen 1920x1080",
-		"dateManufactured": "43952",
-		"price": "405827"
+		"features": "IPS Panel Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "409822"
 	},
 	{
 		"type": "Notebook",
@@ -451,8 +355,8 @@
 		"details": "IPS Panel Full HD 1920x1080 Intel Celeron Quad Core N3450 1.1GHz 4GB 32GB SSD Intel HD Graphics 500",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "358934"
+		"dateManufactured": "1588291200",
+		"price": "289782"
 	},
 	{
 		"type": "Notebook",
@@ -461,8 +365,8 @@
 		"details": "IPS Panel Full HD 1920x1080 Intel Atom x5-Z8350 1.44GHz 4GB 32GB Flash Storage Intel HD Graphics",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "248466"
+		"dateManufactured": "1588291200",
+		"price": "450717"
 	},
 	{
 		"type": "Ultrabook",
@@ -471,8 +375,8 @@
 		"details": "Touchscreen 2256x1504 Intel Core i5 7200U 2.5GHz 4GB 128GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Touchscreen 2256x1504",
-		"dateManufactured": "43952",
-		"price": "310914"
+		"dateManufactured": "1588291200",
+		"price": "315080"
 	},
 	{
 		"type": "Ultrabook",
@@ -481,8 +385,8 @@
 		"details": "Touchscreen 2256x1504 Intel Core i5 7200U 2.5GHz 8GB 256GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Touchscreen 2256x1504",
-		"dateManufactured": "43952",
-		"price": "334078"
+		"dateManufactured": "1588291200",
+		"price": "227480"
 	},
 	{
 		"type": "Ultrabook",
@@ -491,48 +395,48 @@
 		"details": "Touchscreen 2256x1504 Intel Core i7 7660U 2.5GHz 16GB 512GB SSD Intel Iris Plus Graphics 640",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Touchscreen 2256x1504",
-		"dateManufactured": "43952",
-		"price": "407942"
+		"dateManufactured": "1588291200",
+		"price": "290310"
 	},
 	{
 		"type": "Gaming",
 		"tradeMark": "MSI",
 		"model": "GS73VR 7RG",
-		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 256GB SSD +  2TB HDD Nvidia GeForce GTX 1070",
+		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 256GB SSD and 2TB HDD Nvidia GeForce GTX 1070",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "350596"
+		"dateManufactured": "1588291200",
+		"price": "286600"
 	},
 	{
 		"type": "Gaming",
 		"tradeMark": "MSI",
 		"model": "GL72M 7RDX",
-		"details": "Full HD 1920x1080 Intel Core i5 7300HQ 2.5GHz 8GB 128GB SSD +  1TB HDD Nvidia GeForce GTX 1050",
+		"details": "Full HD 1920x1080 Intel Core i5 7300HQ 2.5GHz 8GB 128GB SSD and 1TB HDD Nvidia GeForce GTX 1050",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "374815"
+		"dateManufactured": "1588291200",
+		"price": "497096"
 	},
 	{
 		"type": "Gaming",
 		"tradeMark": "MSI",
 		"model": "GP62M 7REX",
-		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 256GB SSD +  1TB HDD Nvidia GeForce GTX 1050 Ti",
+		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 256GB SSD and 1TB HDD Nvidia GeForce GTX 1050 Ti",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "260060"
+		"dateManufactured": "1588291200",
+		"price": "253479"
 	},
 	{
 		"type": "Gaming",
 		"tradeMark": "Razer",
 		"model": "Blade Pro",
-		"details": "4K Ultra HD / Touchscreen 3840x2160 Intel Core i7 7820HK 2.9GHz 32GB 1TB SSD Nvidia GeForce GTX 1080",
+		"details": "4K Ultra HD - Touchscreen 3840x2160 Intel Core i7 7820HK 2.9GHz 32GB 1TB SSD Nvidia GeForce GTX 1080",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
-		"features": "4K Ultra HD / Touchscreen 3840x2160",
-		"dateManufactured": "43952",
-		"price": "469293"
+		"features": "4K Ultra HD - Touchscreen 3840x2160",
+		"dateManufactured": "1588291200",
+		"price": "100235"
 	},
 	{
 		"type": "Gaming",
@@ -541,8 +445,8 @@
 		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 256GB SSD Nvidia GeForce GTX 1060",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "124015"
+		"dateManufactured": "1588291200",
+		"price": "127077"
 	},
 	{
 		"type": "Gaming",
@@ -551,8 +455,8 @@
 		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 512GB SSD Nvidia GeForce GTX 1060",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "121838"
+		"dateManufactured": "1588291200",
+		"price": "154772"
 	},
 	{
 		"type": "Netbook",
@@ -561,18 +465,18 @@
 		"details": "1366x768 Intel Celeron Dual Core N3060 1.6GHz 4GB 16GB Flash Storage Intel HD Graphics 400",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "43952",
-		"price": "126740"
+		"dateManufactured": "1588291200",
+		"price": "363287"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "Samsung",
 		"model": "Notebook Odyssey",
-		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 128GB SSD +  1TB HDD Nvidia GeForce GTX 1050",
+		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 128GB SSD and 1TB HDD Nvidia GeForce GTX 1050",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "215782"
+		"dateManufactured": "1588291200",
+		"price": "405827"
 	},
 	{
 		"type": "Ultrabook",
@@ -581,18 +485,18 @@
 		"details": "Full HD 1920x1080 Intel Core i7 7500U 2.7GHz 16GB 256GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "43952",
-		"price": "142117"
+		"dateManufactured": "1588291200",
+		"price": "358934"
 	},
 	{
 		"type": "Ultrabook",
 		"tradeMark": "Samsung",
 		"model": "Notebook 9",
-		"details": "Full HD / Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 8GB 256GB SSD Intel HD Graphics 620",
+		"details": "Full HD - Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 8GB 256GB SSD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
-		"features": "Full HD / Touchscreen 1920x1080",
-		"dateManufactured": "44075",
-		"price": "288642"
+		"features": "Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1598918400",
+		"price": "248466"
 	},
 	{
 		"type": "Notebook",
@@ -601,8 +505,8 @@
 		"details": "1366x768 Intel Core i5 6200U 2.3GHz 4GB 500GB HDD Intel HD Graphics 520",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44075",
-		"price": "321389"
+		"dateManufactured": "1598918400",
+		"price": "310914"
 	},
 	{
 		"type": "Notebook",
@@ -611,8 +515,8 @@
 		"details": "1366x768 Intel Core i3 6006U 2.2GHz 4GB 500GB HDD Intel HD Graphics 520",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44075",
-		"price": "417665"
+		"dateManufactured": "1598918400",
+		"price": "334078"
 	},
 	{
 		"type": "Notebook",
@@ -621,48 +525,48 @@
 		"details": "1366x768 Intel Core i3 7100U 2.4GHz 4GB 500GB HDD Intel HD Graphics 620",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44075",
-		"price": "422264"
+		"dateManufactured": "1598918400",
+		"price": "407942"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "Vero",
-		"model": "K147 (N3350/4GB/32GB/FHD/W10)",
+		"model": "K147 -N3350/4GB/32GB/FHD/W10-",
 		"details": "IPS Panel Full HD 1920x1080 Intel Celeron Dual Core N3350 1.1GHz 4GB 32GB Flash Storage Intel HD Graphics 500",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "44075",
-		"price": "150048"
+		"dateManufactured": "1598918400",
+		"price": "350596"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "Vero",
-		"model": "K146 (N3350/4GB/32GB/W10)",
+		"model": "K146 -N3350/4GB/32GB/W10-",
 		"details": "1920x1080 Intel Celeron Dual Core N3350 1.1GHz 4GB 32GB Flash Storage Intel HD Graphics 500",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "1920x1080",
-		"dateManufactured": "44075",
-		"price": "108331"
+		"dateManufactured": "1598918400",
+		"price": "374815"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "Vero",
-		"model": "V142 (X5-Z8350/2GB/32GB/W10)",
+		"model": "V142 -X5-Z8350/2GB/32GB/W10-",
 		"details": "1366x768 Intel Atom X5-Z8350 1.44GHz 2GB 32GB Flash Storage Intel HD Graphics 400",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "1366x768",
-		"dateManufactured": "44075",
-		"price": "328347"
+		"dateManufactured": "1598918400",
+		"price": "260060"
 	},
 	{
 		"type": "Notebook",
 		"tradeMark": "Vero",
-		"model": "V131 (X5-Z8350/4GB/32GB/FHD/W10)",
+		"model": "V131 -X5-Z8350/4GB/32GB/FHD/W10-",
 		"details": "Full HD 1920x1080 Intel Atom X5-Z8350 1.44GHz 4GB 32GB Flash Storage Intel HD Graphics 400",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "Full HD 1920x1080",
-		"dateManufactured": "44075",
-		"price": "151832"
+		"dateManufactured": "1598918400",
+		"price": "469293"
 	},
 	{
 		"type": "Notebook",
@@ -671,8 +575,8 @@
 		"details": "IPS Panel Full HD 1920x1080 Intel Core i5 8250U 1.6GHz 8GB 256GB SSD Nvidia GeForce MX150",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "44075",
-		"price": "422924"
+		"dateManufactured": "1598918400",
+		"price": "124015"
 	},
 	{
 		"type": "Ultrabook",
@@ -681,8 +585,8 @@
 		"details": "IPS Panel Full HD 1920x1080 Intel Core i5 7200U 2.5GHz 8GB 256GB SSD Nvidia GeForce MX150",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "44075",
-		"price": "459101"
+		"dateManufactured": "1598918400",
+		"price": "121838"
 	},
 	{
 		"type": "Notebook",
@@ -691,7 +595,715 @@
 		"details": "IPS Panel Full HD 1920x1080 Intel Core i7 8550U 1.8GHz 16GB 256GB SSD Nvidia GeForce MX150",
 		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
 		"features": "IPS Panel Full HD 1920x1080",
-		"dateManufactured": "44075",
+		"dateManufactured": "1598918400",
+		"price": "126740"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Acer",
+		"model": "Aspire 3",
+		"details": "1366x768 AMD A9-Series 9420 3GHz 4GB 500GB HDD AMD Radeon R5",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1601510400",
+		"price": "215782"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Acer",
+		"model": "Aspire ES1-531",
+		"details": "1366x768 Intel Celeron Dual Core N3060 1.6GHz 4GB 500GB HDD Intel HD Graphics 400",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1601510400",
+		"price": "142117"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Apple",
+		"model": "MacBook Pro",
+		"details": "IPS Panel Retina Display 2560x1600 Intel Core i5 2.3GHz 8GB 128GB SSD Intel Iris Plus Graphics 640",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "IPS Panel Retina Display 2560x1600",
+		"dateManufactured": "1601510400",
+		"price": "288642"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Apple",
+		"model": "Macbook Air",
+		"details": "1440x900 Intel Core i5 1.8GHz 8GB 128GB Flash Storage Intel HD Graphics 6000",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "1440x900",
+		"dateManufactured": "1601510400",
+		"price": "321389"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Apple",
+		"model": "MacBook Air",
+		"details": "1366x768 Intel Core i5 1.6GHz 4GB 256GB Flash Storage Intel HD Graphics 6000",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1601510400",
+		"price": "417665"
+	},
+	{
+		"type": "2 in 1 Convertible",
+		"tradeMark": "Asus",
+		"model": "ZenBook Flip",
+		"details": "Full HD - Touchscreen 1920x1080 Intel Core i5 8250U 1.6GHz 8GB 256GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1601510400",
+		"price": "422264"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Asus",
+		"model": "X555BP-XX180T -A9-9420/4GB/1TB/Radeon",
+		"details": "1366x768 AMD A9-Series 9420 3GHz 4GB 1TB HDD AMD Radeon R5 M420",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1601510400",
+		"price": "150048"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Asus",
+		"model": "ZenBook UX305CA-UBM1",
+		"details": "IPS Panel Full HD 1920x1080 Intel Core M 6Y30 0.9GHz 8GB 512GB SSD Intel HD Graphics 515",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1601510400",
+		"price": "108331"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Asus",
+		"model": "X553SA-XX031T -N3050/4GB/500GB/W10-",
+		"details": "1366x768 Intel Celeron Dual Core N3050 1.6GHz 4GB 500GB HDD Intel HD Graphics",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1601510400",
+		"price": "328347"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Chuwi",
+		"model": "LapBook 15.6",
+		"details": "Full HD 1920x1080 Intel Atom x5-Z8300 1.44GHz 4GB 64GB Flash Storage Intel HD Graphics",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_708214-MLA49316030730_032022-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1601510400",
+		"price": "151832"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Chuwi",
+		"model": "LapBook 12.3",
+		"details": "IPS Panel Retina Display 2736x1824 Intel Celeron Quad Core N3450 1.1GHz 6GB 64GB Flash Storage Intel HD Graphics 500",
+		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=100",
+		"features": "IPS Panel Retina Display 2736x1824",
+		"dateManufactured": "1601510400",
+		"price": "422924"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Chuwi",
+		"model": "Lapbook 15,6",
+		"details": "Full HD 1920x1080 Intel Atom x5-Z8350 1.44GHz 4GB 64GB Flash Storage Intel HD Graphics",
+		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=101",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1601510400",
+		"price": "459101"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Dell",
+		"model": "Vostro 5568",
+		"details": "Full HD 1920x1080 Intel Core i5 7200U 2.5GHz 8GB 1TB HDD Intel HD Graphics 620",
+		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=102",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1601510400",
 		"price": "130333"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Dell",
+		"model": "Inspiron 5570",
+		"details": "Full HD 1920x1080 Intel Core i7 8550U 1.8GHz 16GB 256GB SSD and 2TB HDD AMD Radeon 530",
+		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=103",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1601510400",
+		"price": "413339"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Dell",
+		"model": "Inspiron 5570",
+		"details": "Full HD 1920x1080 Intel Core i5 8250U 1.6GHz 8GB 256GB SSD AMD Radeon 530",
+		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=104",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1601510400",
+		"price": "253542"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Dell",
+		"model": "XPS 13",
+		"details": "Quad HDand - Touchscreen 3200x1800 Intel Core i7 8550U 1.8GHz 8GB 256GB SSD Intel UHD Graphics 620",
+		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=105",
+		"features": "Quad HDand - Touchscreen 3200x1800",
+		"dateManufactured": "1601510400",
+		"price": "214666"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Fujitsu",
+		"model": "Lifebook A557",
+		"details": "1366x768 Intel Core i5 7200U 2.5GHz 8GB 1TB HDD Intel HD Graphics 620",
+		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=106",
+		"features": "1366x768",
+		"dateManufactured": "1601510400",
+		"price": "448435"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Fujitsu",
+		"model": "LifeBook A557",
+		"details": "1366x768 Intel Core i5 7200U 2.5GHz 8GB 256GB SSD Intel HD Graphics 620",
+		"picture": "https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/NOT00224/1000x1000-NOT00224.jpg&w=500&q=107",
+		"features": "1366x768",
+		"dateManufactured": "1601510400",
+		"price": "499758"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Fujitsu",
+		"model": "LifeBook A556",
+		"details": "1366x768 Intel Core i5 6200U 2.3GHz 4GB 256GB SSD Intel HD Graphics 520",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1601510400",
+		"price": "364151"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Google",
+		"model": "Pixelbook -Core",
+		"details": "Touchscreen 2400x1600 Intel Core i7 7Y75 1.3GHz 16GB 512GB SSD Intel HD Graphics 615",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "Touchscreen 2400x1600",
+		"dateManufactured": "1593561600",
+		"price": "173250"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Google",
+		"model": "Pixelbook -Core",
+		"details": "Touchscreen 2400x1600 Intel Core i5 7Y57 1.2GHz 8GB 128GB SSD Intel HD Graphics 615",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "Touchscreen 2400x1600",
+		"dateManufactured": "1593561600",
+		"price": "242881"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Google",
+		"model": "Pixelbook -Core",
+		"details": "Touchscreen 2400x1600 Intel Core i5 7Y57 1.2GHz 8GB 256GB SSD Intel HD Graphics 615",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "Touchscreen 2400x1600",
+		"dateManufactured": "1593561600",
+		"price": "370968"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "HP",
+		"model": "Pavilion 15-AW003nv",
+		"details": "Full HD 1920x1080 AMD A9-Series 9410 2.9GHz 6GB 1TB Hybrid AMD Radeon R7 M440",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1593561600",
+		"price": "412920"
+	},
+	{
+		"type": "Netbook",
+		"tradeMark": "HP",
+		"model": "Stream 11-Y000na",
+		"details": "1366x768 Intel Celeron Dual Core N3060 1.6GHz 2GB 32GB Flash Storage Intel HD Graphics 400",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1593561600",
+		"price": "369726"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "HP",
+		"model": "15-AC110nv -i7-6500U/6GB/1TB/Radeon",
+		"details": "1366x768 Intel Core i7 6500U 2.5GHz 6GB 1TB HDD AMD Radeon R5 M330",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1593561600",
+		"price": "482909"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Huawei",
+		"model": "MateBook X",
+		"details": "IPS Panel Full HD 2160x1440 Intel Core i5 7200U 2.5GHz 8GB 256GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
+		"features": "IPS Panel Full HD 2160x1440",
+		"dateManufactured": "1593561600",
+		"price": "220785"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Huawei",
+		"model": "MateBook X",
+		"details": "IPS Panel Full HD 2160x1440 Intel Core i7 7500U 2.7GHz 8GB 512GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
+		"features": "IPS Panel Full HD 2160x1440",
+		"dateManufactured": "1593561600",
+		"price": "246291"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Lenovo",
+		"model": "IdeaPad 320-15IKB",
+		"details": "Full HD 1920x1080 Intel Core i3 7100U 2.4GHz 8GB 1TB HDD Nvidia GeForce 940MX",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1593561600",
+		"price": "338497"
+	},
+	{
+		"type": "Gaming",
+		"tradeMark": "Lenovo",
+		"model": "Legion Y520-15IKBN",
+		"details": "IPS Panel Full HD 1920x1080 Intel Core i5 7300HQ 2.5GHz 8GB 128GB SSD and 1TB HDD Nvidia GeForce GTX 1050",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1593561600",
+		"price": "267075"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Lenovo",
+		"model": "IdeaPad 120S-14IAP",
+		"details": "1366x768 Intel Celeron Dual Core N3350 1.1GHz 4GB 64GB Flash Storage Intel HD Graphics 500",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1593561600",
+		"price": "222791"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Lenovo",
+		"model": "IdeaPad 320-15ISK",
+		"details": "1366x768 Intel Core i3 6006U 2GHz 4GB 128GB SSD Intel HD Graphics 520",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_837325-MLA47767921408_102021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1593561600",
+		"price": "130173"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "LG",
+		"model": "Gram 15Z975",
+		"details": "IPS Panel Full HD 1920x1080 Intel Core i7 8550U 1.8GHz 8GB 512GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1593561600",
+		"price": "216429"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "LG",
+		"model": "Gram 15Z970",
+		"details": "IPS Panel Full HD - Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 16GB 512GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "IPS Panel Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1593561600",
+		"price": "414891"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "LG",
+		"model": "Gram 14Z970",
+		"details": "IPS Panel Full HD - Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 8GB 512GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "IPS Panel Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "116495"
+	},
+	{
+		"type": "2 in 1 Convertible",
+		"tradeMark": "Mediacom",
+		"model": "FlexBook Edge",
+		"details": "IPS Panel Full HD - Touchscreen 1920x1080 Intel Celeron Dual Core N3350 1.1GHz 4GB 32GB SSD Intel HD Graphics 500",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "IPS Panel Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "473822"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Mediacom",
+		"model": "SmartBook Edge",
+		"details": "IPS Panel Full HD 1920x1080 Intel Celeron Quad Core N3450 1.1GHz 4GB 32GB SSD Intel HD Graphics 500",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "198001"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Mediacom",
+		"model": "SmartBook 130",
+		"details": "IPS Panel Full HD 1920x1080 Intel Atom x5-Z8350 1.44GHz 4GB 32GB Flash Storage Intel HD Graphics",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "335204"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Microsoft",
+		"model": "Surface Laptop",
+		"details": "Touchscreen 2256x1504 Intel Core i5 7200U 2.5GHz 4GB 128GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Touchscreen 2256x1504",
+		"dateManufactured": "1588291200",
+		"price": "371656"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Microsoft",
+		"model": "Surface Laptop",
+		"details": "Touchscreen 2256x1504 Intel Core i5 7200U 2.5GHz 8GB 256GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Touchscreen 2256x1504",
+		"dateManufactured": "1588291200",
+		"price": "434602"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Microsoft",
+		"model": "Surface Laptop",
+		"details": "Touchscreen 2256x1504 Intel Core i7 7660U 2.5GHz 16GB 512GB SSD Intel Iris Plus Graphics 640",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Touchscreen 2256x1504",
+		"dateManufactured": "1588291200",
+		"price": "117917"
+	},
+	{
+		"type": "Gaming",
+		"tradeMark": "MSI",
+		"model": "GS73VR 7RG",
+		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 256GB SSD and 2TB HDD Nvidia GeForce GTX 1070",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "405967"
+	},
+	{
+		"type": "Gaming",
+		"tradeMark": "MSI",
+		"model": "GL72M 7RDX",
+		"details": "Full HD 1920x1080 Intel Core i5 7300HQ 2.5GHz 8GB 128GB SSD and 1TB HDD Nvidia GeForce GTX 1050",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "283715"
+	},
+	{
+		"type": "Gaming",
+		"tradeMark": "MSI",
+		"model": "GP62M 7REX",
+		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 256GB SSD and 1TB HDD Nvidia GeForce GTX 1050 Ti",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "266043"
+	},
+	{
+		"type": "Gaming",
+		"tradeMark": "Razer",
+		"model": "Blade Pro",
+		"details": "4K Ultra HD - Touchscreen 3840x2160 Intel Core i7 7820HK 2.9GHz 32GB 1TB SSD Nvidia GeForce GTX 1080",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "4K Ultra HD - Touchscreen 3840x2160",
+		"dateManufactured": "1588291200",
+		"price": "405001"
+	},
+	{
+		"type": "Gaming",
+		"tradeMark": "Razer",
+		"model": "Blade Pro",
+		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 256GB SSD Nvidia GeForce GTX 1060",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "145018"
+	},
+	{
+		"type": "Gaming",
+		"tradeMark": "Razer",
+		"model": "Blade Pro",
+		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 512GB SSD Nvidia GeForce GTX 1060",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "179434"
+	},
+	{
+		"type": "Netbook",
+		"tradeMark": "Samsung",
+		"model": "Chromebook 3",
+		"details": "1366x768 Intel Celeron Dual Core N3060 1.6GHz 4GB 16GB Flash Storage Intel HD Graphics 400",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1588291200",
+		"price": "280574"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Samsung",
+		"model": "Notebook Odyssey",
+		"details": "Full HD 1920x1080 Intel Core i7 7700HQ 2.8GHz 16GB 128GB SSD and 1TB HDD Nvidia GeForce GTX 1050",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_834700-MLA46806711363_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "465895"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Samsung",
+		"model": "Notebook 9",
+		"details": "Full HD 1920x1080 Intel Core i7 7500U 2.7GHz 16GB 256GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1588291200",
+		"price": "372413"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Samsung",
+		"model": "Notebook 9",
+		"details": "Full HD - Touchscreen 1920x1080 Intel Core i7 7500U 2.7GHz 8GB 256GB SSD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "Full HD - Touchscreen 1920x1080",
+		"dateManufactured": "1598918400",
+		"price": "131120"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Toshiba",
+		"model": "Satellite Pro",
+		"details": "1366x768 Intel Core i5 6200U 2.3GHz 4GB 500GB HDD Intel HD Graphics 520",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1598918400",
+		"price": "361577"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Toshiba",
+		"model": "Satellite Pro",
+		"details": "1366x768 Intel Core i3 6006U 2.2GHz 4GB 500GB HDD Intel HD Graphics 520",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1598918400",
+		"price": "261315"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Toshiba",
+		"model": "Satellite Pro",
+		"details": "1366x768 Intel Core i3 7100U 2.4GHz 4GB 500GB HDD Intel HD Graphics 620",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1598918400",
+		"price": "147384"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Vero",
+		"model": "K147 -N3350/4GB/32GB/FHD/W10-",
+		"details": "IPS Panel Full HD 1920x1080 Intel Celeron Dual Core N3350 1.1GHz 4GB 32GB Flash Storage Intel HD Graphics 500",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1598918400",
+		"price": "324100"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Vero",
+		"model": "K146 -N3350/4GB/32GB/W10-",
+		"details": "1920x1080 Intel Celeron Dual Core N3350 1.1GHz 4GB 32GB Flash Storage Intel HD Graphics 500",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "1920x1080",
+		"dateManufactured": "1598918400",
+		"price": "461915"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Vero",
+		"model": "V142 -X5-Z8350/2GB/32GB/W10-",
+		"details": "1366x768 Intel Atom X5-Z8350 1.44GHz 2GB 32GB Flash Storage Intel HD Graphics 400",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "1366x768",
+		"dateManufactured": "1598918400",
+		"price": "176742"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Vero",
+		"model": "V131 -X5-Z8350/4GB/32GB/FHD/W10-",
+		"details": "Full HD 1920x1080 Intel Atom X5-Z8350 1.44GHz 4GB 32GB Flash Storage Intel HD Graphics 400",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "Full HD 1920x1080",
+		"dateManufactured": "1598918400",
+		"price": "474195"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Xiaomi",
+		"model": "Mi Notebook",
+		"details": "IPS Panel Full HD 1920x1080 Intel Core i5 8250U 1.6GHz 8GB 256GB SSD Nvidia GeForce MX150",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1598918400",
+		"price": "129774"
+	},
+	{
+		"type": "Ultrabook",
+		"tradeMark": "Xiaomi",
+		"model": "Mi Notebook",
+		"details": "IPS Panel Full HD 1920x1080 Intel Core i5 7200U 2.5GHz 8GB 256GB SSD Nvidia GeForce MX150",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1598918400",
+		"price": "363525"
+	},
+	{
+		"type": "Notebook",
+		"tradeMark": "Xiaomi",
+		"model": "Mi Notebook",
+		"details": "IPS Panel Full HD 1920x1080 Intel Core i7 8550U 1.8GHz 16GB 256GB SSD Nvidia GeForce MX150",
+		"picture": "https://http2.mlstatic.com/D_NQ_NP_720801-MLA46901034263_072021-O.webp",
+		"features": "IPS Panel Full HD 1920x1080",
+		"dateManufactured": "1598918400",
+		"price": "263530"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple iPhone 12",
+		"details": "Versions: A2403 -International- A2172 -USA- A2402 -Canada, Japan- A2404 -China, Hong Kong-",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg",
+		"standards": "GSM - CDMA - HSPA - EVDO - LTE - 5G",
+		"dateManufactured": "1602547200",
+		"price": "402213"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple iPhone 12 mini",
+		"details": "Versions: A2399 -International- A2176 -USA- A2398 -Canada, Japan- A2400 -China-",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-mini.jpg",
+		"standards": "GSM - CDMA - HSPA - EVDO - LTE - 5G",
+		"dateManufactured": "1602547200",
+		"price": "453143"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple iPhone 12 Pro",
+		"details": "Versions: A2407 -International- A2341 -USA- A2406 -Canada, Japan- A2408 -China, Hong Kong-",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-.jpg",
+		"standards": "GSM - CDMA - HSPA - EVDO - LTE - 5G",
+		"dateManufactured": "1602547200",
+		"price": "220333"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple iPhone 12 Pro Max",
+		"details": "Versions: A2411 -International- A2342 -USA- A2410 -Canada, Japan- A2412 -China, Hong Kong-",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg",
+		"standards": "GSM - CDMA - HSPA - EVDO - LTE - 5G",
+		"dateManufactured": "1602547200",
+		"price": "267241"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple Watch Edition Series 5",
+		"details": "GPS and Cellular versions: A2156 40mm, A2157 44mm -Global- A2094 40mm, A2095 44mm -USA, LATAM, Canada-",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-edition-series-5.jpg",
+		"standards": "GSM - HSPA - LTE",
+		"dateManufactured": "1598918400",
+		"price": "265561"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple Watch Edition Series 6",
+		"details": "GPS and Cellular versions: A2375 40mm, A2376 44mm -Global- A2293 40mm, A2294 44mm -USA, LATAM, Canada - GPS versions: N/A",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-s6-titanium.jpg",
+		"standards": "GSM - HSPA - LTE",
+		"dateManufactured": "1598918400",
+		"price": "322512"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple Watch Series 5 Aluminum",
+		"details": "GPS and Cellular versions: A2156 40mm, A2157 44mm -Global- A2094 40mm, A2095 44mm -USA, LATAM, Canada - GPS versions: A2092 40mm, A2093 44mm",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-aluminum-series-5.jpg",
+		"standards": "GSM - HSPA - LTE",
+		"dateManufactured": "1598918400",
+		"price": "360017"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple Watch Series 6",
+		"details": "GPS and Cellular versions: A2375 40mm, A2376 44mm -Global- A2293 40mm, A2294 44mm -USA, LATAM, Canada - GPS versions: N/A",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-s6-steel.jpg",
+		"standards": "GSM - HSPA - LTE",
+		"dateManufactured": "1598918400",
+		"price": "413933"
+	},
+	{
+		"type": "mobile",
+		"model": "Apple Watch Series 6 Aluminum",
+		"details": "GPS and Cellular versions: A2375 40mm, A2376 44mm -Global- A2293 40mm, A2294 44mm -USA, LATAM, Canada - GPS versions: A2291 40mm, A2292 44mm -Global-",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-s6.jpg",
+		"standards": "GSM - HSPA - LTE",
+		"dateManufactured": "1598918400",
+		"price": "385667"
+	},
+	{
+		"type": "mobile",
+		"model": "Samsung Galaxy Note20",
+		"details": "Also available with 5G",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-5g-r.jpg",
+		"standards": "GSM - CDMA - HSPA - EVDO - LTE",
+		"dateManufactured": "1593907200",
+		"price": "140807"
+	},
+	{
+		"type": "mobile",
+		"model": "Samsung Galaxy Note20 5G",
+		"details": "Also available with 4G/LTE only - Versions: SM-N981B -International- SM-N981U -USA- SM-N981U1 -USA unlocked- SM-N981W -Canada-",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-5g-r.jpg",
+		"standards": "GSM - CDMA - HSPA - EVDO - LTE - 5G",
+		"dateManufactured": "1593907200",
+		"price": "418944"
+	},
+	{
+		"type": "mobile",
+		"model": "Samsung Galaxy Note20 Ultra",
+		"details": "Also available with 5G",
+		"picture": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-ultra-.jpg",
+		"standards": "GSM - CDMA - HSPA - EVDO - LTE",
+		"dateManufactured": "1593907200",
+		"price": "378476"
 	}
 ]

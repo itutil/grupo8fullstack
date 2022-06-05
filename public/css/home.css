@@ -12,9 +12,22 @@ element.style {
     overflow: hidden;
     position: relative;
 }
+.form {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 2px 5px 2px 5px;
+}
+
+/*            -------------  FLEXSLIDER  ----------------*/
+
+
 .flexslider {
     margin: 0px;
-    padding: 0;
     background: #ffffff;
     position: relative;
     zoom: 1;
@@ -26,23 +39,13 @@ element.style {
     -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
     box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
 }
-::marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;
+  .flexslider .slides {
+    zoom: 1;
 }
-.flexslider .slides::after {
-    content: "\0020";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+  .flexslider .slides img {
+    height: auto;
 }
-.flex-viewport {
+  .flex-viewport {
     max-height: 2000px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -50,18 +53,142 @@ element.style {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
-.flexslider .slides {
-    zoom: 1;
+  .loading .flex-viewport {
+    max-height: 300px;
 }
-.flexslider .slides > li {
-    display: none;
-    -webkit-backface-visibility-: hidden;
+  .carousel li {
+    margin-right: 5px;
 }
-.flexslider .slides img {
-    height: auto;
-    width: 100%;
+  .flex-direction-nav {
+    *height: 0;
+}
+  .flex-direction-nav a {width: 30px; 
+    height: 30px; margin: -20px 0 0; 
+    display: block; 
+    background: url(../images/bg_direction_nav.png) no-repeat 0 0; 
+    position: absolute; top: 50%; cursor: pointer; 
+    text-indent: -9999px; 
+    opacity: 0;
+    -webkit-transition-: all .3s ease;
+}
+  .flex-direction-nav .flex-prev {
+    left: -50px;
+}
+  .flex-direction-nav .flex-next {
+    background-position: 100% 0;
+    right: -50px;
+}
+  .flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 0.7;
+    left: 10px;
+}
+  .flexslider:hover .flex-direction-nav .flex-prev:hover {
+    opacity: 1;
+}
+  .flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 0.7;
+    right: 10px;
+}
+  .flexslider:hover .flex-direction-nav .flex-next:hover {
+    opacity: 1;
+}
+  .flex-direction-nav .flex-disabled {
+    opacity: 0!important;
+    filter: alpha(opacity=0);
+    cursor: default;
+}
+  .flex-pauseplay a {
     display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    opacity: 0.8;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
 }
+  .flex-pauseplay a:before {
+    font-family: "flexslider-icon";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f004';
+}
+  .flex-pauseplay a:hover {
+    opacity: 1;
+}
+  .flex-pauseplay a.flex-play:before {
+    content: '\f003';
+}
+  .flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+  .flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+  .flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+  .flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, 0.7);
+}
+  .flex-control-paging li a.flex-active {
+    background: #0099cc;
+    background: rgba(0, 153, 204, 0.9);
+    cursor: default;
+}
+  .flex-control-thumbs {
+    margin: 5px 0 0;
+    position: static;
+    overflow: hidden;
+}
+  .flex-control-thumbs li {
+    width: 25%;
+    float: left;
+    margin: 0;
+}
+  .flex-control-thumbs img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: .7;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+  .flex-control-thumbs img:hover {
+    opacity: 1;
+}
+  .flex-control-thumbs .flex-active {
+    opacity: 1;
+    cursor: default;
+}
+/*     -------------------  FIN FLEXSLIDER  -----------------    */
 img {
     border: 0;
     max-width: 100%;
@@ -157,13 +284,24 @@ a:-webkit-any-link {
     opacity: 0;
     -webkit-transition-: all .3s ease;
 }
-
+.content {
+    margin: 0 20px;
+    overflow: hidden;
+}
+.columna-big {
+    width: 75%;
+    float: left;
+}
 .columna-small {
     width: 25%;
     float: left;
 }
 .columna-content {
     padding: 10px;
+    overflow: hidden;
+}
+#home-productos {
+    width: 100%;
     overflow: hidden;
 }
 #home-destacados {
@@ -279,56 +417,14 @@ p {
     position: relative;
     top: 10px;
 }
-.owl-carousel {
-    display: none;
-    position: relative;
-    width: 100%;
-    -ms-touch-action-: pan-y;
+.line-tit a {
+    color: #666;
 }
-.owl-carousel .owl-wrapper-outer {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-.owl-carousel .owl-wrapper {
-    display: none;
-    position: relative;
-    -webkit-transform-: translate3d(0px, 0px, 0px);
-}
-.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
-    -webkit-backface-visibility-: hidden;
-    -moz-backface-visibility-: hidden;
-    -ms-backface-visibility-: hidden;
-    -webkit-transform-: translate3d(0,0,0);
-    -moz-transform-: translate3d(0,0,0);
-    -ms-transform-: translate3d(0,0,0);
-}
-.owl-carousel .owl-item {
-    float: left;
-}
-.owl-carousel .owl-wrapper:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
-#owl-demo .item {
-    background: #ffffff;
-    padding: 0;
-    margin: 20px;
-    text-align: center;
-    -webkit-transition: box-shadow 0.3s ease-out;
-    -o-transition: box-shadow 0.3s ease-out;
-    transition: box-shadow 0.3s ease-out;
-    -webkit-transition: all box-shadow 0.3s ease-out ease;
-    -moz-transition: all box-shadow 0.3s ease-out ease;
-    -ms-transition: all box-shadow 0.3s ease-out ease;
-    -o-transition: all box-shadow 0.3s ease-out ease;
-    transition: all box-shadow 0.3s ease-out ease;
-}
+/*      ------------  VIEW  --------------        */
+
 .view {
+    #nav-footer2 { text-align: left;}
+    #nav-footer2 a { padding: 5px 0px; display: block;}
     margin: 0;
     float: left;
     border: 0;
@@ -367,16 +463,6 @@ p {
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-}
-.productos-marcalist {
-    margin-top: 2px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: normal;
-    color: #999;
-    text-align: center;
-    padding: 0;
 }
 .view a.info {
     display: inline-block;
@@ -499,6 +585,7 @@ p {
     top: 0;
     left: 0;
 }
+/*       FIN VIEW       */
 .cleaner {
     clear: both;
 }
@@ -523,6 +610,10 @@ p {
 a.medialink {
     float: right;
     margin: 2px 0px 2px 5px;
+}
+.item span {
+    color: #666;
+    font-weight: normal;
 }
 .iconos-estado {
     float: left;
@@ -566,10 +657,6 @@ a.medialink {
     text-align: center;
     padding: 0 6px 0 6px;
 }
-.item span {
-    color: #666;
-    font-weight: normal;
-}
 .productos-marcalist span {
     color: #999;
 }
@@ -585,39 +672,6 @@ a.medialink {
 }
 .productos-preciolist a.button-comprar {
     display: none;
-}
-a.button-comprar {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #e9e9e9;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    float: right;
-    background-color: #000;
-    margin-top: 4px;
-    margin-bottom: 0;
-}
-a.button-comprar_off {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #e9e9e9;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    float: right;
-    background-color: #ccc;
-    margin-top: 4px;
-    margin-bottom: 0;
-}
-a.button-comprar:hover {
-    background-color: #666;
 }
 .owl-theme .owl-controls {
     margin-top: 10px;
@@ -757,4 +811,422 @@ a.button-comprar_off {
 }
 a.button-comprar:hover {
     background-color: #b3241d;
+}
+
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.24
+ */
+ 
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+
+#owl-demo .item {
+    background: #ffffff;
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+    -webkit-transition: box-shadow 0.3s ease-out;
+    -o-transition: box-shadow 0.3s ease-out;
+    transition: box-shadow 0.3s ease-out;
+    -webkit-transition: all box-shadow 0.3s ease-out ease;
+    -moz-transition: all box-shadow 0.3s ease-out ease;
+    -ms-transition: all box-shadow 0.3s ease-out ease;
+    -o-transition: all box-shadow 0.3s ease-out ease;
+    transition: all box-shadow 0.3s ease-out ease;
+}
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action-: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform-: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+
+	
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility-: hidden;
+	-moz-backface-visibility-:    hidden;
+	-ms-backface-visibility-:     hidden;
+  -webkit-transform-:- translate3d(0,0,0);
+  -moz-transform-: translate3d(0,0,0);
+  -ms-transform-: translate3d(0,0,0);
+}
+
+
+
+/* CSS3 Transitions */
+
+.owl-origin {
+	-webkit-perspective: 1200px;
+	-webkit-perspective-origin-x : 50%;
+	-webkit-perspective-origin-y : 50%;
+	-moz-perspective : 1200px;
+	-moz-perspective-origin-x : 50%;
+	-moz-perspective-origin-y : 50%;
+	perspective : 1200px;
+}
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {opacity: 1}
+}
+@-moz-keyframes empty {
+  0% {opacity: 1}
+}
+@keyframes empty {
+  0% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes backSlideOut {
+  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+}
+@-moz-keyframes backSlideOut {
+  25% { opacity: .5; -moz-transform: translateZ(-500px); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+}
+@keyframes backSlideOut {
+  25% { opacity: .5; transform: translateZ(-500px); }
+  75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+}
+@-webkit-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
+}
+@-moz-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px); }
+  100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }
+}
+@keyframes backSlideIn {
+  0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; transform: translateZ(-500px); }
+  100% { opacity: 1; transform: translateZ(0) translateX(0); }
+}
+@-webkit-keyframes scaleToFade {
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleToFade {
+  to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleToFade {
+  to { opacity: 0; transform: scale(.8); }
+}
+@-webkit-keyframes goDown {
+  from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes goDown {
+  from { -moz-transform: translateY(-100%); }
+}
+@keyframes goDown {
+  from { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  from { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpFrom {
+  from { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpFrom {
+  from { opacity: 0; transform: scale(1.5); }
+}
+
+@-webkit-keyframes scaleUpTo {
+  to { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpTo {
+  to { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpTo {
+  to { opacity: 0; transform: scale(1.5); }
+}
+
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.24
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #666666;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	font-size: 12px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.owl-next{
+	float: right;
+	background-image: url(../images/button-next.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 40px;
+	width: 20px;
+	top: 50%;
+    right: 0px;
+    position: absolute;
+	margin-top: -20px;
+}
+
+.owl-prev{
+	float: left;
+	background-image: url(../images/button-prev.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 40px;
+	width: 20px;
+	top: 50%;
+    left: 0px;
+    position: absolute;
+	margin-top: -20px;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+
+
+/*          ---------------------------------------------          */
+
+
+@media only screen and (max-width:800px) {
+
+    #productos-columna-left { width: 40%}
+    #productos-columna-right { width: 60%}
+    #imagen_grande_1 { display: none;}
+    #imagen_chica_1 { display: none;}
+    #imagen_grande_2 { display: block;}
+    #imagen_chica_2 { display: block;}
+    
+    .columnaproductos { width: 50%}
+    .sin-barra .columnaproductos { width: 50%;}
+    
+}
+@media only screen and (max-width:768px) {
+
+    .wishlist-item { margin-top: 8px; margin-left: 0; float: none;}
+    .title-item-float { float: none;}
+    #nav-footer .colum { width: 50%; margin: 15px 0;}
+    
+    .columna-small { width: 50%}
+    #profile-desc .leftrow { display: block; width: 100%; border-right-width: 0; padding-right: 0;}
+    #profile-desc .rightrow { display: block; width: 100%; padding-left: 0;}  
+}
+@media only screen and (max-width:560px) {
+
+    #main { padding-top: 126px;}
+    .iconos-producto { padding: 0px 0; height: 35px;}
+    .iconos-producto .media { display: none;}
+    .iconos-producto .iconos-estado { width: 100%;}
+    .productos-titulolist { text-align: left;}
+    .productos-marcalist { text-align: left;}
+    .productos-preciolist { text-align: left;}   
+}
+@media only screen and (max-width:460px) {
+    #nav-footer .colum { width: 100%}
+    .columna-small { width: 100%}
+    #nav-footer2 { text-align: left;}
+    #nav-footer2 a { padding: 5px 0px; display: block;}
+}
+@media only screen and (max-width:430px) {
+    #productos-columna-left { width: 100%; margin-top: 0; margin-bottom: 0;}
+    #productos-columna-left-content { display: none;}
+    #productos-columna-left-content-mobile { display: block;}
+    #productos-columna-right { width: 100%}
+    #productos-columna-right-content { margin-left: 10px; margin-right: 10px;}   
+    .iconos-producto .iconos-estado img { margin: 4px 2px 4px 0; height: 17px;}       
+}
+@media only screen and (max-width:414px) {   
+    #productos-columna-pic { width: 100%}
+    #productos-columna-pic-content { margin-right: 0;}
+    #productos-columna-info { width: 100%}
+    #productos-columna-info-content { margin-left: 0; margin-top: 20px;}
+    .column .four { width: 100%}  
+    .productos-titulolist { font-size: 12px;}   
 }

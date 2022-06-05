@@ -188,49 +188,6 @@ element.style {
     opacity: 1;
     cursor: default;
 }
-/*     -------------------  FIN FLEXSLIDER  -----------------    */
-img {
-    border: 0;
-    max-width: 100%;
-}
-img.scale-with-grid {
-    width: 100%;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-ol {
-    display: block;
-    list-style-type: decimal;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-a {
-    text-decoration: none;
-    color: #b3241d;
-}
-a:hover {
-    text-decoration: none;
-    color: #c33d27; 
-}
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
 .flex-control-nav {
     width: 100%;
     position: absolute;
@@ -283,6 +240,65 @@ a:-webkit-any-link {
     text-indent: -9999px;
     opacity: 0;
     -webkit-transition-: all .3s ease;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+ @media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev {
+      opacity: 1;
+      left: 10px;
+    }
+    .flex-direction-nav .flex-next {
+      opacity: 1;
+      right: 10px;
+    }
+  }
+  
+
+
+/*     -------------------  FIN FLEXSLIDER  -----------------    */
+img {
+    border: 0;
+    max-width: 100%;
+}
+img.scale-with-grid {
+    width: 100%;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a {
+    text-decoration: none;
+    color: #b3241d;
+}
+a:hover {
+    text-decoration: none;
+    color: #c33d27; 
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
 }
 .content {
     margin: 0 20px;
@@ -585,7 +601,7 @@ p {
     top: 0;
     left: 0;
 }
-/*       FIN VIEW       */
+/*   ----------    FIN VIEW    ------------   */
 .cleaner {
     clear: both;
 }

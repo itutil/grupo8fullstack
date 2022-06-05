@@ -689,79 +689,6 @@ a.medialink {
 .productos-preciolist a.button-comprar {
     display: none;
 }
-.owl-theme .owl-controls {
-    margin-top: 10px;
-    text-align: center;
-}
-.owl-controls {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.owl-controls .owl-page, .owl-controls .owl-buttons div {
-    cursor: pointer;
-}
-.owl-theme .owl-controls .owl-page {
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-}
-.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-    filter: Alpha(Opacity=100);
-    opacity: 1;
-}
-.owl-theme .owl-controls .owl-page span {
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin: 5px 7px;
-    filter: Alpha(Opacity=50);
-    opacity: 0.5;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    background: #869791;
-}
-.owl-theme .owl-controls .owl-buttons div {
-    color: #666666;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    font-size: 12px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-}
-.owl-prev {
-    float: left;
-    background-image: url(../images/button-prev.png);
-    background-repeat: no-repeat;
-    background-position: left top;
-    height: 40px;
-    width: 20px;
-    top: 50%;
-    left: 0px;
-    position: absolute;
-    margin-top: -20px;
-}
-.owl-next {
-    float: right;
-    background-image: url(../images/button-next.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    height: 40px;
-    width: 20px;
-    top: 50%;
-    right: 0px;
-    position: absolute;
-    margin-top: -20px;
-}
 .cleaner {
     clear: both;
 }
@@ -886,7 +813,79 @@ a.button-comprar:hover {
 .owl-carousel .owl-item{
 	float: left;
 }
-
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.owl-controls .owl-page, .owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  opacity: 1;
+}
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  color: #666666;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  font-size: 12px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.owl-prev {
+  float: left;
+  background-image: url(../images/button-prev.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 40px;
+  width: 20px;
+  top: 50%;
+  left: 0px;
+  position: absolute;
+  margin-top: -20px;
+}
+.owl-next {
+  float: right;
+  background-image: url(../images/button-next.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 40px;
+  width: 20px;
+  top: 50%;
+  right: 0px;
+  position: absolute;
+  margin-top: -20px;
+}
 	
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{

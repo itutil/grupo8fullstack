@@ -265,6 +265,9 @@ img {
 img.scale-with-grid {
     width: 100%;
 }
+img.scale-with-grid2 {
+  width: 70%;
+}
 ul {
     display: block;
     list-style-type: disc;

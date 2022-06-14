@@ -4,7 +4,13 @@ const controller = {
     },
     mainDetail: (req, res) => {
         res.render('menuDetail')
-    }
+    },
+    login: (req, res) => {
+        if(!req.body){
+            res.redirect('index')
+        }
+        res.render('productos')
+    }   
 };
 
 module.exports = controller;

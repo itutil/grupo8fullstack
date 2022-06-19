@@ -67,8 +67,6 @@ main {
     max-height: 20rem;
 }
 
-
-
 .superior {
     display: none;
     width: 100%;
@@ -150,13 +148,11 @@ main {
 }
 
 .derechaArriba {
-    width: 100%;
-    border: red;
+    width: 0%;
 }
 
 .derechaAbajo {
-    width: 100%;
-    border: red;
+    width: 0%;
 }
 
 
@@ -164,6 +160,15 @@ main {
 
     .centro {
         width: 100%;
+        font-size: 18px;
+    }
+
+    h4{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 20px;
     }
 
     .productos {
@@ -214,12 +219,11 @@ main {
     .izquierda {
         width: 10%;
         height: auto;
-        border: solid red 1px;
+        
     }
 
     .derecha {
         width: 20%;
-        border: solid red 1px;
         display: flex;
         flex-wrap: wrap;
 
@@ -227,12 +231,10 @@ main {
 
     .derechaArriba {
         width: 100%;
-        border: red;
     }
 
     .derechaAbajo {
         width: 100%;
-        border: red;
     }
 
 }
@@ -240,38 +242,48 @@ main {
 @media (min-width: 1070px) {
 
     .centro {
-        width: 70%;
-        border: solid red 1px;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .centro img{
+        width: 203px;
+        height: 250px;
+    }
+
+    h4{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 26px;
     }
 
     .productos {
-        padding: 80px;
+        padding: 60px;
         display: flex;
-        border: dotted red;
+        margin: 90px;
     }
 
     .izquierda {
-        width: 10%;
+        width: 0%;
         height: auto;
-        border: solid red 1px;
+
     }
 
     .derecha {
-        width: 20%;
-        border: solid red 1px;
-        display: flex;
+        width: 0%;
+        display: none;
         flex-wrap: wrap;
 
     }
 
     .derechaArriba {
-        width: 100%;
-        border: red;
+        width: 0%;
     }
 
     .derechaAbajo {
-        width: 100%;
-        border: red;
+        width: 0%;
     }
 
 }

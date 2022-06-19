@@ -19,11 +19,9 @@
 <body>
     <header>
         <div>
-            <div>
-                <div class="logo">
-                    <img src="/images/logo.png" alt="logo">
-                </div>
-                <div class="banderas">
+            <div class="logo">
+                <img class="logo-imagen" src="/images/logo_products.png" alt="logo">
+                <div class="banderas-inicio">
                     <a href="/productos"><img src="/images/spain.png" alt="ESP"></a>
                     <a href="/products"><img src="/images/uk.png" alt="EN"></a>
                 </div>
@@ -31,27 +29,92 @@
             <nav>
                 <ul class="inicio">
                     <li>
-                        <a class="titulo" href="#">Inicio</a>
-                        <a href="#"><i class="fa-solid fa-house"></i></a>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Home</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-house"></i></a></button>
+                        </div>
                     </li>
                     <li>
-                        <a class="titulo" href="#">Registrate</a>
-                        <a href="#"><i class="fa-solid fa-pen-clip"></i></a>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Sign up</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
+                            <div class="dropdown-content">
+                                <div class="login">
+                                    <form id="login" method="get" action="login.php">
+                                        <label><b>E-Mail
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Email" id="Email" placeholder="Email">
+                                        <br><br>
+                                        <label><b>User Name
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
+                                        <br><br>
+                                        <label><b>Password
+                                            </b>
+                                        </label>
+                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+                                        <br><br>
+                                        <input type="button" name="log" id="log" value="Log In Here">
+                                        <br><br>
+                                        <input type="checkbox" id="check">
+                                        <span>Remember me</span>
+                                        <br><br>
+                                        <a href="#">Forgot Password</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a class="titulo" href="#">Logeate</a>
-                        <a href="#"><i class="fa-solid fa-laptop"></i></a>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Log in</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
+                            <div class="dropdown-content">
+                                <div class="login">
+                                    <form id="login" method="get" action="login.php">
+                                        <label><b>User Name
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
+                                        <br><br>
+                                        <label><b>Password
+                                            </b>
+                                        </label>
+                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+                                        <br><br>
+                                        <input type="button" name="log" id="log" value="Log In Here">
+                                        <br><br>
+                                        <input type="checkbox" id="check">
+                                        <span>Remember me</span>
+                                        <br><br>
+                                        <a href="#">Forgot Password</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="carrito">
-                        <a class="titulo" href="#">Carrito</a>
-                        <a href="#"><i class="fa-solid fa-truck"></i></a>
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Cart</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-truck"></i></a></button>
+                        </div>
                     </li>
                 </ul>
                 <form class="barra">
-                    <input type="search" name="barra-busqueda" placeholder="Busca tu favorito">
+                    <input type="search" name="barra-busqueda" placeholder="Search for your favorite">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </nav>
+            <div class="banderas">
+                <a href="/productos"><img src="/images/spain.png" alt="ESP"></a>
+                <a href="/products"><img src="/images/uk.png" alt="EN"></a>
+            </div>
             <ul class="menu">
                 <li>
                     <a class="icono" href="#">
@@ -59,8 +122,8 @@
                     </a>
 
                     <ul class="desplegable">
-                        <li><a href="">Tipos</a></li>
-                        <li><a href="">Marcas</a></li>
+                        <li><a href="">Company Information</a></li>
+                        <li><a href="">Social Media</a></li>
 
                     </ul>
                 </li>
@@ -71,7 +134,7 @@
     <main>
         <div class="acordeon">
             <li class="item" id="mn1">
-                <a class="btn" href="#mn1">Marcas</a>
+                <a class="btn" href="#mn1">Marcas/Brands</a>
                 <div class="submenu">
                     <a href="#">Apple</a>
                     <a href="#">Samgung</a>
@@ -79,15 +142,15 @@
                 </div>
             </li>
             <li class="item" id="mn2">
-                <a class="btn" href="#mn2">Tipos</a>
+                <a class="btn" href="#mn2">Tipos/Types</a>
                 <div class="submenu">
-                    <a href="#">Celulares</a>
-                    <a href="#">Relojes</a>
+                    <a href="#">Celulares-Phones</a>
+                    <a href="#">Relojes-Watches</a>
                     <a href="#">Tablets</a>
                 </div>
             </li>
             <li class="item" id="mn3">
-                <a class="btn" href="#mn3">Modelo</a>
+                <a class="btn" href="#mn3">Modelo/Models</a>
                 <div class="submenu">
                     <a href="#">Mini</a>
                     <a href="#">Plus</a>
@@ -245,6 +308,7 @@
             <div class="derechaArriba">4</div>
             <div class="derechaAbajo">5</div>
         </div>
+
     </main>
     <footer>
         <div>

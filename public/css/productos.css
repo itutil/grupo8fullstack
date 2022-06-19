@@ -262,7 +262,7 @@ main {
     .productos {
         padding: 60px;
         display: flex;
-        margin: 90px;
+        margin: 30px 160px;
     }
 
     .izquierda {

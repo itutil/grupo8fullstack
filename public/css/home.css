@@ -3,7 +3,7 @@
     margin: auto;
     overflow: hidden;
     background-color: #fff;
-    padding-top: 36px;
+    padding-top: 40px;
 }
 
 img {
@@ -110,6 +110,7 @@ p.large {
   position: relative;
   overflow: hidden;
 }
+
 #thumbnail-preview-indicators .slides .slide-1, 
 #thumbnail-preview-indicators .slides .slide-2,
 #thumbnail-preview-indicators .slides .slide-3 {
@@ -117,32 +118,40 @@ p.large {
   background-position: center center;
   background-repeat: no-repeat;
 }
-    #thumbnail-preview-indicators,
-    #thumbnail-preview-indicators .slides,
-    #thumbnail-preview-indicators .slides .slide-1, 
-    #thumbnail-preview-indicators .slides .slide-2,
-    #thumbnail-preview-indicators .slides .slide-3 {
-      height: 480px;
-    }
-#thumbnail-preview-indicators .slides .slide-1 {
-  background-image: url(https://i.ytimg.com/vi/4fuieX8AiGA/maxresdefault.jpg); 
+
+#thumbnail-preview-indicators,
+#thumbnail-preview-indicators .slides,
+#thumbnail-preview-indicators .slides .slide-1, 
+#thumbnail-preview-indicators .slides .slide-2,
+#thumbnail-preview-indicators .slides .slide-3 {
+  height: 550px;
+  width: 100%;
 }
+
+#thumbnail-preview-indicators .slides .slide-1 {
+  background-image: url(https://technocio.com/wp-content/uploads/2020/08/Yoga-Slim-7-2.jpg); 
+}
+
 #thumbnail-preview-indicators .slides .slide-2 {
   background-image: url(https://s1.eestatic.com/2021/09/22/omicrono/analisis-prueba-productos/613950219_209426499_1024x576.jpg);
 }
+
 #thumbnail-preview-indicators .slides .slide-3 {
   background-image: url(https://cdn.pocket-lint.com/r/s/970x/assets/images/120309-phones-news-buyer-s-guide-best-smartphones-image66-camkvh2lyz.jpg);
 }
+
 #thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
   top: 20%;
   bottom: inherit;
 }
+
 #thumbnail-preview-indicators .carousel-indicators li,
 #thumbnail-preview-indicators .carousel-indicators li.active {
   position: relative;
   width: 100px;
   height: 8px;  
 }
+
 #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
   position: absolute;
   top: 0;
@@ -153,14 +162,17 @@ p.large {
   margin-top: -80px;
   margin-left: -50px;
 }
+
 #thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
 #thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
   display: block;
   opacity: .8;
 }
+
 #thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
   opacity: 1;
 }
+
 @media screen and (max-width : 480px) {    
     #thumbnail-preview-indicators .carousel-indicators li,
     #thumbnail-preview-indicators .carousel-indicators li.active {

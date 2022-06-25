@@ -6,6 +6,18 @@
     padding-top: 40px;
 }
 
+section {
+  display: block;
+}
+
+article{
+  display: block;
+}
+
+div {
+  display: block;
+}
+
 img {
   border: 0;
   max-width: 100%
@@ -104,6 +116,7 @@ p.large {
 .black {
   color: #161616;
 }
+
 /* ==========   INICIO Carrusel de imagenes    =========== */
 
 #thumbnail-preview-indicators {
@@ -114,6 +127,9 @@ p.large {
 #thumbnail-preview-indicators .slides .slide-1, 
 #thumbnail-preview-indicators .slides .slide-2,
 #thumbnail-preview-indicators .slides .slide-3 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

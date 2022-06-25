@@ -1,76 +1,38 @@
 <div id="main">
     <!-- Inicio Slides -->
-    <section id="bannershome" class="flexslider">
-        <div class="flex-viewport" style="overflow: hidden; position: relative;">
-          <ul class="slides" style="width: 1400%; transition-duration: 0.6s; transform: translate3d(-1564px, 0px, 0px);"><li class="clone" aria-hidden="true" style="width: 782px; float: left; display: block;"><a href="https://www.ripcurlargentina.com/the_search.html" target="_self"><img src="https://www.ripcurlargentina.com/fullaccess/banner345.jpg" draggable="false"></a></li>
-            <li style="width: 782px; float: left; display: block;" class="">
-                <a href="RUTA DE PRODUCTOS" target="_self">
-                    <img src="https://the-update.com/wp-content/uploads/2021/12/KV-OLED-Family-1.jpg" draggable="false">
-                </a>
-            </li>
-            <li style="width: 782px; float: left; display: block;" class="flex-active-slide">
-                <a href="RUTA DE PRODUCTOS" target="_self">
-                    <img src="https://i.pinimg.com/originals/89/85/9f/89859f105548433cbf47816df96d0980.jpg" draggable="false">
-                </a>
-            </li>
-            <li style="width: 782px; float: left; display: block;" class="">
-                <a href="RUTA DE PRODUCTOS" target="_blank">
-                    <img src="https://zetabite.com/wp-content/uploads/2020/04/EZVIZ-C6CN-Apoyo-5.jpg" draggable="false">
-                </a>
-            </li>
-            <li style="width: 782px; float: left; display: block;" class="">
-                <a href="RUTA DE PRODUCTOS" target="_self">
-                    <img src="https://cditolosa.eus/themes/euscommerce/assets/img/modules/leoslideshow/2%20tazas%20cdi.jpg" draggable="false">
-                </a>
-                </li>
-            <li style="width: 782px; float: left; display: block;" class="">
-                <a href="RUTA DE PRODUCTOS" target="_self">
-                    <img src="https://cdn.coolermaster.com/media/assets/1005/ms111-section3-1-bannerdesktop.png" draggable="false">
-                </a>
-            </li>               
-            <li style="width: 782px; float: left; display: block;" class="clone" aria-hidden="true">
-                <a href="RUTA DE PRODUCTOS" target="_self"> 
-                    <img src="https://s3.amazonaws.com/mfs.ezvizlife.com/ede8e85b607da52d0db5d543062c5138.jpg" draggable="false">
-                </a>
-            </li>
-            ::after
-          </ul>
-        </div>
-        <ol class="flex-control-nav flex-control-paging">
-            <li>
-                <a class="flex-active">1</a> 
-            </li>
-            <li>
-                <a class="flex-active">2</a>
-            </li>
-            <li>
-                <a class="flex-active">3</a>
-            </li>
-            <li>
-                <a class="flex-active">4</a>
-            </li>
-            <li>
-                <a class="flex-active">5</a>
-                        
-            </li>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <section id="thumbnail-preview-indicators" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#thumbnail-preview-indicators" data-slide-to="0" class="active"></li>
+          <li data-target="#thumbnail-preview-indicators" data-slide-to="1"></li>
+          <li data-target="#thumbnail-preview-indicators" data-slide-to="2"></li>
         </ol>
-        <ul class="flex-direction-nav">
-            <li class="flex-nav-prev">
-                
-                <a class="flex-prev" href="#">Previous</a>
-            </li>
-            <li class="flex-nav-next">
-                
-                <a class="flex-next" href="#">Next</a>
-            </li>
-        </ul>
-    </section>
+        <div class="carousel-inner">
+          <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="container"></div>
+          </div>
+          <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="container"></div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="container"></div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </section>     
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Fin Slides -->   
     <!-- Inicio Home Destacados -->
     <section id="home-destacados">
         <div class="content">
 		<!-- Inicio Columna -->
-			<div class="columna-small">
+			<article class="columna-small">
 				<a href="RUTA DE CELULARES" target="_self">
 					<div class="columna-content">
 						<div class="pic" style="background-image:url(https://www.eltiempo.com/files/article_main/uploads/2017/03/18/58cdc63522694.jpeg)">
@@ -83,10 +45,10 @@
 						</div>
 					</div>
 				</a>
-			</div>
+			</article>
 			<!-- Fin Columna -->
 			<!-- Inicio Columna -->
-			<div class="columna-small">
+			<article class="columna-small">
 				<a href="RUTA DE TABLETS" target="_self">
 					<div class="columna-content">
 						<div class="pic" style="background-image:url(https://s1.eestatic.com/2022/02/03/elandroidelibre/moviles-android/analisis/647445677_221583951_1706x960.jpg)">
@@ -99,10 +61,10 @@
 						</div>
 					</div>
 				</a>
-			</div>
+			</article>
 			<!-- Fin Columna -->
 			<!-- Inicio Columna -->
-			<div class="columna-small">
+			<article class="columna-small">
 			    <a href="RUTA DE NOTEBOOKS" target="_self">
 					<div class="columna-content">
 						<div class="pic" style="background-image:url(https://img.freepik.com/foto-gratis/mujer-negocios-que-trabajan-computadora-portatil_1388-67.jpg?w=2000)">
@@ -115,10 +77,10 @@
 						</div>
 					</div>
 				</a>
-			</div>
+			</article>
 			<!-- Fin Columna -->
 			<!-- Inicio Columna -->
-			<div class="columna-small">
+			<article class="columna-small">
 				<a href="RUTA DE ACCESORIOS" target="_self">
 					<div class="columna-content">
 						<div class="pic" style="background-image:url(https://i.ytimg.com/vi/iQlqELeCL24/maxresdefault.jpg)">
@@ -131,7 +93,7 @@
 						</div>
 					</div>
 				</a>
-			</div>
+			</article>
 		<!-- Fin Columna -->					
         </div>
     </section>
@@ -144,19 +106,19 @@
             </div>   
             <!-- Inicio Slide productos -->
             <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-				<div class="owl-wrapper-outer">
-                    <div class="owl-wrapper" style="width: 14840px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px);">
-                        <div class="owl-item" style="width: 371px;">
-                            <div class="owl-item" style="width: 371px;">
+                 <div class="owl-wrapper-outer">
+                    <div class="owl-wrapper" style="width: 8480px; left: 0px; display: block;">
+                        <div class="owl-item" style="width: 265px;">
+                            <div class="owl-item" style="width: 265px;">
                                 <div class="item">
-        				           <div class="view view-first">
-                        	            <img src="images/marco-prod-list.png" class="scale-with-grid">						
-						                <img src="https://digimartve.com/wp-content/uploads/2021/03/apple-iphone-12-pro-max-1.jpg" class="scale-with-grid2" style="position: absolute; top: 50px; left: 50px;">                        	
-                                            <div class="mask">            
-                                                <div class="contenidoproducto">
-                                                    <a href="RUTA AL PRODUCTO" class="zoomproducto"></a>
-                                                </div>
+                                    <div class="view view-first">                
+                                        <img src="images/marco-prod-list.png" class="scale-with-grid">                
+                                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-12-pro-silver-2020?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1635202851000" class="scale-with-grid" style="position: absolute; top: 0;">                       	
+                                        <div class="mask">
+                                            <div class="contenidoproducto">
+                                                <a href="DETALLE DEL PRODUCTO" class="zoomproducto"></a>
                                             </div>
+<<<<<<< HEAD
         				            </div>        
 					                <div class="cleaner"></div>                                           
                                     <!-- Inicio Iconos Producto -->
@@ -405,57 +367,66 @@
                                     <div class="mask">              
                                         <div class="contenidoproducto">
                                             <a href="RUTA AL PRODUCTO" class="zoomproducto"></a>
+=======
+>>>>>>> e9e14a39f5dcf4724e78d1dd2572b972430e505a
                                         </div>
                                     </div>
-        				        </div>
-					            <div class="cleaner"></div>
+                                <div class="cleaner"></div>
                                 <!-- Inicio Iconos Producto -->
-        			            <div class="iconos-producto">
-                                    <div class="iconos-estado">
-                                       <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
-                                    </div>                       
-                                </div>
-        			            <!-- Fin Iconos Producto -->	
-						        <div class="productos-titulolist">
-							        <a href="RUTA AL PRODUCTO" class="productos-titulolist">
-								    marca<br>modelo								
-                                    </a>
-						        </div>
-                                <div class="productos-marcalist">
-							        <span>- </span>producto<span> -</span>
-						        </div>
-						        <div class="productos-preciolist">
-							        <span style="color:#333; font-size:15px; font-weight: 400;">$ 49999.-</span>
-                                    <a href="RUTA AL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
-                                    <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
-						        </div>
-					        </div>
-                        </div>
-                    </div>
-                    <div class="owl-item" style="width: 371px;">
-                        <div class="owl-item" style="width: 371px;">
-                            <div class="item">
-        				        <div class="view view-first">
-                        	            <img src="images/marco-prod-list.png" class="scale-with-grid">
-						                <img src="images/marco-prod-list.png" class="scale-with-grid" style="position: absolute; top: 0;">                        	
-                                    <div class="mask">            
-                                        <div class="contenidoproducto">
-                                            <a href="RUTA AL PRODUCTO" class="zoomproducto"></a>
-                                        </div>
-                                    </div>
-        				        </div>
-					            <div class="cleaner"></div>
-                                <!-- Inicio Iconos Producto -->
-        			            <div class="iconos-producto">                     		                            
+                                <div class="iconos-producto">                                    
                                     <div class="iconos-estado">
                                         <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
                                     </div>                       
                                 </div>
-        			            <!-- Fin Iconos Producto -->	
-						        <div class="productos-titulolist">
-							        <a href="RUTA AL PRODUCTO" class="productos-titulolist">
-								    marca<br>modelo								
+                                <!-- Fin Iconos Producto -->                    
+                                <div class="productos-titulolist">
+                                    <a href="DETALLE DEL PRODUCTO" class="productos-titulolist">
+                                        Apple<br>iPhone 12 pro max								
                                     </a>
+                                </div>
+                            <div class="productos-marcalist">
+                                <span>- </span>cellulars<span> -</span>
+                            </div>
+                            <div class="productos-preciolist">
+                                <span style="color:#333; font-size:15px; font-weight: 400;">$ 4599.-</span>
+                                <a href="DETALLE DEL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
+                                <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 265px;">
+                            <div class="owl-item" style="width: 265px;">
+                            <div class="item">
+<<<<<<< HEAD
+        				        <div class="view view-first">
+                        	            <img src="images/marco-prod-list.png" class="scale-with-grid">
+						                <img src="images/marco-prod-list.png" class="scale-with-grid" style="position: absolute; top: 0;">                        	
+                                    <div class="mask">            
+=======
+                                <div class="view view-first">               
+                                    <img src="images/marco-prod-list.png" class="scale-with-grid">               
+                                    <img src="https://antien.vn/uploaded/Apple%20Watch%20Series%205/Apple-watch-series-5-GPS-44mm-Aluminum-Case-with-Sport-Band-chinh-hang.jpg" class="scale-with-grid" style="position: absolute; top: 0;">
+                                    <div class="mask">                                                                               
+>>>>>>> e9e14a39f5dcf4724e78d1dd2572b972430e505a
+                                        <div class="contenidoproducto">
+                                            <a href="DETALLE DEL PRODUCTO" class="zoomproducto"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cleaner"></div>             
+                                <!-- Inicio Iconos Producto -->
+                                <div class="iconos-producto">                                                                   
+                                    <div class="iconos-estado">
+                                        <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
+                                    </div>                       
+                                </div>
+                                <!-- Fin Iconos Producto -->                  
+                                <div class="productos-titulolist">
+                                    <a href="DETALLE DEL PRODUCTO" class="productos-titulolist">
+                                        apple<br>watch aluminum series 5								
+                                    </a>
+<<<<<<< HEAD
 						        </div>
                                 <div class="productos-marcalist">
 							        <span>- </span>producto<span> -</span>
@@ -486,51 +457,258 @@
                                     <div class="iconos-estado">
                                         <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
                                     </div>                       
+=======
+>>>>>>> e9e14a39f5dcf4724e78d1dd2572b972430e505a
                                 </div>
-        			            <!-- Fin Iconos Producto -->	
-						        <div class="productos-titulolist">
-							        <a href="RUTA AL PRODUCTO" class="productos-titulolist">
-								        marca<br>modelo								
-                                    </a>
-						        </div>
                                 <div class="productos-marcalist">
-							        <span>- </span>producto<span> -</span>
-						        </div>
-						        <div class="productos-preciolist">
-							        <span style="color:#333; font-size:15px; font-weight: 400;">$ 2999.-</span>
-                                    <a href="RUTA AL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
+                                    <span>- </span>accesories<span> -</span>
+                                </div>
+                                <div class="productos-preciolist">
+                                    <span style="color:#333; font-size:15px; font-weight: 400;">$ 24999.-</span>
+                                    <a href="DETALLE DEL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
                                     <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
-						        </div>
-					        </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 265px;">
+                    <div class="owl-item" style="width: 265px;">
+                        <div class="item">
+                            <div class="view view-first">             
+                                <img src="images/marco-prod-list.png" class="scale-with-grid">           
+                                <img src="https://images.fravega.com/f500/b2850b9dd3e84a07885becc4da5fa840.jpg" class="scale-with-grid" style="position: absolute; top: 0;">                        	
+                                <div class="mask">
+                                    <div class="contenidoproducto">
+                                        <a href="DETALLE DEL PRODUCTO" class="zoomproducto"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cleaner"></div> 
+                            <!-- Inicio Iconos Producto -->
+                            <div class="iconos-producto">   
+                                <div class="iconos-estado">                                    
+                                    <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
+                                </div>                       
+                            </div>
+                            <!-- Fin Iconos Producto -->            
+                            <div class="productos-titulolist">
+                                <a href="DETALLE DEL PRODUCTO" class="productos-titulolist">
+                                    Apple<br>iPad Pro 12.9"								
+                                </a>
+                            </div>
+                            <div class="productos-marcalist">
+                                <span>- </span>tablets<span> -</span>
+                            </div>
+                            <div class="productos-preciolist">
+                                <span style="color:#333; font-size:15px; font-weight: 400;">$ 23999.-</span>
+                                <a href="DETALLE DEL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
+                                <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="owl-item" style="width: 265px;">
+                    <div class="owl-item" style="width: 265px;">
+                        <div class="item">
+                            <div class="view view-first">
+                                <img src="images/marco-prod-list.png" class="scale-with-grid">
+                                <img src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/195477019553_2.jpg" class="scale-with-grid" style="position: absolute; top: 0;">                        	
+                                <div class="mask">                        
+                                    <div class="contenidoproducto">
+                                        <a href="https://www.ripcurlargentina.com/producto_detalle///camperarip_curl_parka/22200.html" class="zoomproducto"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="cleaner"></div>
+                        <!-- Inicio Iconos Producto -->
+                        <div class="iconos-producto">                              
+                            <div class="iconos-estado">
+                                <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
+                            </div>                       
+                        </div>
+                        <!-- Fin Iconos Producto -->     
+                        <div class="productos-titulolist">
+                            <a href="DETALLE DEL PRODUCTO" class="productos-titulolist">
+                               Lenovo<br>TAB P11 Slate				
+                            </a>
+                        </div>
+                        <div class="productos-marcalist">
+                            <span>- </span>tablets<span> -</span>
+                        </div>
+                        <div class="productos-preciolist">
+                            <span style="color:#333; font-size:15px; font-weight: 400;">$ 31999.-</span>
+                            <a href="DETALLE DEL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
+                            <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
                         </div>
                     </div>
                 </div>
-            </div>             
-	        <div class="owl-controls clickable">
-                <div class="owl-pagination">
-                    <div class="owl-page active">
-                        <span class=""></span>
+                        </div>
+                        <div class="owl-item" style="width: 265px;">
+                    <div class="owl-item" style="width: 265px;">
+                        <div class="item">
+                            <div class="view view-first">
+                                <img src="images/marco-prod-list.png" class="scale-with-grid">
+                                <img src="https://images.fravega.com/f1000/873fa7181d0bc2dfb3a26b36b2b2c606.jpg" class="scale-with-grid" style="position: absolute; top: 0;">                        	
+                                <div class="mask">                    
+                                    <div class="contenidoproducto">
+                                        <a href="DETALLE DEL PRODUCTO" class="zoomproducto"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cleaner"></div>
+                            <!-- Inicio Iconos Producto --> 
+                            <div class="iconos-producto">                                  
+                                <div class="iconos-estado">
+                                    <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
+                                </div>                       
+                            </div>
+                            <!-- Fin Iconos Producto -->     
+                            <div class="productos-titulolist">
+                                <a href="DETALLE DEL PRODUCTO" class="productos-titulolist">
+                                   Lenovo <br>ThinkPad E14								
+                                </a>
+                            </div>
+                            <div class="productos-marcalist">
+                                <span>- </span>notebook<span> -</span>
+                            </div>
+                            <div class="productos-preciolist">
+                                <span style="color:#333; font-size:15px; font-weight: 400;">$ 4299.-</span>
+                                <a href="DETALLE DEL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
+                                <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
+                            </div>
+                        </div>
                     </div>
-                    <div class="owl-page">
-                        <span class=""></span>
-                    </div>
-                    <div class="owl-page">
-                        <span class=""></span>
-                    </div>
-                    <div class="owl-page">
-                        <span class=""></span>
-                    </div>
-                    <div class="owl-page">
-                        <span class=""></span>
+                        </div>
+                        <div class="owl-item" style="width: 265px;">
+                <div class="owl-item" style="width: 265px;">
+                    <div class="item">
+                        <div class="view view-first">
+                            <img src="images/marco-prod-list.png" class="scale-with-grid">
+                            <img src="IMG DEL PRODUCTO" class="scale-with-grid" style="position: absolute; top: 0;">                        	
+                            <div class="mask">                                                            
+                                <div class="contenidoproducto">
+                                    <a href="DETALLE DEL PRODUCTO" class="zoomproducto"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cleaner"></div>
+                        <!-- Inicio Iconos Producto -->
+                        <div class="iconos-producto">            
+                            <div class="iconos-estado">
+                                <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
+                            </div>                       
+                        </div>
+                        <!-- Fin Iconos Producto -->     
+                        <div class="productos-titulolist">
+                            <a href="DETALLE DEL PRODUCTO" class="productos-titulolist">
+                                Pantalon<br>Rip Curl Slouchy Golden								
+                            </a>
+                        </div>
+                        <div class="productos-marcalist">
+                            <span>- </span>Mujer<span> -</span>
+                        </div>
+                        <div class="productos-preciolist">
+                            <span style="color:#333; font-size:15px; font-weight: 400;">$ 10999.-</span>
+                            <a href="DETALLE DEL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
+                            <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
+                        </div>
                     </div>
                 </div>
-                <div class="owl-buttons">
-                    <div class="owl-prev"></div>
-                    <div class="owl-next"></div>
+                        </div>
+                        <div class="owl-item" style="width: 265px;">
+                <div class="owl-item" style="width: 265px;">
+                    <div class="item">
+                        <div class="view view-first">
+                            <img src="images/marco-prod-list.png" class="scale-with-grid">
+                            <img src="IMG DEL PRODUCTO" class="scale-with-grid" style="position: absolute; top: 0;">
+                            <div class="mask">                    
+                                <div class="contenidoproducto">
+                                    <a href="DETALLE DEL PRODUCTO" class="zoomproducto"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cleaner"></div>
+                        <!-- Inicio Iconos Producto -->
+                        <div class="iconos-producto">                              
+                            <div class="iconos-estado">
+                                <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
+                            </div>                       
+                        </div>
+                        <!-- Fin Iconos Producto -->           
+                        <div class="productos-titulolist">
+                            <a href="DETALLE DEL PRODUCTO" class="productos-titulolist">
+                               Beanie<br>Rip Curl Wenderer								
+                            </a>
+                        </div>
+                        <div class="productos-marcalist">
+                            <span>- </span>Mujer<span> -</span>
+                        </div>
+                        <div class="productos-preciolist">
+                            <span style="color:#333; font-size:15px; font-weight: 400;">$ 3999.-</span>
+                            <a href="DETALLE DEL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
+                            <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
+                        </div>
+                    </div>
+                </div>
+                        </div>
+                        <div class="owl-item" style="width: 265px;">
+                <div class="owl-item" style="width: 265px;">
+                    <div class="item">
+                        <div class="view view-first">       
+                            <img src="images/marco-prod-list.png" class="scale-with-grid">
+                            <img src="IMG DEL PRODUCTO" class="scale-with-grid" style="position: absolute; top: 0;">                        	
+                            <div class="mask">
+                                <div class="contenidoproducto">
+                                    <a href="DETALLE DEL PRODUCTO" class="zoomproducto"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cleaner"></div>
+                        <!-- Inicio Iconos Producto -->
+                        <div class="iconos-producto">                    
+                            <div class="iconos-estado">
+                                <img src="https://www.ripcurlargentina.com/images/ico-enviogratis-small.png">
+                            </div>                       
+                        </div>
+                        <!-- Fin Iconos Producto -->
+                        <div class="productos-titulolist">
+                            <a href="DETALLE DEL PRODUCTO" class="productos-titulolist">
+                                Campera<br>Rip Curl Anti Serie								
+                            </a>
+                        </div>
+                        <div class="productos-marcalist">
+                            <span>- </span>Mujer<span> -</span>
+                        </div>
+                        <div class="productos-preciolist">
+                            <span style="color:#333; font-size:15px; font-weight: 400;">$ 49999.-</span>
+                            <a href="DETALLE DEL PRODUCTO" class="button-comprar" style="float:right;">COMPRAR</a>								
+                            <!--<a href="#" class="button-comprar" style="float:right;">COMPRAR</a>-->
+                        </div>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>                                                                                                
+                <div class="owl-controls">
+        <div class="owl-pagination">
+            <div class="owl-page active">
+                <span class=""></span>
+            </div>
+            <div class="owl-page">
+                <span class=""></span>
+            </div>
+            <div class="owl-page">
+                <span class=""></span>
+            </div>
+        </div>
+        <div class="owl-buttons">
+            <div class="owl-prev"></div>
+            <div class="owl-next"></div>
+        </div>
                 </div>
             </div>
-       </div>
-        <!-- Fin Slide Productos -->
+            <!-- Fin Slide Productos -->
+        </div>    
     </section>
     <!-- Fin Home Productos -->
 </div>

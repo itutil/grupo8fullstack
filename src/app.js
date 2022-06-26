@@ -1,10 +1,26 @@
-const bodyParser = require('body-parser');
-const {body, checkSchema, validationResult} = require('express-validator');
-const express = require('express');
-const app = express ();
+/* Import external modules */
+
 const path = require('path');
+const express = require('express');
+const methodOverride = require('method-override');
+const bodyParser = require('body-parser');
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
+const { body, checkSchema, check, validationResult } = require('express-validator');
+
+/* Import internal modules */
+
 const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
+
+/* Define application variables */
+
+const app = express ();
+app.set('view engine', 'ejs');
+app.set('views', path.resolve(__dirname, './views'));
+
+
+/* Define registration schema */
+
 const registrationSchema = {
     username: {
         custom: {
@@ -50,30 +66,45 @@ const registrationSchema = {
             }
         }
     }
-}
-const methodOverride = require('method-override');
-app.set('view engine', 'ejs');
-app.set('views', path.resolve(__dirname, './views'))
+};
+
+/* Define application paths for requests */
+
+app.get('', (req, res)=> {
+    res.render('index')
+})
+
+app.get('/register', (req, res)=> {
+    res.render('register')
+})
+
+app.post('/register', urlencodedParser, [
+    check('username', 'This username must me 3+ characters long')
+        .exists()
+        .isLength({ min: 3 }),
+    check('email', 'Email is not valid')
+        .isEmail()
+        .normalizeEmail()
+], (req, res)=> {
+
+    const errors = validationResult(req)
+    if(!errors.isEmpty()) {
+        // return res.status(422).jsonp(errors.array())
+        const alert = errors.array()
+        res.render('register', {
+            alert
+        })
+    }
+})
+
+/* Define paths configuration */
 
 app.use(express.static('public'));
-app.use('/', mainRouter)
+app.use('/', mainRouter);
 app.use('/product', productRouter);
 app.use('/producto', productRouter);
-app.post('/register', checkSchema(registrationSchema), (req, res) => {
-    // Validate incoming input
-    const errors = validationResult(req);
 
-    if (!errors.isEmpty()) {
-        return res.status(400).json({
-            errors: errors.array()
-        });
-    }
 
-    res.status(200).json({
-        success: true,
-        message: 'Registration successful',
-    });
-});
+/* Let application start listeting requests */
 
-app.use(methodOverride('_method'));
-app.listen(3000, ()=> {console.log('Servidor arriba en el puerto 3000');})
+app.listen(3000, ()=> {console.log('Servidor arriba en el puerto 3000')});

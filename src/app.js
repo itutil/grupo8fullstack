@@ -5,7 +5,6 @@ const app = express ();
 const path = require('path');
 const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
-<<<<<<< HEAD
 const registrationSchema = {
     username: {
         custom: {
@@ -52,16 +51,11 @@ const registrationSchema = {
         }
     }
 }
-=======
 const methodOverride = require('method-override');
-
->>>>>>> e9e14a39f5dcf4724e78d1dd2572b972430e505a
-
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, './views'))
 
 app.use(express.static('public'));
-<<<<<<< HEAD
 app.use('/', mainRouter)
 app.use('/product', productRouter);
 app.use('/producto', productRouter);
@@ -80,8 +74,6 @@ app.post('/register', checkSchema(registrationSchema), (req, res) => {
         message: 'Registration successful',
     });
 });
-=======
-app.use(methodOverride('_method'));
->>>>>>> e9e14a39f5dcf4724e78d1dd2572b972430e505a
 
+app.use(methodOverride('_method'));
 app.listen(3000, ()=> {console.log('Servidor arriba en el puerto 3000');})

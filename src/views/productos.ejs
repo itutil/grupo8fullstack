@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
-    <link type='text/css' rel="stylesheet" href="/css/normalize.css">
-    <link type='text/css' rel="stylesheet" href="/css/header.css">
-    <link type='text/css' rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/productos.css">
 </head>
 
 <body>
@@ -42,25 +42,25 @@
                                 <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
                             <div class="dropdown-content">
                                 <div class="login">
-                                    <form id="loginSignup" method="get" action="/register">
+                                    <form id="login" method="get" action="login.php">
                                         <label><b>E-Mail
                                             </b>
                                         </label>
-                                        <input type="text" name="emailSignupProd" id="emailSignupProd" placeholder="Email">
+                                        <input type="text" name="Email" id="Email" placeholder="Email">
                                         <br><br>
                                         <label><b>User Name
                                             </b>
                                         </label>
-                                        <input type="text" name="unameSignupProd" id="unameSignupProd" placeholder="Username">
+                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
                                         <br><br>
                                         <label><b>Password
                                             </b>
                                         </label>
-                                        <input type="Password" name="passSignupProd" id="passSignupProd" placeholder="Password">
+                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
                                         <br><br>
-                                        <input type="button" name="logSignupProd" id="logSignupProd" value="Log In Here">
+                                        <input type="button" name="log" id="log" value="Log In Here">
                                         <br><br>
-                                        <input type="checkbox" id="checkSignupProd">
+                                        <input type="checkbox" id="check">
                                         <span>Remember me</span>
                                         <br><br>
                                         <a href="#">Forgot Password</a>
@@ -76,20 +76,20 @@
                                 <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
                             <div class="dropdown-content">
                                 <div class="login">
-                                    <form id="loginLoginProd" method="get" action="/login">
+                                    <form id="login" method="get" action="login.php">
                                         <label><b>User Name
                                             </b>
                                         </label>
-                                        <input type="text" name="unameLogin" id="unameLogin" placeholder="Username">
+                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
                                         <br><br>
                                         <label><b>Password
                                             </b>
                                         </label>
-                                        <input type="Password" name="passLogin" id="passLogin"" placeholder="Password">
+                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
                                         <br><br>
-                                        <input type="button" name="logLogin" id="logLogin" value="Log In Here">
+                                        <input type="button" name="log" id="log" value="Log In Here">
                                         <br><br>
-                                        <input type="checkbox" id="checkLogin">
+                                        <input type="checkbox" id="check">
                                         <span>Remember me</span>
                                         <br><br>
                                         <a href="#">Forgot Password</a>
@@ -161,12 +161,15 @@
         <section class="superior">1</section>
         <section class="izquierda">2</section>
         <section class="centro">
+            <% products.forEach(product => {
+            %>    
             <article class="productos">
-                <img src="/images/apple-iphone-12-mini.jpg" alt="">
+                <img src="<%=product.picture%>" alt="imagen del producto">
                 <article class="descripcion">
-                    <h4>Descripcion: apple-iphone-12-mini</h4>
-                    <p>Valor: 22.500</p>
-                    <p>Descuento</p>
+                    <h4><%=product.tradeMark %></h4> 
+                    <h4><%=product.model%></h4>
+                    <p class="descripcion-producto"><%=product.details%></p>
+                    <p><%=product.price%></p>
                 </article>
                 <article class="enlaces">
                     <article class="detalle">
@@ -177,132 +180,7 @@
                     </article>
                 </article>
             </article>
-            <article class="productos">
-                <img src="/images/apple-iphone-12-pro-max.jpg" alt="">
-                <article class="descripcion">
-                    <p>
-                    <h4>Descripcion: apple-iphone-12-pro-max</h4>
-                    </p>
-                    <p>Valor: 32.500</p>
-                    <p>Descuento</p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
-                    </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
-                    </article>
-                </article>
-            </article>
-            <article class="productos">
-                <img src="/images/apple-iphone-12-pro.jpg" alt="">
-                <article class="descripcion">
-                    <p>
-                    <h4>Descripcion: apple-iphone-12-pro</h4>
-                    </p>
-                    <p>Valor: 42.500</p>
-                    <p>Descuento</p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
-                    </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
-                    </article>
-                </article>
-            </article>
-            <article class="productos">
-                <img src="/images/apple-iphone-12.jpg" alt="">
-                <article class="descripcion">
-                    <p>
-                    <h4>Descripcion: apple-iphone-12</h4>
-                    </p>
-                    <p>Valor: 12.500</p>
-                    <p>Descuento</p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
-                    </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
-                    </article>
-                </article>
-            </article>
-            <article class="productos">
-                <img src="/images/apple-watch-s6 (1).jpg" alt="">
-                <article class="descripcion">
-                    <p>
-                    <h4>Descripcion: apple-watch-s6</h4>
-                    </p>
-                    <p>Valor: 2.500</p>
-                    <p>Descuento</p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
-                    </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
-                    </article>
-                </article>
-            </article>
-            <article class="productos">
-                <img src="/images/apple-watch-s6-steel.jpg" alt="">
-                <article class="descripcion">
-                    <p>
-                    <h4>Descripcion: apple-iphone-watch-s6-stell</h4>
-                    </p>
-                    <p>Valor: 2.500</p>
-                    <p>Descuento</p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
-                    </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
-                    </article>
-                </article>
-            </article>
-            <article class="productos">
-                <img src="/images/apple-watch-s6-titanium.jpg" alt="">
-                <article class="descripcion">
-                    <p>
-                    <h4>Descripcion: apple-watch-s6-titanium</h4>
-                    </p>
-                    <p>Valor: 2.500</p>
-                    <p>Descuento</p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
-                    </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
-                    </article>
-                </article>
-            </article>
-            <article class="productos">
-                <img src="/images/samsung-galaxy-note20-ultra.jpg" alt="">
-                <article class="descripcion">
-                    <p>
-                    <h4>Descripcion: samsung-galaxy-note20-ultra.jpg</h4>
-                    </p>
-                    <p>Valor: 27.500</p>
-                    <p>Descuento</p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
-                    </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
-                    </article>
-                </article>
-            </article>
+        <%})%>
         </section>
         <section class="derecha">
             <section class="derechaArriba">4</section>

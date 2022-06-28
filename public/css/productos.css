@@ -95,6 +95,10 @@ main {
 }
 
 .descripcion{
+    font-size: 10px;
+}
+
+.descripcion-producto{
     font-size: 20px;
 }
 

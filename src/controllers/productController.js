@@ -10,6 +10,9 @@ const controller = {
     },
     detail: (req,res) => {
         res.render('detalleProducto')
+    },
+    create: (req,res) =>{
+        res.render('crearProducto')
     }
 }; 
 

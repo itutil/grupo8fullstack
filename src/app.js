@@ -102,7 +102,6 @@ app.post('/register', urlencodedParser, [
 app.use(express.static('public'));
 app.use('/', mainRouter);
 app.use('/product', productRouter);
-app.use('/producto', productRouter);
 
 
 /* Let application start listeting requests */

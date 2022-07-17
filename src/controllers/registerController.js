@@ -1,7 +1,6 @@
 const {validationResult} = require('express-validator');
 const bcrypt = require('bcryptjs');
-/* Check if removing one of two dots from ../dbConnection works */
-const conn = require('./dbConnection').promise();
+const conn = require('../dbConnection').promise();
 
 exports.register = async(req,res,next) => {
     const errors = validationResult(req);

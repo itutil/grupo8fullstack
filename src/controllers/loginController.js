@@ -14,7 +14,7 @@ exports.login = async (req,res,next) =>{
     try{
 
         const [row] = await conn.execute(
-            "SELECT * FROM `users` WHERE `email`=?",
+            "SELECT * FROM `user` WHERE `email`=?",
             [req.body.email]
           );
 
@@ -24,7 +24,7 @@ exports.login = async (req,res,next) =>{
             });
         }
 
-        const passMatch = await bcrypt.compare(req.body.password, row[0].password);
+        const passMatch = await bcrypt.compare(req.body.password, row[0].passwordHash);
         if(!passMatch){
             return res.status(422).json({
                 message: "Incorrect password",

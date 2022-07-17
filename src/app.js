@@ -75,9 +75,9 @@ app.get('', (req, res)=> {
     res.render('index')
 })
 
-app.get('/register', (req, res)=> {
+/* app.get('/register', (req, res)=> {
     res.render('register')
-})
+}) 
 
 app.post('/register', urlencodedParser, [
     check('username', 'This username must me 3+ characters long')
@@ -96,7 +96,7 @@ app.post('/register', urlencodedParser, [
             alert
         })
     }
-})
+}) */
 
 /* Define paths configuration */
 

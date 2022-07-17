@@ -1,5 +1,9 @@
 const {validationResult} = require('express-validator');
 const bcrypt = require('bcryptjs');
+<<<<<<< Updated upstream
+=======
+/* Check if removing one of two dots from ../dbConnection works */
+>>>>>>> Stashed changes
 const conn = require('../dbConnection').promise();
 
 exports.register = async(req,res,next) => {
@@ -12,7 +16,7 @@ exports.register = async(req,res,next) => {
     try{
 
         const [row] = await conn.execute(
-            "SELECT `email` FROM `users` WHERE `email`=?",
+            "SELECT `email` FROM `user` WHERE `email`=?",
             [req.body.email]
           );
 
@@ -24,8 +28,8 @@ exports.register = async(req,res,next) => {
 
         const hashPass = await bcrypt.hash(req.body.password, 12);
 
-        const [rows] = await conn.execute('INSERT INTO `users`(`name`,`email`,`password`) VALUES(?,?,?)',[
-            req.body.name,
+        const [rows] = await conn.execute('INSERT INTO `user`(`firstName`,`email`,`passwordHash`) VALUES(?,?,?)',[
+            req.body.firstName,
             req.body.email,
             hashPass
         ]);

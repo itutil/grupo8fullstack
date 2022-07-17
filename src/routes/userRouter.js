@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const {body} = require('express-validator');
-const {register} = require('./controllers/registerController');
-const {login} = require('./controllers/loginController');
-const {getUser} = require('./controllers/getUserController');
+const {register} = require('../controllers/registerController');
+const {login} = require('../controllers/loginController');
+const {getUser} = require('../controllers/getUserController');
 
 router.post('/register', [
     body('name',"The name must be of minimum 3 characters length")

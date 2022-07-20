@@ -31,7 +31,6 @@ a {
   text-decoration: none;
   color: #b3241d;
 }
-
 a:hover {
   text-decoration: none;
   color: #c33d27;
@@ -65,7 +64,7 @@ h3 {
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 15px;  
 }
 
 h5 {
@@ -329,7 +328,7 @@ p.large {
 .item:hover {
   padding: 10px;
   margin: 10px;
-  webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
 }
 	
@@ -1338,13 +1337,17 @@ overflow: hidden;
 
 .productos-titulolist {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: #333;
   text-align: center;
   padding: 0;
   display: block;
   text-transform: uppercase;
+}
+.productos-titulolist :hover{
+	color: red;
+	text-decoration:none;
 }
 
 .productos-preciolist {

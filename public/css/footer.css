@@ -44,8 +44,6 @@ a.button-footer {
     font-weight: 400;
     line-height: normal;
     padding: 5px 10px 5px 10px;
-    display: flex;
-    justify-content: center;
     color: #556483;
     background-color: #fff;
     /*background-repeat: no-repeat;*/

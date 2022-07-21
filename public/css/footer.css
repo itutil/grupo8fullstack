@@ -57,6 +57,7 @@ a.button-footer:hover {
     background-color: #b3282d;
     transition-property:background-color,color;
     transition-duration:0.3s;
+    text-decoration:none;
 }
 
 

@@ -9,10 +9,12 @@ const controller = {
         res.render('productos',{products});
     },
     detail: (req,res) => {
-        res.render('detalleProducto')
+        const productoDetalle = []
+        productoDetalle.push(products[req.params.id])
+        res.render('detalleProducto',{products, productoDetalle});
     },
     create: (req,res) =>{
-        res.render('crearProducto')
+        res.render('crearProducto');
     }
 }; 
 

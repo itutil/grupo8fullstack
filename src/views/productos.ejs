@@ -13,7 +13,9 @@
     <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/productos.css">
+   
 </head>
 
 <body>
@@ -161,26 +163,34 @@
         <section class="superior">1</section>
         <section class="izquierda">2</section>
         <section class="centro">
-            <% products.forEach(product => {
-            %>    
-            <article class="productos">
-                <img src="<%=product.picture%>" alt="imagen del producto">
-                <article class="descripcion">
-                    <h4><%=product.tradeMark %></h4> 
-                    <h4><%=product.model%></h4>
-                    <p class="descripcion-producto"><%=product.details%></p>
-                    <p><%=product.price%></p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
+            <%products.forEach((product, index)=> {
+                %>
+                <article class="productos">
+                    <img src="<%=product.picture%>" alt="imagen del producto">
+                    <article class="descripcion">
+                        <h4>
+                            <%=product.tradeMark %>
+                        </h4>
+                        <h4>
+                            <%=product.model%>
+                        </h4>
+                        <p class="descripcion-producto">
+                            <%=product.details%>
+                        </p>
+                        <p>
+                            <%=product.price%>
+                        </p>
                     </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
+                    <article class="enlaces">
+                        <article class="detalle">
+                            <a href="http://localhost:3000/product/<%=index%>">Ver Detalle</a>
+                        </article>
+                        <article class="carrit">
+                            <a href="#">Al Carrito</a>
+                        </article>
                     </article>
                 </article>
-            </article>
-        <%})%>
+                <%})%>
         </section>
         <section class="derecha">
             <section class="derechaArriba">4</section>

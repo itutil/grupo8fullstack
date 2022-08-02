@@ -75,11 +75,17 @@ header div div{
     background-color: rgb(1, 18, 44);
 }
 
-.fa-solid {
+.fa-house,
+.fa-pen-clip,
+.fa-laptop,
+.fa-magnifying-glass,
+.fa-truck,
+.fa-bars {
     color: white;
     font-size: 7vw;
     background-color: rgb(1, 18, 44);
 }
+
 
 .fa-magnifying-glass{
     font-size: 18px;
@@ -193,12 +199,17 @@ nav {
         width: 100%;
         max-width: 38px;
     }
-    
-    .fa-solid {
+
+    .fa-house,
+    .fa-pen-clip,
+    .fa-laptop,
+    .fa-magnifying-glass,
+    .fa-truck,
+    .fa-bars {
         color: white;
-        font-size: 27px;
-        padding: 0;
+        font-size: 7vw;
         background-color: rgb(1, 18, 44);
+        display: block;
     }
     
     .fa-magnifying-glass{
@@ -290,7 +301,9 @@ nav {
     
     }
 
-    .inicio li {
+    .ini  .fa-solid {
+        font-size: 18px;
+    }cio li {
         display: block;
         padding: 0px 15px;
         margin: 0px 10px;
@@ -413,7 +426,6 @@ div.offers{
 
 Body {  
     font-family: Calibri, Helvetica, sans-serif;  
-    background-color: pink;  
   }  
   
 
@@ -486,9 +498,7 @@ background-color: transparent;
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
+    background-color: white;
     border-radius: 6px;
     padding: 5px 0;
   

@@ -163,7 +163,7 @@
         <section class="superior">1</section>
         <section class="izquierda">2</section>
         <section class="centro">
-            <%products.forEach((product, index)=> {
+            <%products.forEach((product)=> {
                 %>
                 <article class="productos">
                     <img src="<%=product.picture%>" alt="imagen del producto">
@@ -183,7 +183,7 @@
                     </article>
                     <article class="enlaces">
                         <article class="detalle">
-                            <a href="http://localhost:3000/product/<%=index%>">Ver Detalle</a>
+                            <a href="/product/<%=product.id%>">Ver Detalle</a>
                         </article>
                         <article class="carrit">
                             <a href="#">Al Carrito</a>

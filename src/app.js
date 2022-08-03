@@ -100,8 +100,14 @@ app.post('/register', urlencodedParser, [
 /* Define paths configuration */
 
 app.use(express.static('public'));
+app.use(methodOverride('_method'));
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 app.use('/', mainRouter);
 app.use('/product', productRouter);
+app.use((req,res,next)=>{
+    res.status(404).render('404')
+})
 
 
 /* Let application start listeting requests */

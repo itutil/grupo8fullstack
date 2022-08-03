@@ -450,12 +450,6 @@ Body {
 
 }
 
-{
-    text-align: center;
-    color: #277582;
-    padding: 20px;
-}
-
 label {
     color: #08ffd1;
     font-size: 17px;
@@ -496,12 +490,12 @@ label {
 
 }
 
-{
+span{
     color: white;
     font-size: 17px;
 }
 
- {
+a{
     float: center;
     background-color: transparent;
 }

@@ -131,8 +131,6 @@
             </ul>
         </div>
     </header>
-    <%productoDetalle.forEach(product=> {
-        %>
     <main>
         <div class="card-wrapper">
             <div class="card">
@@ -140,31 +138,31 @@
                 <div class="product-imgs">
                     <div class="img-display">
                         <div class="img-showcase">
-                            <img src="<%=product.picture%>" alt="producto">
-                            <img src="<%=product.picture%>" alt="producto">
-                            <img src="<%=product.picture%>" alt="producto">
-                            <img src="<%=product.picture%>" alt="producto">
+                            <img src="<%=productoDetalle.picture%>" alt="producto">
+                            <img src="<%=productoDetalle.picture%>" alt="producto">
+                            <img src="<%=productoDetalle.picture%>" alt="producto">
+                            <img src="<%=productoDetalle.picture%>" alt="producto">
                         </div>
                     </div>
                     <div class="img-select">
                         <div class="img-item">
                             <a href="#" data-id="1">
-                                <img src="<%=product.picture%>" alt="producto">
+                                <img src="<%=productoDetalle.picture%>" alt="producto">
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="#" data-id="2">
-                                <img src="<%=product.picture%>" alt="producto">
+                                <img src="<%=productoDetalle.picture%>" alt="producto">
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="#" data-id="3">
-                                <img src="<%=product.picture%>" alt="producto">
+                                <img src="<%=productoDetalle.picture%>" alt="producto">
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="#" data-id="4">
-                                <img src="<%=product.picture%>" alt="producto">
+                                <img src="<%=productoDetalle.picture%>" alt="producto">
                             </a>
                         </div>
                     </div>
@@ -172,7 +170,7 @@
                 <!-- cart right -->
                 <div class="product-content">
                     <h2 class="product-title">
-                        <%=product.model%>
+                        <%=productoDetalle.model%>
                     </h2>
                     <a href="#" class="product-link">8Technology</a>
                     <div class="product-rating">
@@ -185,15 +183,15 @@
                     </div>
                     <div class="product-price">
                         <p class="last-price">Discount: <span>15%</span></p>
-                        <p class="new-price">Current Price: <span><%=product.price%></span></p>
+                        <p class="new-price">Current Price: <span><%=productoDetalle.price%></span></p>
                     </div>
                     <div class="product-detail">
                         <h2>About this Item: </h2>
-                        <p><%=product.details%></p>
+                        <p><%=productoDetalle.details%></p>
                         <ul>
                             <li><i class="fa-solid fa-circle-check"></i> Color: <span>All Color</span></li>
                             <li><i class="fa-solid fa-circle-check"></i> Avalible: <span>In stock</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Category: <span><%=product.type%>"</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> Category: <span><%=productoDetalle.type%>"</span></li>
                             <li><i class="fa-solid fa-circle-check"></i> Shipping Area: <span></span>All over the world
                             </li>
                             <li><i class="fa-solid fa-circle-check"></i> Shiping Fee: <span>Free</span></li>
@@ -228,8 +226,6 @@
                 </div>
             </div>
         </div>
-        <%})%>
-        <script src="detail.js"></script>
     </main>
     <footer>
         <div id="footer">

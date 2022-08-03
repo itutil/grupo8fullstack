@@ -11,7 +11,7 @@ body{
 
 main{
     margin-bottom: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 110px;
 }
 
 .card-wrapper{
@@ -47,7 +47,7 @@ img{
 }
 
 .img-item:hover{
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .product-content{
     padding: 2rem 1rem;

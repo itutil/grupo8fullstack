@@ -92,14 +92,16 @@ main {
 
 .productos img{
     margin: auto;
+    max-width: 70%;
+
 }
 
 .descripcion{
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .descripcion-producto{
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .enlaces{
@@ -163,8 +165,10 @@ main {
 @media (min-width: 700px) {
 
     .centro {
-        width: 100%;
+        width: 90%;
         font-size: 18px;
+        margin: auto;
+        padding: auto;
     }
 
     h4{
@@ -177,21 +181,23 @@ main {
 
     .productos {
         display: flex;
-        padding: 30px;
+        padding: auto;
         justify-content: space-around;
+
     }
 
     .productos img{
-        width: 20%;
-        display: block;
+        width: 35%;
+        max-width: 100%;
+        margin: 0;
+
     }
 
     .descripcion{
         width: 35%;
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
+        max-width: 100%;
         margin: auto;
-        padding: auto;
     }
 
     .descripcion h4{
@@ -203,20 +209,21 @@ main {
     }
 
     .enlaces{
-        width: 20%;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 5px 5px;
-        margin: 40px 0px;
+        width: 30%;
+        display: block;
+        padding: 0 40px;
+        margin: auto;
+        
+
     }
 
     .detalle{
-        width: 70%;
+        width: 100%;
         margin: auto;
     }
 
     .carrit{
-        width: 70%;
+        width: 100%;
         margin: auto;
     }
 
@@ -246,29 +253,30 @@ main {
 @media (min-width: 1070px) {
 
     .centro {
-        width: 100%;
-        font-size: 25px;
-    }
-
-    .centro img{
-        width: 203px;
-        height: 250px;
-    }
-
-    h4{
-        font-size: 28px;
-    }
-
-    p{
-        font-size: 26px;
+        width: 80%;
+        font-size: 20px;
+        margin: auto;
+        padding: auto;
+        max-height: 240px;
     }
 
     .productos {
-        padding: 60px;
         display: flex;
-        margin: 30px 160px;
+        padding: auto;
+        justify-content: space-around;
+
     }
 
+    .productos img{
+        width: 35%;
+        max-height: 300px;
+        padding: 20px;
+        margin: 0;
+
+    }
+
+
+    
     .izquierda {
         width: 0%;
         height: auto;

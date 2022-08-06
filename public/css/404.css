@@ -1,0 +1,11 @@
+div{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+img{
+    display: block;
+    text-align: center;
+    width: 65%;
+}

@@ -1,0 +1,28 @@
+
+main{
+    padding: 30px 50px;
+    font-size: 18px;
+}
+
+main form input{
+}
+
+article{
+    margin: 10px 0px;
+}
+
+input:invalid{
+    border: red solid 2px;
+}
+
+input:invalid:hover{
+    background-color: red;
+}
+
+button{
+    color: white;
+    width: 70px;
+    background-color:#1259c3;
+    border-radius: 12%;
+    font: bolder;
+}

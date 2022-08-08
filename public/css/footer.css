@@ -4,15 +4,22 @@
     background-color: #000;
 }
 #nav-footer {
-    background-color: #556483;
+    background-color: rgb(1, 18, 44);
     width: 100%;
     overflow: hidden;
     padding: 20px 0;
-    display:flex;
-    justify-content:space-around;
 }
-#nav-footer .column {
-    width: 45%;
+#nav-footer .colum {
+    width: 25%;
+    float: left;
+}
+#nav-footer .colum .left {
+    width: 65%;
+    float: left;
+}
+#nav-footer .colum .right {
+    width: 35%;
+    float: left;
 }
 #nav-footer h4 {
     font-family: 'Fira Sans', sans-serif;
@@ -22,8 +29,6 @@
     text-transform: uppercase;
     padding-bottom: 10px;
     margin: 0;
-    display: flex;
-    justify-content:center;
 }
 #nav-footer p {
     font-family: 'Open Sans', sans-serif;
@@ -33,36 +38,31 @@
     color: #999;
     padding-bottom: 20px;
     margin: 0;
-    display:flex;
-    justify-content:space-around;
 }
 a.button-footer {
     font-family: 'Fira Sans', sans-serif;
-    text-decoration: none; 
-    left: 138px;
+    text-decoration: none;
     font-size: 13px;
     font-weight: 400;
     line-height: normal;
     padding: 5px 10px 5px 10px;
-    color: #556483;
+    display: inline-block;
+    color: #333;
     background-color: #fff;
     /*background-repeat: no-repeat;*/
     /*background-position: left center;*/
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
-    border-radius: 2px;
+    border-radius: 0px;
 }
 a.button-footer:hover {
     color: #fff;
     background-color: #b3282d;
-    transition-property:background-color,color;
-    transition-duration:0.3s;
-    text-decoration:none;
 }
 
 
 #nav-footer2 {
-    background-color: #556483;
+    background-color: #333;
     width: 100%;
     overflow: hidden;
     padding: 0px 0;
@@ -92,10 +92,21 @@ a.button-footer:hover {
     font-weight: 400;
     color: #999;
     padding: 5px 10px;
-    background-color: #556483;
 }
 
 #nav-footer2 a:hover {
     color: #ccc;
 }
 
+@media only screen and (max-width:768px) {
+
+    #nav-footer .colum { width: 50%; margin: 15px 0;}
+   
+}
+@media only screen and (max-width:460px) {
+
+    #nav-footer .colum { width: 100%}  
+    #nav-footer2 { text-align: left;}
+    #nav-footer2 a { padding: 5px 0px; display: block;}
+     
+}

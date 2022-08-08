@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+<body>
+    <main>        
+        <div id="stores">
+            <div class="file">
+                <div class="smallrow">
+                    <div class="tit-nav">
+                        <h3 class="text-white bold">THE SURFING CO.</h3>
+                    </div>
+                </div>
+                <div class="bigrow">
+                    <!---- Inicio Sectrion Banner  ---->
+                    <section id="section-banner">
+                        <div class="banner-arrow"></div>
+                        <img src="images/banner-news.jpg">
+                        <div class="section-tit">
+                            <h4 class="white bold">Rip Curl / Contacto</h4>
+                        </div>
+                    </section>
+                    <!---- Fin Section Banner ---->
+                    <!-- Inicio Profile -->
+                    <section id="profile">
+                        <div class="content">
+                            <div id="profile-desc">
+                                <div class="file">
+                                    <div class="leftrow">
+                                        <h2 class="text-color bold" style="width: 100%;text-align: left;">Rip Curl Argentina
+                                        </h2>
+                                        <div id="tips">
+                                            <p><span class="bold">Mexico 1315 (1640) Martinez.<br>Buenos Aires.
+                                                    Argentina.</span></p><br>
+                                            <p>Envianos tu consulta por medio de nuestro formulario de contacto
+                                                seleccionando el
+                                                destinatario deseado. Te responderemos a la brevedad.<br><br>Si estás
+                                                interesado
+                                                en formar parte de nuestro Staff ingresá a: <a
+                                                    href="https://rrhh.cristobalcolon.com/" target="_blank"
+                                                    style="color: #b3241d; font-weight: 600;">rrhh.cristobalcolon.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rightrow">
+                                        <!-- Inicio Formulario -->
+                                        <form action="https://www.ripcurlargentina.com/contacto2.php" name="contactoform"
+                                            id="contactoform" method="POST">
+                                            <p>Destinatario</p>
+                                            <select name="destinatario" id="destinatario" class="camposform"
+                                                onchange="caption(this.value);">
+                                                <option value=""></option>
+                                                <option value="1">Quejas - Reclamos - Sugerencias</option>
+                                                <option value="2">Venta Online - Consultas de Stock - Cambios</option>
+                                                <!--<option value="3">Curriculums - CVS - Recursos Humanos</option>-->
+                                                <option value="4">Marketing</option>
+                                                <option value="5">Ventas Mayoristas - Franquicias</option>
+                                                <option value="6">Proveedores - Producto Terminado</option>
+                                                <option value="7">Proveedores - Producción Textil / Insumos</option>
+                                            </select>
+                                            <p>Nombre (*)</p>
+                                            <input type="text" name="nombre" id="nombre" class="camposform">
+                                            <p>Nro. de Tel/Cel (*)</p>
+                                            <input type="text" name="telefono" id="telefono" class="camposform">
+                                            <p>E-mail (*)</p>
+                                            <input type="text" name="email" id="email" class="camposform"
+                                                style="background: url();">
+                                            <p>Asunto</p>
+                                            <input type="text" name="asunto" id="asunto" class="camposform">
+                                            <p>Mensaje</p>
+                                            <textarea name="mensaje" id="mensaje" class="camposformbig"></textarea>
+                                            <div class="g-recaptcha" data-sitekey="6LfOP98UAAAAAJMXFgF8sJMVNWE-cn7-aE6JLIqj"
+                                                style="margin-bottom: 15px;">
+                                                <div style="width: 304px; height: 78px;">
+                                                    <div><iframe title="reCAPTCHA"
+                                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfOP98UAAAAAJMXFgF8sJMVNWE-cn7-aE6JLIqj&amp;co=aHR0cHM6Ly93d3cucmlwY3VybGFyZ2VudGluYS5jb206NDQz&amp;hl=es-419&amp;v=gWN_U6xTIPevg0vuq7g1hct0&amp;size=normal&amp;cb=7u8t35hongs1"
+                                                            width="304" height="78" role="presentation"
+                                                            name="a-ap5qm4yhtpow" frameborder="0" scrolling="no"
+                                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                                    </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                        class="g-recaptcha-response"
+                                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                                </div><iframe style="display: none;"></iframe>
+                                            </div>
+                                            <a onclick="validate();" style="cursor: pointer;"
+                                                class="button-enviar">ENVIAR</a>
+                                        </form>
+                                        <!-- Fin Formulario -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Fin Profile -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('./partials/footer') %>  
+</body>
+</html>

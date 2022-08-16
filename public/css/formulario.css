@@ -1,0 +1,244 @@
+
+/* Basic Theme */
+
+body.p-popup-open {
+    overflow: hidden;
+}
+
+.p-optin,
+.p-optin * {
+    font-family: 'Open Sans', Helvetica, Arial, Sans-Serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+.p-optin {
+    width: 100%;
+    color: #000;
+    background: #FFF;
+    max-width: 500px;
+    border-radius: 3px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.p-close {
+    background: #000 none repeat scroll 0 0;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 21px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.p-inline .p-close {
+    display: none;
+}
+
+.p-optin .p-header {
+    background: #0088cc;
+    color: #FFF;
+    padding: 0.75em 1em;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-weight: bold;
+}
+
+.p-optin .p-body {
+    border: 3px solid #DDD;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.p-header + .p-body {
+    border-top: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.p-optin .p-body p {
+    margin: 0 0 1em;
+    color: #666;
+}
+
+.p-optin .p-field {
+    margin-bottom: 1em;
+}
+
+.p-optin label {
+    font-weight: normal;
+}
+
+.p-optin .p-field label span {
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    display: block;
+}
+
+.p-optin input[type=checkbox] {
+    margin-right:0.5em;
+}
+
+.p-optin .p-field select,
+.p-optin .p-field input[type=text] {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 100%;
+    padding: 0.5em;
+    width: 100%;
+    background: #FFF;
+}
+
+.p-optin .p-field input[type=text].p-error,
+.p-optin .p-field select.p-error {
+    border-color: #FF0000;
+}
+
+.p-optin .p-field .p-error-message {
+    color: #FF0000;
+    font-style: italic;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.p-optin .p-interests {
+    margin-bottom: 1em;
+}
+
+.p-optin .p-interest {
+    margin-bottom: 0.25em;
+}
+
+.p-open,
+.p-optin button {
+    border: none;
+    background: #0088cc;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 100%;
+    padding: 0.75em 1em;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.p-optin .p-success {
+    text-align: center;
+    font-weight: bold;
+}
+
+.p-layer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    z-index: 20000;
+}
+
+.p-layer.p-closed {
+    display: none;
+}
+
+/* Modern Theme */
+
+.p-optin {
+    max-width: 760px;
+}
+
+.p-close {
+    background: transparent;
+    border: none;
+    font-size: 2.5em;
+    font-weight: 300;
+    right: 20px;
+    top: 0.35em;
+}
+
+.p-optin .p-header {
+    background: #000;
+    color: #FFF;
+    /*text-transform: uppercase;*/
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-weight: 300;
+    font-size: 1.8em;
+    padding: 0.25em 5%;
+}
+
+.p-optin .p-body {
+    border-width: 1px;
+    padding: 2em 5%;
+}
+
+.p-optin .p-body p {
+    color: #696969;
+    font-size: 1.2em;
+}
+
+.p-optin label,
+.p-optin .p-field label span {
+    color: #696969;
+    font-size: 0.95em;
+}
+
+.p-open,
+.p-optin button {
+    background: #b3241d;
+}
+
+#p-open{
+	background-image:url(../images/button-mail.png);
+   width: auto;
+	font-family: 'Fira Sans', sans-serif;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: normal;
+	padding: 7px 10px 5px 38px;
+	display: inline-block;
+	color: #ffffff;
+	background-color: #161616;
+	background-repeat: no-repeat;
+	background-position: left center;
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#p-open:hover{ background-color: #b3241d;}
+
+.p-optin button {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    /*text-transform: uppercase;*/
+    width: auto;
+}
+
+.p-inline .p-optin {
+    max-width: 100%;
+    margin: 0;
+}
+
+.p-optin .p-success {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.4em;
+    color: #00AEEB;
+}
+
+.p-layer .p-optin {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}

@@ -139,7 +139,8 @@ p.large {
 }
 
 #home-destacados .pic img {
-  width: 100%}
+  width: 100%
+}
 
 #home-destacados .info {
   text-align: center;
@@ -292,12 +293,6 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
 
-.flex-direction-nav a:before {
-  
-}
-.flex-direction-nav a.flex-next:before {
-  
-}
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
@@ -1146,6 +1141,20 @@ html[xmlns] .flexslider .slides {
   -webkit-animation: scaleUpTo .5s ease both;
   -moz-animation: scaleUpTo .5s ease both;
   animation: scaleUpTo .5s ease both;
+}
+
+.comprar{
+  background-color: #333;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  width: 20%;
+  position: relative;
+  top:5px;
+}
+.comprar:hover{
+  background-color: #b3241d;
+  border-radius: 20px;
+  transition-duration: 1s;
 }
 /* Keyframes */
 /*empty*/

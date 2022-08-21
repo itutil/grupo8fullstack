@@ -291,19 +291,33 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav {
   *height: 0;
 }
-.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px; 
+  margin: -20px 0 0; 
+  display: block; 
+  background: url(../images/bg_direction_nav.png) no-repeat 0 0; 
+  position: absolute; 
+  top: 50%; cursor: pointer; 
+  text-indent: -9999px; 
+  opacity: 0; 
+  -webkit-transition-: all .3s ease;
+}
 
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
+
 .flex-direction-nav .flex-next {
   background-position: 100% 0;
   right: -50px;
 }
+
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px;
 }
+
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }

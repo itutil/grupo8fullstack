@@ -70,7 +70,7 @@ const registrationSchema = {
 
 /* Define application paths for requests */
 
-app.get('', (req, res)=> {
+app.get('/', (req, res)=> {
     res.render('index')
 })
 
@@ -96,6 +96,11 @@ app.post('/register', urlencodedParser, [
         })
     }
 })
+
+app.get('/cart', (req, res)=>{
+    res.render('cart')
+})
+
 
 /* Define paths configuration */
 

@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    font-family: Roboto;
+    padding: 0 5vw;
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+
+input{
+    height: 30%;
+    width: 30%;
+}
+
+h3{
+    display: block;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: left ;
+    padding-left: 3%;
+}
+.imagen-carrito{
+    width: 2%;
+    height: 5%;
+}
+.titulo-carrito{
+    display: block;
+    padding-left: 5px;
+    color : white;
+    font-family: "Quicksand";
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(1, 18, 44);
+    text-align:left;
+}
+.detalle-producto-general{
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 3px rgba(202, 202, 202, 0.5);
+    border-radius: 15px;
+    background-color:rgba(202, 202, 202, 0.5);
+    transition: border 10ms;
+}
+.detalle-producto-general:hover{
+    border:solid 3px blue;
+}
+.detalle-producto-carrito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.etiqueta-valor{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 300px;
+}
+
+.producto-detallado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    margin: auto;
+}
+
+
+.etiqueta-nombre:link,
+.etiqueta-nombre:visited{
+    color: red;
+}
+.etiqueta-nombre:hover{
+    color:blue;
+}
+.icono-borrar{
+    font-size: 25px;
+    transition: font-size 0.8ms ;
+}
+.icono-borrar:hover{
+    color:blue;
+    font-size: 35px;
+}
+
+.resumen{
+    display: block;
+    text-align: center;
+    padding:0%;
+    background-color:rgb(1, 18, 44);
+    color: white;
+}
+
+.resumen-pago{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 15px;
+    height: 200px;
+}
+
+.checkout-pago{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px;
+}
+.boton-pagar{
+    background-color:rgb(28, 84, 187);
+    color: whitesmoke;
+    border:solid blue 2px;
+    border-radius: 5px;
+    transition: width 5ms,
+                height 5ms;
+}
+.boton-pagar:hover{
+    background-color:rgba(28, 84, 187, 0.7);
+}
+
+
+@media (min-width: 768px) {
+    .resumen-pago{
+        font-size: 25px;
+    }
+    main{
+        font-size: 20px;
+    }
+
+    
+}
+
+@media (min-width: 1200px) {
+    .titulo-carrito{
+        font-size: 45px;
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0%;
+
+    }
+    .resumen-carrito{
+        flex-grow: 0.8;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+    .resumen-pago{
+        height: 500px;
+    }
+    .checkout-pago{
+        justify-content: space-between;
+        height: 600px;
+        width: 300px;
+    }
+    .etiqueta-valor{
+        font-size: 15px;
+    }
+
+    .detalle-producto-general:hover{
+        border:solid 3px blue;
+    }
+}

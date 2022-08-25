@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
+    <link type = "text/css" rel="stylesheet" href="/css/normalize.css">
+    <link type ="text/css" rel= "stylesheet" href="/css/header.css">
+    <link type ="text/css" rel="stylesheet" href="/css/productos.css">
+    <link type ="text/css" rel="stylesheet" href="/css/footer.css">
+    <link type ="text/css" rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+   
+</head>
+<body>
+    <header>
+        <%- include('./partials/header-eng') %>
+    </header>
+    <main>        
+        <div id="stores">
+            <div class="file">
+                <div class="bigrow">
+
+                    <!-- Inicio Profile -->
+                    <section id="profile">
+                        <div class="content">
+                            <div id="profile-desc">
+                                <div class="file">
+                                    <div class="leftrow">
+                                        <h2 class="text-color bold" style="width: 100%;text-align: left;">8Technology
+                                        </h2>
+                                        <div id="tips">
+                                            
+                                            <p>Envianos tu consulta por medio de nuestro formulario de contacto
+                                                seleccionando el
+                                                destinatario deseado. Te responderemos a la brevedad.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rightrow">
+                                        <!-- Inicio Formulario -->
+                                        <form action="" name="contactoform"
+                                            id="contactoform" method="POST">
+                                            <p>Destinatario</p>
+                                            <select name="destinatario" id="destinatario" class="camposform"
+                                                onchange="caption(this.value);">
+                                                <option value=""></option>
+                                                <option value="1">Quejas - Reclamos - Sugerencias</option>
+                                                <option value="2">Venta Online - Consultas de Stock - Cambios</option>
+                                                <!--<option value="3">Curriculums - CVS - Recursos Humanos</option>-->
+                                                <option value="4">Marketing</option>
+                                                <option value="5">Ventas Mayoristas - Franquicias</option>
+                                            </select>
+                                            <p>Nombre (*)</p>
+                                            <input type="text" name="nombre" id="nombre" class="camposform">
+                                            <p>Nro. de Tel/Cel (*)</p>
+                                            <input type="text" name="telefono" id="telefono" class="camposform">
+                                            <p>E-mail (*)</p>
+                                            <input type="text" name="email" id="email" class="camposform"
+                                                style="background: url();">
+                                            <p>Asunto</p>
+                                            <input type="text" name="asunto" id="asunto" class="camposform">
+                                            <p>Mensaje</p>
+                                            <textarea name="mensaje" id="mensaje" class="camposformbig"></textarea>                                           
+                                                <div style="width: 304px; height: 78px;">                                                    
+                                                    <button>
+                                                        <a onclick="validate();" style="cursor: pointer;" class="button-enviar">ENVIAR</a>
+                                                     </button>                                                    
+                                                </div>                                                                      
+                                        </form>
+                                        <!-- Fin Formulario -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Fin Profile -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('./partials/footer') %>  
+</body>
+</html>

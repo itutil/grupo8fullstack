@@ -1,4 +1,4 @@
-#main {
+#mainHome {
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -116,94 +116,6 @@ p.large {
   color: #161616;
 }
 
-/* ==========   INICIO Carrusel de imagenes    =========== */
-
-#thumbnail-preview-indicators {
-  position: relative;
-  overflow: hidden;
-}
-
-#thumbnail-preview-indicators .slides .slide-1, 
-#thumbnail-preview-indicators .slides .slide-2,
-#thumbnail-preview-indicators .slides .slide-3 {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-#thumbnail-preview-indicators,
-#thumbnail-preview-indicators .slides,
-#thumbnail-preview-indicators .slides .slide-1, 
-#thumbnail-preview-indicators .slides .slide-2,
-#thumbnail-preview-indicators .slides .slide-3 {
-  height: 550px;
-  width: 100%;
-}
-
-#thumbnail-preview-indicators .slides .slide-1 {
-  background-image: url(https://technocio.com/wp-content/uploads/2020/08/Yoga-Slim-7-2.jpg); 
-}
-
-#thumbnail-preview-indicators .slides .slide-2 {
-  background-image: url(https://s1.eestatic.com/2021/09/22/omicrono/analisis-prueba-productos/613950219_209426499_1024x576.jpg);
-}
-
-#thumbnail-preview-indicators .slides .slide-3 {
-  background-image: url(https://cdn.pocket-lint.com/r/s/970x/assets/images/120309-phones-news-buyer-s-guide-best-smartphones-image66-camkvh2lyz.jpg);
-}
-
-#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
-  top: 20%;
-  bottom: inherit;
-}
-
-#thumbnail-preview-indicators .carousel-indicators li,
-#thumbnail-preview-indicators .carousel-indicators li.active {
-  position: relative;
-  width: 100px;
-  height: 8px;  
-}
-
-#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
-  position: absolute;
-  top: 0;
-  width: 100px;
-  display: none;
-  opacity: 0;
-  left: 50%;
-  margin-top: -80px;
-  margin-left: -50px;
-}
-
-#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
-#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
-  display: block;
-  opacity: .8;
-}
-
-#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
-  opacity: 1;
-}
-
-@media screen and (max-width : 480px) {    
-    #thumbnail-preview-indicators .carousel-indicators li,
-    #thumbnail-preview-indicators .carousel-indicators li.active {
-      width: 50px;
-      height: 8px;
-      position: relative;
-    }
-    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
-       width: 50px;
-       left: 50%;
-       margin-top: -50px;
-       margin-left: -25px;
-    }
-}
-
-/* ==========    FIN Carrusel de imagenes    =========== */
 /* ==========    INICIO Home Destacados    =========== */
 
 #home-destacados {
@@ -227,7 +139,8 @@ p.large {
 }
 
 #home-destacados .pic img {
-  width: 100%}
+  width: 100%
+}
 
 #home-destacados .info {
   text-align: center;
@@ -265,6 +178,270 @@ p.large {
 }
 
 /* ==========    FIN Home Destacados    =========== */
+/*=========  INICIO flexslider  =========*/
+/*
+ * jQuery FlexSlider v2.5.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ * 
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+ @font-face {
+  font-family: 'flexslider-icon';
+  src: url('fonts/flexslider-icon.eot');
+  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility-: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0px;
+  background: #ffffff;
+  position: relative;
+  zoom: 1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides img {
+  height: auto;
+}
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.loading .flex-viewport {
+  max-height: 300px;
+}
+.carousel li {
+  margin-right: 5px;
+}
+.flex-direction-nav {
+  *height: 0;
+}
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px; 
+  margin: -20px 0 0; 
+  display: block; 
+  background: url(../images/bg_direction_nav.png) no-repeat 0 0; 
+  position: absolute; 
+  top: 50%; cursor: pointer; 
+  text-indent: -9999px; 
+  opacity: 0; 
+  -webkit-transition-: all .3s ease;
+}
+
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+.flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: -50px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 0!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+.flex-control-paging li a.flex-active {
+  background: #0099cc;
+  background: rgba(0, 153, 204, 0.9);
+  cursor: default;
+}
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+
+/*=========  FIN flexslider  =========*/
+
+
 /* ==========    INICIO Owl Carousel   =========== */
 
 /* 
@@ -979,6 +1156,20 @@ p.large {
   -moz-animation: scaleUpTo .5s ease both;
   animation: scaleUpTo .5s ease both;
 }
+
+.comprar{
+  background-color: #333;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  width: 20%;
+  position: relative;
+  top:5px;
+}
+.comprar:hover{
+  background-color: #b3241d;
+  border-radius: 20px;
+  transition-duration: 1s;
+}
 /* Keyframes */
 /*empty*/
 @-webkit-keyframes empty {
@@ -1084,6 +1275,160 @@ p.large {
 }
 
 /* ==========    FIN Owl Theme   =========== */
+/* ==========    INICIO hover-effects.css   =========== */
+.view-first img {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.view-first .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background-color: rgba(255,255,255, 0.8);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.view-first p {
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.view-first:hover img {
+  -webkit-transform: scale(1.0,1.0);
+  -moz-transform: scale(1.0,1.0);
+  -o-transform: scale(1.0,1.0);
+  -ms-transform: scale(1.0,1.0);
+  transform: scale(1.0,1.0);
+}
+.view-first a.info {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.view-first:hover p {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+   
+/* ==========    FIN hover-effects.css   =========== */
+/* ==========    INICIO cloud-zoom.css    =========== */
+/*   @charset "utf-8";   */
+/* 这是下方的鼠标指针的移动镜头平方米。 */
+.cloud-zoom-lens {border: 4px solid #888;margin:-4px;background-color:#fff;cursor:move;}
+/* 这是标题文本 */
+.cloud-zoom-title {font-family:Arial, Helvetica, sans-serif;position:absolute !important;background-color:#000;color:#fff;padding:3px;width:100%;text-align:center;font-weight:bold;font-size:10px;top:0px;}
+/* 这是缩放窗口。 */
+.cloud-zoom-big {border:4px solid #ccc;overflow:hidden;}
+/* 这是加载消息。 */
+.cloud-zoom-loading {color:white;background:#222;padding:3px;border:1px solid #000;}
+
+
+.zoom-section{
+	clear:both;
+	margin-top:0px;
+}
+
+*html .zoom-section{
+	display:inline;
+	clear:both;
+	width:100%;
+}
+
+.zoom-small-content{
+	margin: 10px;
+}
+
+.zoom-small-image{
+	border:0px solid #CCC;
+	float:left;
+	margin-bottom:10px;
+	width:100%;
+}
+
+
+.tinylist {
+	width:25%;
+	float:left;
+	line-height: 0;
+}
+
+.tinylist-content {
+	margin: 10px;
+}
+
+.zoom-tiny-image{
+	border: 1px solid #ccc;
+	margin:0px;
+	width:100%;
+}
+.zoom-tiny-image:hover{
+	border:1px solid #999;
+}
+/* ==========    FIN cloud-zoom.css    =========== */
 /* ==========    INICIO Home Productos   =========== */
 
 

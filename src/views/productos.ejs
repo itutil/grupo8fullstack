@@ -35,69 +35,8 @@
                                 <a href="#"><i class="fa-solid fa-house"></i></a></button>
                         </div>
                     </li>
-                    <li>
-                        <div class="dropdown tooltip">
-                            <span class="tooltiptext">Sign up</span>
-                            <button class="dropbtn">
-                                <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
-                            <div class="dropdown-content">
-                                <div class="login">
-                                    <form id="login" method="get" action="login.php">
-                                        <label><b>E-Mail
-                                            </b>
-                                        </label>
-                                        <input type="text" name="Email" id="Email" placeholder="Email">
-                                        <br><br>
-                                        <label><b>User Name
-                                            </b>
-                                        </label>
-                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
-                                        <br><br>
-                                        <label><b>Password
-                                            </b>
-                                        </label>
-                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
-                                        <br><br>
-                                        <input type="button" name="log" id="log" value="Log In Here">
-                                        <br><br>
-                                        <input type="checkbox" id="check">
-                                        <span>Remember me</span>
-                                        <br><br>
-                                        <a href="#">Forgot Password</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown tooltip">
-                            <span class="tooltiptext">Log in</span>
-                            <button class="dropbtn">
-                                <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
-                            <div class="dropdown-content">
-                                <div class="login">
-                                    <form id="login" method="get" action="login.php">
-                                        <label><b>User Name
-                                            </b>
-                                        </label>
-                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
-                                        <br><br>
-                                        <label><b>Password
-                                            </b>
-                                        </label>
-                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
-                                        <br><br>
-                                        <input type="button" name="log" id="log" value="Log In Here">
-                                        <br><br>
-                                        <input type="checkbox" id="check">
-                                        <span>Remember me</span>
-                                        <br><br>
-                                        <a href="#">Forgot Password</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    <%- include('./partials/signup-validated') %>
+                    <%- include('./partials/signin') %>
                     <li>
                         <div class="dropdown tooltip">
                             <span class="tooltiptext">Cart</span>

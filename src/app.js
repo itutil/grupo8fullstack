@@ -6,31 +6,51 @@ const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const { body, checkSchema, check, validationResult } = require('express-validator');
+const passport = require('./middleware/mypassport')
+const session = require('express-session') 
 
 /* Import internal modules */
 
 const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
+const signupRouter = require('./routes/signupRouter');
+const signinRouter = require('./routes/signinRouter');
+const logoutRouter = require('./routes/logoutRouter');
+const cartRouter = require('./routes/cartRouter');
 
 /* Define application variables */
 
 const app = express ();
-app.set('view engine', 'ejs');
-app.set('views', path.resolve(__dirname, './views'));
-
-/* Define application paths for requests */
-
-app.get('', (req, res)=> {
-    res.render('index')
-})
 
 /* Define paths configuration */
 
 app.use(express.static('public'));
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(session({
+  secret: 'something that should not be shared',
+  resave: false,
+  saveUninitialized: true
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.set('view engine', 'ejs');
+app.set('views', path.resolve(__dirname, './views'));
 app.use('/', mainRouter);
-app.use('/product', productRouter);
-app.use('/producto', productRouter);
+app.use('/products', productRouter);
+app.use('/productos', productRouter);
+app.use('/cart', cartRouter);
 
+// User interaction routes
+
+app.use(['/signup'], signupRouter);
+app.use(['/signin'], signinRouter);
+app.use(['/logout'], logoutRouter);
+/* Define application paths for requests */
+
+//app.get('', (req, res)=> {
+//    res.render('index')
+// })
 
 /* Let application start listeting requests */
 

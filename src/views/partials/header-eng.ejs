@@ -23,28 +23,29 @@
                             <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
                         <div class="dropdown-content">
                             <div class="login">
-                                <form id="loginSignupEng" method="get" action="/register">
-                                    <label><b>E-Mail
-                                        </b>
+                                <form id="loginSignupEng" method="POST" action="/signup">
+                                    <label><b>First Name </b>
                                     </label>
-                                    <input type="text" name="emailSignupEng" id="emailSignupEng" placeholder="Email">
+                                    <input type="text" name="firstName" id="firstName" placeholder="Your first name">
                                     <br><br>
-                                    <label><b>User Name
-                                        </b>
+                                    <label><b>Last Name </b>
+                                    <input type="text" name="lastName" id="lastName" placeholder="Your last name">
+                                    <br><br>
+                                    <label><b>E-Mail </b>
                                     </label>
-                                    <input type="text" name="unameSignupEng" id="unameSignupEng" placeholder="Username">
+                                    <input type="text" name="eMail" id="eMail" placeholder="Email">
                                     <br><br>
-                                    <label><b>Password
-                                        </b>
-                                    </label>
-                                    <input type="Password" name="passSignuEng" id="passSignupEng" placeholder="Password">
+                                    <label><b>Password </b>
+                                    <input type="password" name="password" id="password" placeholder="Password">
                                     <br><br>
-                                    <input type="button" name="logSignupEng" id="logSignupEng" value="Log In Here">
+                                        <div class="row p-2">
+                                            <div class="col p-2">
+                                    <input id="product-submit" class="btn btn-success col" type="submit" value="Submit">
+                                </div>
+                                <div class="col p-2">
+                                    <input class="btn btn-danger col" type="reset" value="Reset">
+                                </div>
                                     <br><br>
-                                    <input type="checkbox" id="checkSignupEng">
-                                    <span>Remember me</span>
-                                    <br><br>
-                                    <a href="#">Forgot Password</a>
                                 </form>
                             </div>
                         </div>
@@ -57,23 +58,19 @@
                             <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
                         <div class="dropdown-content">
                             <div class="login">
-                                <form id="login" method="get" action="/login">
-                                    <label><b>User Name
+                                <form id="login" method="POST" action="/signin">
+                                    <label><b>E-Mail
                                         </b>
                                     </label>
-                                    <input type="text" name="unameLogin" id="unameLogin" placeholder="Username">
+                                    <input type="text" name="eMail" id="eMail" placeholder="E-Mail">
                                     <br><br>
                                     <label><b>Password
                                         </b>
                                     </label>
-                                    <input type="Password" name="passLogin" id="passLogin"" placeholder="Password">
+                                    <input type="password" name="password" id="password"" placeholder="Password">
                                     <br><br>
-                                    <input type="button" name="logLogin" id="logLogin" value="Log In Here">
+                                    <input id="submit" class="btn btn-success col" type="submit" value="Submit">
                                     <br><br>
-                                    <input type="checkbox" id="checkLogin">
-                                    <span>Remember me</span>
-                                    <br><br>
-                                    <a href="#">Forgot Password</a>
                                 </form>
                             </div>
                         </div>

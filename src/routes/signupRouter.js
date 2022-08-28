@@ -30,8 +30,8 @@ route.post('/', (req, res) => {
       password: password_enc,
     }).then((newuser) => {
      // and then, we return to home       
-     //    res.redirect('/')
-       res.redirect('/signin')
+       res.redirect('/')
+     //    res.redirect('/signin')
     }).catch((err) => {
       res.send(
         `Error in creating user

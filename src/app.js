@@ -11,6 +11,7 @@ const session = require('express-session')
 
 /* Import internal modules */
 
+const ensureAuthenticated = require('./middleware/routes-protector');
 const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
 const signupRouter = require('./routes/signupRouter');
@@ -46,6 +47,20 @@ app.use('/cart', cartRouter);
 app.use(['/signup'], signupRouter);
 app.use(['/signin'], signinRouter);
 app.use(['/logout'], logoutRouter);
+
+// Protect product routes
+
+app.get('/product', ensureAuthenticated, function(req, res) {
+  if (ensureAuthenticated) {
+    //res.status(200).json({ message: "Valid password" });
+    res.status(200).redirect('/product'); 
+  } else {
+    res.status(400).redirect('/'); // this would be an error page or another error notification
+  }
+  // Do something with user via req.user
+  //res.redirect('/')
+});
+
 /* Define application paths for requests */
 
 //app.get('', (req, res)=> {

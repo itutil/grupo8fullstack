@@ -1,163 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>8Technology / contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/application.min.css">
-    <link type = "text/css" rel="stylesheet" href="/css/normalize.css">
-    <link type ="text/css" rel= "stylesheet" href="/css/header.css">
-    <link type ="text/css" rel="stylesheet" href="/css/productos.css">
-    <link type ="text/css" rel="stylesheet" href="/css/footer.css">
-    <link type ="text/css" rel="stylesheet" href="/css/home.css">
+    <link type="text/css" rel="stylesheet" href="/css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+    <link type="text/css" rel="stylesheet" href="/css/productos.css">
+    <link type="text/css" rel="stylesheet" href="/css/footer.css">
+    <link type="text/css" rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/contacto.css">
-  
-   
+
+
 </head>
+
 <body>
     <header>
         <%- include('./partials/header-eng') %>
     </header>
     <!-- Recaptcha -->
-<script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
-<!-- Inicio Main
+    <!-- Inicio Main
   ================================================== -->
-     <div id="mainContact">
-   
-       <div id="stores">
-       <div class="file">
-               
-               <div class="bigrow">
-                   
-                   <!---- Inicio Sectrion Banner  ---->
-                   <div id="section-banner">
-                       
-                   
-                       <img src="/images/imgContact.jpg">
-                       <div class="section-tit">
-                           <h4 class="white bold">8Technology / Contacto</h4>
-                       </div>
-                  </div>
-                  <!---- Fin Section Banner ---->
-                       
-                   <!-- Inicio Profile -->
-                   <div id="profile">
-                   <div class="content">
-                   
-                           <div id="profile-desc">
-                           <div class="file">
-                           
-                               <div class="leftrow">
-                                   <h2 class="text-color bold"  style="width: 100%;text-align: left;color: wheat;">8Technology</h2>
-                                   <div id="tips"><br>                                       
-                                       <p>Envianos tu consulta por medio de nuestro formulario de contacto seleccionando el destinatario deseado. Te responderemos a la brevedad.<br><br>Si estás interesado en formar parte de nuestro Staff ingresá a: <a href="RAMA STAFF" target="_blank" style="color: #b3241d; font-weight: 600;">STAFF</a></p>
-                                   </div>
-                               </div>
-                               
-                               <div class="rightrow">
-                               
-                                   <!-- Inicio Formulario -->
-                                   <form action="/contacto" name="contactoform" id="contactoform" method="POST">
-                                   
-                                       
-                                       <script>
-                                           function validate(){
-                                               if (document.getElementById('destinatario').value == ''){
-                                                   alert('Debe elegir el destinatario al que lo desea enviar.');
-                                                   document.getElementById('destinatario').focus();
-                                                   return false;
-                                               }
-                                               if (document.getElementById('nombre').value == ''){
-                                                   alert('Campo requerido.');
-                                                   document.getElementById('nombre').focus();
-                                                   return false;
-                                               }
-                                               if (document.getElementById('telefono').value == ''){
-                                                   alert('Campo requerido.');
-                                                   document.getElementById('telefono').focus();
-                                                   return false;
-                                               }
-                                               if (document.getElementById('email').value == ''){
-                                                   alert('Campo requerido.');
-                                                   document.getElementById('email').focus();
-                                                   return false;
-                                               }else{
-                                                   var x = document.getElementById('email').value;
-                                                   var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-                                                   if (filter.test(x)){
-                                                                                                                   
-                                                   }else{
-                                                       alert('Formato invalido');
-                                                       document.getElementById('email').focus();
-                                                       return false;
-                                                   }		
-                                               }                		
-                                               
-                                               contactoform.submit();
-                                               
-                                           }
-                                           function checkmessage(id_msj){
-                                               if(id_msj==3){
-                                                   document.getElementById("text1").style.display = "block";
-                                               }else{
-                                                   document.getElementById("text1").style.display = "none";
-                                               }
-                                           }
-                                       </script>
+    <div id="mainContact">
+
+        <div id="stores">
+            <div class="file">
+
+                <div class="bigrow">
+
+                    <!---- Inicio Sectrion Banner  ---->
+                    <div id="section-banner">
 
 
-                                   
-                                       <p>Destinatario</p>
-                                       <select name="destinatario" id="destinatario" class="camposform" onChange="caption(this.value);">
-                                               <option value=""></option>
-                                                   <option value="1">Quejas - Reclamos - Sugerencias</option>
-                                                   <option value="2">Venta Online - Consultas de Stock - Cambios</option>                    	
-                                                   <!--<option value="3">Curriculums - CVS - Recursos Humanos</option>-->
-                                                   <option value="4">Marketing</option>
-                                                   <option value="5">Ventas Mayoristas - Franquicias</option>                                                  
-                                       </select>
-                                       <p>Nombre (*)</p>
-                                       <input type="text" name="nombre" id="nombre" class="camposform"/>
-                                       <p>Nro. de Tel/Cel (*)</p>
-                                       <input type="text" name="telefono" id="telefono" class="camposform"/>
-                                       <p>E-mail (*)</p>
-                                       <input type="text" name="email" id="email" class="camposform" style="background: url();"/>
-                                       <p>Asunto</p>
-                                       <input type="text" name="asunto" id="asunto" class="camposform"/>
-                                       <p>Mensaje</p>
-                                       <textarea name="mensaje" id="mensaje" class="camposformbig"></textarea>
+                        <img src="/images/imgContact.jpg">
+                        <div class="section-tit">
+                            <h4 class="white bold">8Technology / Contact</h4>
+                        </div>
+                    </div>
+                    <!---- Fin Section Banner ---->
 
-                                       
-                                       <a onClick="validate();" style="cursor: pointer;" class="button-enviar">ENVIAR</a>
-                                   </form>
-                                   
-                                   <!-- Fin Formulario -->
-                                   
-                                 </div>
-                           
-                           </div>
-                           </div>
-                             
-               
-                   </div>
-                   </div>
-                   <!-- Fin Profile -->
-                   
-               </div>
+                    <!-- Inicio Profile -->
+                    <div id="profile">
+                        <div class="content">
 
-       </div>
-       </div>
-       <!---- Fin Team Escuelas ---->
-   
-   </div>
-     <!-- Fin Main
+                            <div id="profile-desc">
+                                <div class="file">
+
+                                    <div class="leftrow">
+                                        <h2 class="text-color bold" style="width: 100%;text-align: left;color: wheat;">
+                                            8Technology</h2>
+                                        <div id="tips"><br>
+                                            <p>Send us your inquiry through our contact form by selecting the desired
+                                                recipient. We will answer you as soon as possible.<br><br>If you are
+                                                interested in being part of our Staff go to: <a href="RAMA STAFF"
+                                                    target="_blank" style="color: #b3241d; font-weight: 600;">STAFF</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rightrow">
+
+                                        <!-- Inicio Formulario -->
+                                        <form action="/contacto" name="contactoform" id="contactoform" method="POST">
+
+
+                                            <script>
+                                                function validate() {
+                                                    if (document.getElementById('destinatario').value == '') {
+                                                        alert('Debe elegir el destinatario al que lo desea enviar.');
+                                                        document.getElementById('destinatario').focus();
+                                                        return false;
+                                                    }
+                                                    if (document.getElementById('nombre').value == '') {
+                                                        alert('Campo requerido. (Nombre)');
+                                                        document.getElementById('nombre').focus();
+                                                        return false;
+                                                    }
+                                                    if (document.getElementById('telefono').value == '') {
+                                                        alert('Campo requerido. (Teléfono)');
+                                                        document.getElementById('telefono').focus();
+                                                        return false;
+                                                    }
+                                                    if (document.getElementById('email').value == '') {
+                                                        alert('Campo requerido.(email)');
+                                                        document.getElementById('email').focus();
+                                                        return false;
+                                                    } else {
+                                                        var x = document.getElementById('email').value;
+                                                        var filter =
+                                                            /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                                                        if (filter.test(x)) {
+
+                                                        } else {
+                                                            alert('Formato invalido');
+                                                            document.getElementById('email').focus();
+                                                            return false;
+                                                        }
+                                                    }
+                                                    
+                                                    contactoform.submit(alert('mensaje enviado'));                                              
+                                                }
+
+                                                function checkmessage(id_msj) {
+                                                    if (id_msj == 3) {
+                                                        document.getElementById("text1").style.display = "block";
+                                                    } else {
+                                                        document.getElementById("text1").style.display = "none";                                                       
+                                                    }                                                    
+                                                }
+                                            </script>
+
+
+
+                                            <p>Addressee</p>
+                                            <select name="destinatario" id="destinatario" class="camposform"
+                                                onChange="caption(this.value);">
+                                                <option value=""></option>
+                                                <option value="1">Complaints - Claims - Suggestions</option>
+                                                <option value="2">Online Sales - Stock Inquiries - Exchanges</option>
+                                                <!--<option value="3">Curriculums - CVS - Recursos Humanos</option>-->
+                                                <option value="4">Marketing</option>
+                                                <option value="5">Wholesale - Franchises</option>
+                                            </select>
+                                            <p>Name (*)</p>
+                                            <input type="text" name="nombre" id="nombre" class="camposform" />
+                                            <p>Nro. de Tel/Cel (*)</p>
+                                            <input type="text" name="telefono" id="telefono" class="camposform" />
+                                            <p>E-mail (*)</p>
+                                            <input type="text" name="email" id="email" class="camposform"
+                                                style="background: url();" />
+                                            <p>Subject</p>
+                                            <input type="text" name="asunto" id="asunto" class="camposform" />
+                                            <p>Message</p>
+                                            <textarea name="mensaje" id="mensaje" class="camposformbig"></textarea>
+
+
+                                            <a onClick="validate();" style="cursor: pointer;"
+                                                class="button-enviar">SEND</a>
+                                        </form>
+
+                                        <!-- Fin Formulario -->
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- Fin Profile -->
+
+                </div>
+
+            </div>
+        </div>
+        <!---- Fin Team Escuelas ---->
+
+    </div>
+    <!-- Fin Main
   ================================================== -->
-    <%- include('./partials/footer') %>  
+    <%- include('./partials/footer') %>
 </body>
+
 </html>

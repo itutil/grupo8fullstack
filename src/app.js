@@ -12,6 +12,7 @@ const { body, checkSchema, check, validationResult } = require('express-validato
 const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
 const contactRouter = require('./routes/contactRouter');
+const storesRouter = require('./routes/storesRouter');
 
 /* Define application variables */
 
@@ -110,9 +111,10 @@ app.use('/', mainRouter);
 app.use('/product', productRouter);
 app.use('/producto', productRouter);
 app.use('/contacto', contactRouter);
+app.use('/stores', storesRouter);
 
 
 
 /* Let application start listeting requests */
 
-app.listen(3000, ()=> {console.log('Servidor arriba en el puerto 3000')});
+app.listen(3001, ()=> {console.log('Servidor arriba en el puerto 3001')});

@@ -11,6 +11,7 @@ const { body, checkSchema, check, validationResult } = require('express-validato
 
 const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
+const contactRouter = require('./routes/contactRouter');
 
 /* Define application variables */
 
@@ -108,6 +109,8 @@ app.use(express.static('public'));
 app.use('/', mainRouter);
 app.use('/product', productRouter);
 app.use('/producto', productRouter);
+app.use('/contacto', contactRouter);
+
 
 
 /* Let application start listeting requests */

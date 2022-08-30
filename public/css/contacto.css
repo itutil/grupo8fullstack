@@ -1,3 +1,11 @@
+#mainContact {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(1, 18, 44);
+    padding-top: 40px;
+}
+
 #stores {
     display: table;
     width: 100%;

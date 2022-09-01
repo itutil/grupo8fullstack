@@ -9,6 +9,7 @@ const { body, checkSchema, check, validationResult } = require('express-validato
 const passport = require('./middleware/mypassport')
 const session = require('express-session') 
 
+
 /* Import internal modules */
 
 const ensureAuthenticated = require('./middleware/routes-protector');

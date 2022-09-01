@@ -22,6 +22,8 @@ route.post("/", async (req, res) => {
         const validPassword = bcrypt.compare(body.password,user.password);
         if (validPassword) {
           //res.status(200).json({ message: "Valid password" });
+          req.session.inSession = user;
+          console.log(req.session);
           res.status(200).redirect('/'); 
         } else {
           res.status(400).redirect('/'); // this would be an error page or another error notification

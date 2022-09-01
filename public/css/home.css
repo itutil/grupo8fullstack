@@ -1770,7 +1770,7 @@ a.button-comprar:hover {
   overflow: hidden;
   padding: 0px 0;
   margin-bottom: 10px;
-height: 35px;
+  height: 10px;
 }
 .iconos-estado {
   float: left;

@@ -13,7 +13,7 @@ const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
 const contactRouter = require('./routes/contactRouter');
 const storesRouter = require('./routes/storesRouter');
-const comoRealizarTuPedidoRouter = require('../routes/comoRealizarTuPedidoRouter');
+const comoRealizarTuPedidoRouter = require('./routes/comoRealizarTuPedidoRouter');
 
 /* Define application variables */
 

@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const contactController = require('../controllers/contactController');
+const staffController = require('../controllers/staffController');
 
 
-router.get('/', contactController.index);
+router.get('/', staffController.index);
 router.post('/', (req, res) => {
     console.log(req.body);
-    res.redirect('/contacto');
+    res.redirect('/staff');
 })
 
 

@@ -11,9 +11,14 @@ const { body, checkSchema, check, validationResult } = require('express-validato
 
 const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
-const contactRouter = require('./routes/contactRouter');
+const contactoRouter = require('./routes/contactoRouter');
 const storesRouter = require('./routes/storesRouter');
+const staffRouter = require('./routes/staffRouter');
 const comoRealizarTuPedidoRouter = require('./routes/comoRealizarTuPedidoRouter');
+const pagosYEnviosRouter = require('./routes/pagosYEnviosRouter');
+const terminosYCondicionesRouter = require('./routes/terminosYCondicionesRouter');
+const preguntasFrecuentesRouter = require('./routes/preguntasFrecuentesRouter');
+
 
 /* Define application variables */
 
@@ -111,10 +116,13 @@ app.use(express.static('public'));
 app.use('/', mainRouter);
 app.use('/product', productRouter);
 app.use('/producto', productRouter);
-app.use('/contacto', contactRouter);
+app.use('/contacto', contactoRouter);
 app.use('/stores', storesRouter);
+app.use('/staff', staffRouter);
+app.use('/pagosYEnvios', pagosYEnviosRouter);
+app.use('/preguntasFrecuentes', preguntasFrecuentesRouter);
+app.use('/terminosYCondiciones', terminosYCondicionesRouter);
 app.use('/comoRealizarTuPedido', comoRealizarTuPedidoRouter);
-
 
 
 /* Let application start listeting requests */

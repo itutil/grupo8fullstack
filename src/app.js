@@ -13,6 +13,7 @@ const mainRouter = require('./routes/mainRouter');
 const productRouter = require('./routes/productRouter');
 const contactRouter = require('./routes/contactRouter');
 const storesRouter = require('./routes/storesRouter');
+const comoRealizarTuPedidoRouter = require('../routes/comoRealizarTuPedidoRouter');
 
 /* Define application variables */
 
@@ -112,6 +113,7 @@ app.use('/product', productRouter);
 app.use('/producto', productRouter);
 app.use('/contacto', contactRouter);
 app.use('/stores', storesRouter);
+app.use('/comoRealizarTuPedido', comoRealizarTuPedidoRouter);
 
 
 

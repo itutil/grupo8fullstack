@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8Technology / Staff</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/application.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+    <link type="text/css" rel="stylesheet" href="/css/footer.css">
+    <link type="text/css" rel="stylesheet" href="/css/home.css">
+    <link href="css/staff.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body>
+
+    <header>
+        <%- include('./partials/header-eng') %>
+    </header>
+    <!-- Inicio Main
+        ================================================== -->
+    <div id="mainHome">
+
+        <!-- Inicio Box Forms -->
+        <div id="bigbox-forms">
+            <div class="content">
+
+                <div class="bigbox-forms-content">
+
+                    
+                    <p>Ingresá tus datos y adjuntá tu C.V. para poder postularte a nuestras búsquedas laborales.</p>
+                    <div class="separador"></div>
+
+                    <form action="register_abm.php" method="POST" enctype="multipart/form-data" name="register"
+                        id="register">
+
+                        <h5>Datos personales</h5>
+                        <div class="separador"></div>
+
+                        <label for="apellido" class="">Apellido</label>
+                        <div class="form-group">
+                            <input class="form100" id="userlastname" type="text" name="userlastname" required=""
+                                value="" />
+                            <span class="form-icon user"></span>
+                        </div>
+
+                        <label for="nombre" class="">Nombre</label>
+                        <div class="form-group">
+                            <input class="form100" id="userfirstname" type="text" name="userfirstname" required=""
+                                value="" />
+                            <span class="form-icon user"></span>
+                        </div>
+
+                        <label for="foto" class="">Adjuntar foto ( .jpg / .png, Máximo 2Mb )</label>
+                        <div class="form-group">
+                            <input class="form100" id="userphoto1" type="file" accept="image/jpeg,image/x-png"
+                                name="userphoto1" value="" />
+                            <span class="form-icon image"></span>
+                        </div>
+                        <label for="genero" class="">Género</label>
+                        <div class="radio-group">
+                            <input type="radio" name="usergender" value="Masculino" id="male" />
+                            <label id="first" for="male">Masculino</label>
+                            <input type="radio" name="usergender" value="Femenino" id="female" />
+                            <label id="last" for="female">Femenino</label>
+                        </div>
+
+                        <label for="estadocivil" class="">Estado civil</label>
+                        <div class="form-group">
+                            <select class="form100" name="userec" id="userec" required="">
+                                <option value="" selected="" disabled="disabled"></option>
+                                <option value="1">Soltero/a</option>
+                                <option value="2">Casado/a</option>
+                                <option value="3">Divorciado/a</option>
+                                <option value="3">Separado/a</option>
+                                <option value="4">Viudo/a</option>
+                            </select>
+                        </div>
+
+                        <label for="documento" class="">Tipo y Nro. de documento</label>
+                        <div class="form-group">
+                            <select class="form100" style="width:140px; float:left; margin-right:10px;"
+                                name="useridentification" id="useridentification" required="">
+                                <option value="" selected="" disabled="disabled"></option>
+                                <option value="1">CE</option>
+                                <option value="2">DNI</option>
+                                <option value="3">Extranjero</option>
+                                <option value="4">LE</option>
+                            </select>
+                            <input class="form100" style="width: calc(100% - 150px);" id="useridentificationnumber"
+                                type="text" name="useridentificationnumber" required="" value="" />
+                            <span class="form-icon document"></span>
+                        </div>
+
+                        <label for="nacionalidad" class="">Nacionalidad</label>
+                        <div class="form-group">
+                            <select class="form100" name="id_pais" id="id_pais" required="">
+                                <option value="" selected="" disabled="disabled"></option>
+
+                                <option value="1">Aruba</option>
+                                <option value="2">Afghanistan</option>
+                                <option value="3">Angola</option>
+                                <option value="4">Anguilla</option>
+                                <option value="5">Åland</option>
+                                <option value="6">Albania</option>
+                                <option value="7">Andorra</option>
+                                <option value="8">United Arab Emirates</option>
+                                <option value="9">Argentina</option>
+                                <option value="10">Armenia</option>
+                                <option value="11">American Samoa</option>
+                                <option value="12">Antarctica</option>
+                                <option value="13">French Southern Territories</option>
+                                <option value="14">Antigua and Barbuda</option>
+                                <option value="15">Australia</option>
+                                <option value="16">Austria</option>
+                                <option value="17">Azerbaijan</option>
+                                <option value="18">Burundi</option>
+                                <option value="19">Belgium</option>
+                                <option value="20">Benin</option>
+                                <option value="21">Bonaire</option>
+                                <option value="22">Burkina Faso</option>
+                                <option value="23">Bangladesh</option>
+                                <option value="24">Bulgaria</option>
+                                <option value="25">Bahrain</option>
+                                <option value="26">Bahamas</option>
+                                <option value="27">Bosnia and Herzegovina</option>
+                                <option value="28">Saint Barthélemy</option>
+                                <option value="29">Belarus</option>
+                                <option value="30">Belize</option>
+                                <option value="31">Bermuda</option>
+                                <option value="32">Bolivia</option>
+                                <option value="33">Brazil</option>
+                                <option value="34">Barbados</option>
+                                <option value="35">Brunei</option>
+                                <option value="36">Bhutan</option>
+                                <option value="37">Bouvet Island</option>
+                                <option value="38">Botswana</option>
+                                <option value="39">Central African Republic</option>
+                                <option value="40">Canada</option>
+                                <option value="41">Cocos [Keeling] Islands</option>
+                                <option value="42">Switzerland</option>
+                                <option value="43">Chile</option>
+                                <option value="44">China</option>
+                                <option value="45">Ivory Coast</option>
+                                <option value="46">Cameroon</option>
+                                <option value="47">Democratic Republic of the Congo</option>
+                                <option value="48">Republic of the Congo</option>
+                                <option value="49">Cook Islands</option>
+                                <option value="50">Colombia</option>
+                                <option value="51">Comoros</option>
+                                <option value="52">Cape Verde</option>
+                                <option value="53">Costa Rica</option>
+                                <option value="54">Cuba</option>
+                                <option value="55">Curacao</option>
+                                <option value="56">Christmas Island</option>
+                                <option value="57">Cayman Islands</option>
+                                <option value="58">Cyprus</option>
+                                <option value="59">Czech Republic</option>
+                                <option value="60">Germany</option>
+                                <option value="61">Djibouti</option>
+                                <option value="62">Dominica</option>
+                                <option value="63">Denmark</option>
+                                <option value="64">Dominican Republic</option>
+                                <option value="65">Algeria</option>
+                                <option value="66">Ecuador</option>
+                                <option value="67">Egypt</option>
+                                <option value="68">Eritrea</option>
+                                <option value="69">Western Sahara</option>
+                                <option value="70">Spain</option>
+                                <option value="71">Estonia</option>
+                                <option value="72">Ethiopia</option>
+                                <option value="73">Finland</option>
+                                <option value="74">Fiji</option>
+                                <option value="75">Falkland Islands</option>
+                                <option value="76">France</option>
+                                <option value="77">Faroe Islands</option>
+                                <option value="78">Micronesia</option>
+                                <option value="79">Gabon</option>
+                                <option value="80">United Kingdom</option>
+                                <option value="81">Georgia</option>
+                                <option value="82">Guernsey</option>
+                                <option value="83">Ghana</option>
+                                <option value="84">Gibraltar</option>
+                                <option value="85">Guinea</option>
+                                <option value="86">Guadeloupe</option>
+                                <option value="87">Gambia</option>
+                                <option value="88">Guinea-Bissau</option>
+                                <option value="89">Equatorial Guinea</option>
+                                <option value="90">Greece</option>
+                                <option value="91">Grenada</option>
+                                <option value="92">Greenland</option>
+                                <option value="93">Guatemala</option>
+                                <option value="94">French Guiana</option>
+                                <option value="95">Guam</option>
+                                <option value="96">Guyana</option>
+                                <option value="97">Hong Kong</option>
+                                <option value="98">Heard Island and McDonald Islands</option>
+                                <option value="99">Honduras</option>
+                                <option value="100">Croatia</option>
+                                <option value="101">Haiti</option>
+                                <option value="102">Hungary</option>
+                                <option value="103">Indonesia</option>
+                                <option value="104">Isle of Man</option>
+                                <option value="105">India</option>
+                                <option value="106">British Indian Ocean Territory</option>
+                                <option value="107">Ireland</option>
+                                <option value="108">Iran</option>
+                                <option value="109">Iraq</option>
+                                <option value="110">Iceland</option>
+                                <option value="111">Israel</option>
+                                <option value="112">Italy</option>
+                                <option value="113">Jamaica</option>
+                                <option value="114">Jersey</option>
+                                <option value="115">Jordan</option>
+                                <option value="116">Japan</option>
+                                <option value="117">Kazakhstan</option>
+                                <option value="118">Kenya</option>
+                                <option value="119">Kyrgyzstan</option>
+                                <option value="120">Cambodia</option>
+                                <option value="121">Kiribati</option>
+                                <option value="122">Saint Kitts and Nevis</option>
+                                <option value="123">South Korea</option>
+                                <option value="124">Kuwait</option>
+                                <option value="125">Laos</option>
+                                <option value="126">Lebanon</option>
+                                <option value="127">Liberia</option>
+                                <option value="128">Libya</option>
+                                <option value="129">Saint Lucia</option>
+                                <option value="130">Liechtenstein</option>
+                                <option value="131">Sri Lanka</option>
+                                <option value="132">Lesotho</option>
+                                <option value="133">Lithuania</option>
+                                <option value="134">Luxembourg</option>
+                                <option value="135">Latvia</option>
+                                <option value="136">Macao</option>
+                                <option value="137">Saint Martin</option>
+                                <option value="138">Morocco</option>
+                                <option value="139">Monaco</option>
+                                <option value="140">Moldova</option>
+                                <option value="141">Madagascar</option>
+                                <option value="142">Maldives</option>
+                                <option value="143">Mexico</option>
+                                <option value="144">Marshall Islands</option>
+                                <option value="145">Macedonia</option>
+                                <option value="146">Mali</option>
+                                <option value="147">Malta</option>
+                                <option value="148">Myanmar [Burma]</option>
+                                <option value="149">Montenegro</option>
+                                <option value="150">Mongolia</option>
+                                <option value="151">Northern Mariana Islands</option>
+                                <option value="152">Mozambique</option>
+                                <option value="153">Mauritania</option>
+                                <option value="154">Montserrat</option>
+                                <option value="155">Martinique</option>
+                                <option value="156">Mauritius</option>
+                                <option value="157">Malawi</option>
+                                <option value="158">Malaysia</option>
+                                <option value="159">Mayotte</option>
+                                <option value="160">Namibia</option>
+                                <option value="161">New Caledonia</option>
+                                <option value="162">Niger</option>
+                                <option value="163">Norfolk Island</option>
+                                <option value="164">Nigeria</option>
+                                <option value="165">Nicaragua</option>
+                                <option value="166">Niue</option>
+                                <option value="167">Netherlands</option>
+                                <option value="168">Norway</option>
+                                <option value="169">Nepal</option>
+                                <option value="170">Nauru</option>
+                                <option value="171">New Zealand</option>
+                                <option value="172">Oman</option>
+                                <option value="173">Pakistan</option>
+                                <option value="174">Panama</option>
+                                <option value="175">Pitcairn Islands</option>
+                                <option value="176">Peru</option>
+                                <option value="177">Philippines</option>
+                                <option value="178">Palau</option>
+                                <option value="179">Papua New Guinea</option>
+                                <option value="180">Poland</option>
+                                <option value="181">Puerto Rico</option>
+                                <option value="182">North Korea</option>
+                                <option value="183">Portugal</option>
+                                <option value="184">Paraguay</option>
+                                <option value="185">Palestine</option>
+                                <option value="186">French Polynesia</option>
+                                <option value="187">Qatar</option>
+                                <option value="188">Réunion</option>
+                                <option value="189">Romania</option>
+                                <option value="190">Russia</option>
+                                <option value="191">Rwanda</option>
+                                <option value="192">Saudi Arabia</option>
+                                <option value="193">Sudan</option>
+                                <option value="194">Senegal</option>
+                                <option value="195">Singapore</option>
+                                <option value="196">South Georgia and the South Sandwich Islands</option>
+                                <option value="197">Saint Helena</option>
+                                <option value="198">Svalbard and Jan Mayen</option>
+                                <option value="199">Solomon Islands</option>
+                                <option value="200">Sierra Leone</option>
+                                <option value="201">El Salvador</option>
+                                <option value="202">San Marino</option>
+                                <option value="203">Somalia</option>
+                                <option value="204">Saint Pierre and Miquelon</option>
+                                <option value="205">Serbia</option>
+                                <option value="206">South Sudan</option>
+                                <option value="207">São Tomé and Príncipe</option>
+                                <option value="208">Suriname</option>
+                                <option value="209">Slovakia</option>
+                                <option value="210">Slovenia</option>
+                                <option value="211">Sweden</option>
+                                <option value="212">Swaziland</option>
+                                <option value="213">Sint Maarten</option>
+                                <option value="214">Seychelles</option>
+                                <option value="215">Syria</option>
+                                <option value="216">Turks and Caicos Islands</option>
+                                <option value="217">Chad</option>
+                                <option value="218">Togo</option>
+                                <option value="219">Thailand</option>
+                                <option value="220">Tajikistan</option>
+                                <option value="221">Tokelau</option>
+                                <option value="222">Turkmenistan</option>
+                                <option value="223">East Timor</option>
+                                <option value="224">Tonga</option>
+                                <option value="225">Trinidad and Tobago</option>
+                                <option value="226">Tunisia</option>
+                                <option value="227">Turkey</option>
+                                <option value="228">Tuvalu</option>
+                                <option value="229">Taiwan</option>
+                                <option value="230">Tanzania</option>
+                                <option value="231">Uganda</option>
+                                <option value="232">Ukraine</option>
+                                <option value="233">U.S. Minor Outlying Islands</option>
+                                <option value="234">Uruguay</option>
+                                <option value="235">United States</option>
+                                <option value="236">Uzbekistan</option>
+                                <option value="237">Vatican City</option>
+                                <option value="238">Saint Vincent and the Grenadines</option>
+                                <option value="239">Venezuela</option>
+                                <option value="240">British Virgin Islands</option>
+                                <option value="241">U.S. Virgin Islands</option>
+                                <option value="242">Vietnam</option>
+                                <option value="243">Vanuatu</option>
+                                <option value="244">Wallis and Futuna</option>
+                                <option value="245">Samoa</option>
+                                <option value="246">Kosovo</option>
+                                <option value="247">Yemen</option>
+                                <option value="248">South Africa</option>
+                                <option value="249">Zambia</option>
+                                <option value="250">Zimbabwe</option>
+
+                            </select>
+                        </div>
+
+                        <label for="nacimiento" class="">Fecha de nacimiento ( DD - MM - AAAA )</label>
+                        <div class="form-group">
+                            <input class="form100" id="userbirthdated" type="text" name="userbirthdated" required=""
+                                value="" required="" size="4" maxlength="2"
+                                style="width:auto; float:left; margin-right:10px; padding-right: 0px;" />
+                            <input class="form100" id="userbirthdatem" type="text" name="userbirthdatem" required=""
+                                value="" required="" size="4" maxlength="2"
+                                style="width:auto; float:left; margin-right:10px; padding-right: 0px;" />
+                            <input class="form100" id="userbirthdatey" type="text" name="userbirthdatey" required=""
+                                value="" required="" size="4" maxlength="4"
+                                style="width:auto; float:left; margin-right:10px; padding-right: 0px;" />
+                        </div>
+
+                        <div class="separador"></div>
+                        <h5>Información de contacto</h5>
+                        <div class="separador"></div>
+
+                        <label for="email" class="">Email</label>
+                        <div class="form-group">
+                            <input class="form100" id="useremail" type="text" name="useremail" required="" value="" />
+                            <span class="form-icon mail"></span>
+                        </div>
+
+                        <label for="userpassword" class="">Contraseña</label>
+                        <div class="form-group">
+                            <input class="form100" id="userpassword" type="password" name="userpassword" required=""
+                                value="" />
+                            <span class="form-icon pass"></span>
+                        </div>
+
+                        <label for="userpassword2" class="">Repetir contraseña</label>
+                        <div class="form-group">
+                            <input class="form100" id="userpassword2" type="password" name="userpassword2" required=""
+                                value="" />
+                            <span class="form-icon pass"></span>
+                        </div>
+
+                        <label for="telefono" class="">Teléfono</label>
+                        <div class="form-group">
+                            <input class="form100" id="userphone" type="text" name="userphone" required="" value="" />
+                            <span class="form-icon phone"></span>
+                        </div>
+
+                        <div class="separador"></div>
+                        <h5>Lugar de residencia</h5>
+                        <div class="separador"></div>
+
+                        <label for="provincia" class="">Provincia</label>
+                        <div class="form-group">
+                            <select class="form100" name="id_provincia" id="id_provincia">
+                                <option value="" disabled="" selected=""></option>
+                                <option value="1">Buenos Aires</option>
+                                <option value="2">Buenos Aires-GBA</option>
+                                <option value="3">Capital Federal</option>
+                                <option value="4">Catamarca</option>
+                                <option value="5">Chaco</option>
+                                <option value="6">Chubut</option>
+                                <option value="7">Córdoba</option>
+                                <option value="8">Corrientes</option>
+                                <option value="9">Entre Ríos</option>
+                                <option value="10">Formosa</option>
+                                <option value="11">Jujuy</option>
+                                <option value="12">La Pampa</option>
+                                <option value="13">La Rioja</option>
+                                <option value="14">Mendoza</option>
+                                <option value="15">Misiones</option>
+                                <option value="16">Neuquén</option>
+                                <option value="17">Río Negro</option>
+                                <option value="18">Salta</option>
+                                <option value="19">San Juan</option>
+                                <option value="20">San Luis</option>
+                                <option value="21">Santa Cruz</option>
+                                <option value="22">Santa Fe</option>
+                                <option value="23">Santiago del Estero</option>
+                                <option value="24">Tierra del Fuego</option>
+                                <option value="25">Tucumán</option>
+                            </select>
+                        </div>
+
+                        <label for="ciudad" class="">Ciudad</label>
+                        <div class="form-group">
+                            <input type="text" class="form100" name="id_localidad" id="id_localidad" data-idlocalidad="">
+                                <option value="" disabled="" selected=""></option>
+                            </select>
+                        </div>
+
+                        <div class="separador"></div>
+                        <h5>Estudios cursados</h5>
+                        <div class="separador"></div>
+
+                        <label for="estudio" class="">Nivel de Estudios</label>
+                        <div class="form-group">
+                            <select class="form100" name="userstudies" id="userstudies" required="">
+                                <option value="" selected="" disabled="disabled"></option>
+                                <option value="1">Primario</option>
+                                <option value="2">Secundario</option>
+                                <option value="3">Tecnicatura</option>
+                                <option value="4">Universitario</option>
+                                <option value="5">Posgrado</option>
+                                <option value="6">Master</option>
+                                <option value="7">Doctorado</option>
+                            </select>
+                        </div>
+
+                        <label for="estudioestado" class="">Estado del Estudio</label>
+                        <div class="form-group">
+                            <select class="form100" name="userstudiesstatus" id="userstudiesstatus" required="">
+                                <option value="" selected="" disabled="disabled"></option>
+                                <option value="1">Graduado</option>
+                                <option value="2">En curso</option>
+                                <option value="3">Abandonado</option>
+                            </select>
+                        </div>
+
+                        <div class="separador"></div>
+                        <h5>Experiencia laboral</h5>
+                        <div class="separador"></div>
+
+                        <label for="arealaboral" class="">Áreas laborales</label>
+                        <div class="check-group">
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Administración">
+                                Administración </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Ventas">
+                                Ventas </label><br />                           
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Marketing">
+                                Marketing </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Logística">
+                                Logística </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Sistemas">
+                                Sistemas </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Facturación">
+                                Facturación </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Recursos Humanos">
+                                Recursos Humanos </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Otros">
+                                Otros </label><br />                                
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Comercio Exterior ">
+                                Comercio Exterior </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Mayorista">
+                                Mayorista </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Recepción">
+                                Recepción </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Diseño Gráfico">
+                                Diseño Gráfico </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Comercial">
+                                Comercial </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Compras">
+                                Compras </label><br />
+                            <label>
+                                <input type="checkbox" name="workareas[]" id="workareas" class="option-input"
+                                    value="Operario de depósito">
+                                Operario de depósito </label><br />                           
+                        </div>
+
+
+                        <div class="separador"></div>
+                        <h5>Curriculum</h5>
+                        <div class="separador"></div>
+
+                        <label for="cvdoc" class="">Adjuntar C.V. ( .pdf / .doc / .docx, Máximo 2Mb )</label>
+                        <div class="form-group">
+                            <input class="form100" id="usercv" type="file"
+                                accept="application/msword, application/pdf, .docx" name="usercv" required=""
+                                value="" />
+                            <span class="form-icon archive"></span>
+                        </div>
+
+                        <div class="separador"></div>
+
+                        <div class="g-recaptcha" data-sitekey="6LeZT98UAAAAAGQ6_bREX7lM5yF7rWL230XSbWzZ"
+                            style="display: inline-block;"></div>
+
+                        <div class="separador"></div>
+
+                        <input id="form-button" type="submit" name="submit" value="CONTINUAR" />
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id_user" id="id_user" value="">
+                    </form>
+
+                    <script>
+                        $('#useremail, #useridentification, #useridentificationnumber').on('change', function (e) {
+                            console.log('Changed!');
+                            FRN.User.userexist();
+                        });
+
+                      
+
+                        $(document).on('change', 'input[type="file"]', function () {
+                            // this.files[0].size recupera el tamaño del archivo
+                            // alert(this.files[0].size);
+
+                            var fileName = this.files[0].name;
+                            var fileSize = this.files[0].size;
+
+                            if (fileSize > 2000000) {
+                                alert('El archivo no debe superar los 2MB');
+                                this.value = '';
+                                this.files[0].name = '';
+                            } else {
+                                // recuperamos la extensión del archivo
+                                var ext = fileName.split('.').pop();
+
+                                // console.log(ext);
+                                switch (ext) {
+                                    case 'jpg':
+                                    case 'jpeg':
+                                    case 'png':
+                                    case 'doc':
+                                    case 'docx':
+                                    case 'pdf':
+                                        break;
+                                    default:
+                                        alert('El archivo no tiene la extensión adecuada');
+                                        this.value = ''; // reset del valor
+                                        this.files[0].name = '';
+                                }
+                            }
+                        });
+                    </script>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Fin Box Forms -->
+
+
+    </div>
+    <!-- Fin Main
+        ================================================== -->
+
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

@@ -27,6 +27,15 @@ h3{
     text-align: left ;
     padding-left: 3%;
 }
+.productos-carrito{
+    color: white;
+    display: block;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left ;
+    padding-left: 3%;
+}
 .imagen-carrito{
     width: 2%;
     height: 5%;
@@ -42,9 +51,10 @@ h3{
     text-align:left;
 }
 .detalle-producto-general{
-    margin: 50px;
+    margin: 40px 20px;
     padding: 20px;
     display: flex;
+    font-size: 15px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -62,15 +72,20 @@ h3{
     align-items: center;
 }
 .etiqueta-valor{
-    font-size: 15px;
+    font-size: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     max-width: 300px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .producto-detallado{
     display: flex;
+    font-size: 10px;
     flex-direction: column;
     justify-content: space-between;
     height: 150px;
@@ -81,6 +96,11 @@ h3{
 .etiqueta-nombre:link,
 .etiqueta-nombre:visited{
     color: red;
+    font-size: 2px;
+}
+.item-price,
+.texto-subtotal{
+    font-size: 2px;
 }
 .etiqueta-nombre:hover{
     color:blue;
@@ -88,6 +108,9 @@ h3{
 .icono-borrar{
     font-size: 25px;
     transition: font-size 0.8ms ;
+}
+.envio-gratis{
+    font-size: 15px;
 }
 .icono-borrar:hover{
     color:blue;
@@ -97,7 +120,6 @@ h3{
 .resumen{
     display: block;
     text-align: center;
-    padding:0%;
     background-color:rgb(1, 18, 44);
     color: white;
 }
@@ -105,20 +127,21 @@ h3{
 .resumen-pago{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
     font-family: "Quicksand";
     font-weight: bold;
     font-size: 15px;
-    height: 200px;
 }
 
 .checkout-pago{
-    height: 100px;
+    width: 100px;
     display: flex;
+    padding: 0;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 40px;
+    justify-items: flex-start;
+    align-items: center;
+    color:white;
+    font-size: 15px;
 }
 .boton-pagar{
     background-color:rgb(28, 84, 187);
@@ -133,7 +156,7 @@ h3{
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .resumen-pago{
         font-size: 25px;
     }
@@ -144,7 +167,7 @@ h3{
     
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1070px) {
     .titulo-carrito{
         font-size: 45px;
     }
@@ -166,8 +189,8 @@ h3{
     }
     .checkout-pago{
         justify-content: space-between;
-        height: 600px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
     }
     .etiqueta-valor{
         font-size: 15px;

@@ -19,7 +19,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     blob: {
-      type: DataTypes.BLOB,
+      type: DataTypes.TEXT,
       allowNull: true
     }
   }, {
@@ -44,7 +44,7 @@ module.exports = function(sequelize, DataTypes) {
         ]
       },
       {
-        name: "products_id_fk_idx",
+        name: "product_id_fk_idx",
         using: "BTREE",
         fields: [
           { name: "products_id" },

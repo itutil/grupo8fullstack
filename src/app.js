@@ -7,7 +7,8 @@ const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const { body, checkSchema, check, validationResult } = require('express-validator');
 const passport = require('./middleware/mypassport')
-const session = require('express-session') 
+const session = require('express-session')
+const timeLapse = 60; 
 
 
 /* Import internal modules */
@@ -30,9 +31,10 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(session({
-  secret: 'something that should not be shared',
-  resave: false,
-  saveUninitialized: true
+  secret: 'a super ultra hiper secret',
+  saveUninitialized:true,
+  cookie: { maxAge: timeLapse },
+  resave: false 
 }));
 app.use(passport.initialize());
 app.use(passport.session());

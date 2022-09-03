@@ -22,9 +22,12 @@ route.post("/", async (req, res) => {
         const validPassword = bcrypt.compare(body.password,user.password);
         if (validPassword) {
           //res.status(200).json({ message: "Valid password" });
-          req.session.inSession = user;
-          console.log(req.session);
-          res.status(200).redirect('/'); 
+          req.session.inSession = user;           
+          //res.render('/',{"loggedUser":req.session.inSession.firstName})
+          //res.redirect('/doctor-dashboard.html',{"user":username);
+          //res.status(200).redirect('/',{"loggedUser":req.session.inSession.firstName}); 
+          var loggedUser = req.session.inSession.firstName
+          res.status(200).json({ message: "Valid password" }).redirect('/');
         } else {
           res.status(400).redirect('/'); // this would be an error page or another error notification
         }

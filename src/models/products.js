@@ -2,37 +2,36 @@ const Sequelize = require('sequelize');
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('products', {
     id: {
-      autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
+    productCategory_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
     tradeMark: {
       type: DataTypes.TEXT,
-      allowNull: false
+      allowNull: true
     },
     model: {
       type: DataTypes.TEXT,
-      allowNull: false
+      allowNull: true
     },
     details: {
       type: DataTypes.TEXT,
-      allowNull: false
+      allowNull: true
     },
     dateManufactured: {
-      type: DataTypes.DATEONLY,
-      allowNull: false
+      type: DataTypes.DATE,
+      allowNull: true
     },
     stock: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.BIGINT,
+      allowNull: true
     },
     price: {
-      type: DataTypes.FLOAT,
-      allowNull: false
-    },
-    discount: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.TEXT,
       allowNull: true
     }
   }, {
@@ -43,6 +42,21 @@ module.exports = function(sequelize, DataTypes) {
       {
         name: "PRIMARY",
         unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "id" },
+        ]
+      },
+      {
+        name: "id_UNIQUE",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "id" },
+        ]
+      },
+      {
+        name: "ix_products_id",
         using: "BTREE",
         fields: [
           { name: "id" },

@@ -3,6 +3,7 @@ var _cart = require("./cart");
 var _productCategory = require("./productCategory");
 var _productImages = require("./productImages");
 var _products = require("./products");
+var _temp = require("./temp");
 var _userRole = require("./userRole");
 var _users = require("./users");
 
@@ -11,9 +12,12 @@ function initModels(sequelize) {
   var productCategory = _productCategory(sequelize, DataTypes);
   var productImages = _productImages(sequelize, DataTypes);
   var products = _products(sequelize, DataTypes);
+  var temp = _temp(sequelize, DataTypes);
   var userRole = _userRole(sequelize, DataTypes);
   var users = _users(sequelize, DataTypes);
 
+  products.belongsTo(productCategory, { as: "productCategory", foreignKey: "productCategory_id"});
+  productCategory.hasMany(products, { as: "products", foreignKey: "productCategory_id"});
   cart.belongsTo(products, { as: "product", foreignKey: "products_id"});
   products.hasMany(cart, { as: "carts", foreignKey: "products_id"});
   productImages.belongsTo(products, { as: "product", foreignKey: "products_id"});
@@ -28,6 +32,7 @@ function initModels(sequelize) {
     productCategory,
     productImages,
     products,
+    temp,
     userRole,
     users,
   };

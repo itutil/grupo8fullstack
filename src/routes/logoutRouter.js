@@ -1,10 +1,8 @@
 const route = require('express').Router()
 const models = require('../models')
-const passport = require('../middleware/mypassport.js')
+const User = models.users
+const logoutController = require('../controllers/logoutController');
 
-route.get('/', (req, res) => {
-  req.logout()
-  res.redirect('/')
-})
+route.delete('/', logoutController.index);
 
 module.exports = route;

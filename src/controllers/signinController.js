@@ -1,4 +1,3 @@
-const route = require('express').Router()
 const models = require('../models')
 const User = models.users
 const bcrypt = require("bcrypt");

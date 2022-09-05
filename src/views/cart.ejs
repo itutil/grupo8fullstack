@@ -6,27 +6,136 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/acf94df91d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/cart.css">
 </head>
+
+    <header>
+        <div>
+            <div class="logo">
+                <img class= "logo-imagen" src="/images/logo_products.png" alt="logo">
+                <div class="banderas-inicio">
+                    <a href="/productos"><img src="/images/spain.png" alt="ESP"></a>
+                    <a href="/products"><img src="/images/uk.png" alt="EN"></a>
+                </div>
+            </div>
+            <nav>
+                <ul class="inicio">
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Home</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-house"></i></a></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown tooltip registrationSchema">
+                            <span class="tooltiptext">Sign up</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
+                            <div class="dropdown-content">
+                                <div class="login">
+                                    <form id="loginSignupEng" method="get" action="/register">
+                                        <label><b>E-Mail
+                                            </b>
+                                        </label>
+                                        <input type="text" name="emailSignupEng" id="emailSignupEng" placeholder="Email">
+                                        <br><br>
+                                        <label><b>User Name
+                                            </b>
+                                        </label>
+                                        <input type="text" name="unameSignupEng" id="unameSignupEng" placeholder="Username">
+                                        <br><br>
+                                        <label><b>Password
+                                            </b>
+                                        </label>
+                                        <input type="Password" name="passSignuEng" id="passSignupEng" placeholder="Password">
+                                        <br><br>
+                                        <input type="button" name="logSignupEng" id="logSignupEng" value="Log In Here">
+                                        <br><br>
+                                        <input type="checkbox" id="checkSignupEng">
+                                        <span>Remember me</span>
+                                        <br><br>
+                                        <a href="#">Forgot Password</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown tooltip registrationSchema">
+                            <span class="tooltiptext">Log in</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
+                            <div class="dropdown-content">
+                                <div class="login">
+                                    <form id="login" method="get" action="/login">
+                                        <label><b>User Name
+                                            </b>
+                                        </label>
+                                        <input type="text" name="unameLogin" id="unameLogin" placeholder="Username">
+                                        <br><br>
+                                        <label><b>Password
+                                            </b>
+                                        </label>
+                                        <input type="Password" name="passLogin" id="passLogin"" placeholder="Password">
+                                        <br><br>
+                                        <input type="button" name="logLogin" id="logLogin" value="Log In Here">
+                                        <br><br>
+                                        <input type="checkbox" id="checkLogin">
+                                        <span>Remember me</span>
+                                        <br><br>
+                                        <a href="#">Forgot Password</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Cart</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-truck"></i></a></button>
+                        </div>
+                    </li>
+                </ul>
+                <form class="barra">
+                    <input type="search" name="barra-busqueda" placeholder="Search for your favorite">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </nav>
+            <div class="banderas">
+                <a href="/productos"><img src="/images/spain.png" alt="ESP"></a>
+                <a href="/products"><img src="/images/uk.png" alt="EN"></a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a class="icono" href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+    
+                    <ul class="desplegable">
+                        <li><a href="">Company Information</a></li>
+                        <li><a href="">Social Media</a></li>
+    
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
 <body> 
-<%- include('./partials/head') %>
-<!-- Titulo del carrito -->   
-<div class="titulo-carrito">
-    <span>
-        Carrito de compras
-        <i class="fa-solid fa-cart-shopping"></i>
-    </span>
-</div>
-<h3>Productos en el carrito: </h3>
+<h3 class="productos-carrito">Productos en el carrito: </h3>
 <!--Carrito en general -->
 <main class="carrito">
         <div class="resumen-carrito">
             <!-- Aqui se agregan los productos  -->
 
+               
                 <div class="detalle-producto-general">
 
                     <div class="detalle-producto-carrito">   
-                        <img src="./images/product.jpg" alt="">
+                        <img src="/images/product.jpg" alt="">
                         <div class="producto-detallado">
                             <span class="etiqueta-nombre"><a href="#">Nombre producto</a></span>  
                             <span class="etiqueta-modelo">Modelo producto </span>
@@ -35,79 +144,15 @@
 
                     <div class="etiqueta-valor">
                         <div class="precio-item"> 
-                            <span class="item-price">Precio</span>
-                            <span> $4500 </span>  
+                            Precio $4500  
+                        </div>
+
+                         <div class="subtotal"> 
+                             Subtotal $9000  
                         </div>
 
                         <div class="cantidad-producto"> 
                             <form> <input type="number" name="cantidad" id="cantidad" value="2"></form>
-                        </div>
-
-                         <div class="subtotal"> 
-                             <span class="texto-subtotal">Subtotal</span>
-                            <span> $9000</span>  
-                        </div>
-                    </div>
-
-                    <div class="icono-borrar">
-                        <i class="far fa-trash-alt"></i>
-                    </div>
-                </div>
-
-                <div class="detalle-producto-general">
-
-                    <div class="detalle-producto-carrito">   
-                        <img src="./images/product.jpg" alt="">
-                        <div class="producto-detallado">
-                            <span class="etiqueta-nombre"><a href="#">Nombre producto</a></span>  
-                            <span class="etiqueta-modelo">Modelo producto </span>
-                        </div>
-                    </div> 
-
-                    <div class="etiqueta-valor">
-                        <div class="precio-item"> 
-                            <span class="item-price">Precio</span>
-                            <span> $4500 </span>  
-                        </div>
-
-                        <div class="cantidad-producto"> 
-                            <form> <input type="number" name="cantidad" id="cantidad" value="2"></form>
-                        </div>
-
-                         <div class="subtotal"> 
-                             <span class="texto-subtotal">Subtotal</span>
-                            <span> $9000</span>  
-                        </div>
-                    </div>
-
-                    <div class="icono-borrar">
-                        <i class="far fa-trash-alt"></i>
-                    </div>
-                </div>
-
-                <div class="detalle-producto-general">
-
-                    <div class="detalle-producto-carrito">   
-                        <img src="./images/product.jpg" alt="">
-                        <div class="producto-detallado">
-                            <span class="etiqueta-nombre"><a href="#">Nombre producto</a></span>  
-                            <span class="etiqueta-modelo">Modelo producto </span>
-                        </div>
-                    </div> 
-
-                    <div class="etiqueta-valor">
-                        <div class="precio-item"> 
-                            <span class="item-price">Precio</span>
-                            <span> $4500 </span>  
-                        </div>
-
-                        <div class="cantidad-producto"> 
-                            <form> <input type="number" name="cantidad" id="cantidad" value="2"></form>
-                        </div>
-
-                         <div class="subtotal"> 
-                             <span class="texto-subtotal">Subtotal</span>
-                            <span> $9000</span>  
                         </div>
                     </div>
 
@@ -126,20 +171,17 @@
          <h3 class="resumen"> Resumen </h3>
                 <div class="checkout-pago">
                     <div class="envio-gratis">
-                        <i class="fas fa-truck"></i>
-                        <span>Envío gratis a todo el país.</span>
+                        Envío gratis a todo el país.
+                        <i class="fa-solid fa-truck-fast"></i>
                     </div>
                     <div class="subtotal">
-                        <span>Subtotal</span>
-                        <span>$9000</span>
+                        Subtotal
                     </div>
                     <div class="impuestos">
-                        <span>Impuestos</span>
-                        <span>$0</span>
+                        Impuestos
                     </div>
                     <div class="total">
-                        <span>Total</span>
-                        <span>$9000</span>
+                        Total 0
                     </div>
                 </div>
 

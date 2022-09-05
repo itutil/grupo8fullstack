@@ -1,0 +1,1217 @@
+/* CSS Document */
+
+html, body{
+	margin:0px;
+	height:100%;
+}
+
+img{
+	border: 0;
+	max-width: 100%
+}
+
+a{
+	text-decoration: none;
+	color: #cc0000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #b40000;
+}
+
+a.botones {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight:400;
+	line-height: normal;
+	padding: 8px 20px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	display: inline-block;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	box-sizing: border-box;
+}
+
+.boton-color { color: #fff; background: #cc0000;}
+a.boton-color:hover{ color: #fff; background: #b40000;}
+
+.boton-grey { color: #fff; background: #666;}
+a.boton-grey:hover{ color: #fff; background: #333;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	color: #666;
+	margin: 0;
+	padding: 0;
+}
+
+h1{	font-size: 60px; line-height: 62px;}
+h2{	font-size: 60px; line-height: 62px;}
+h3{	font-size: 36px; line-height: 38px;}
+h4{	font-size: 24px; line-height: 26px;}
+
+h5{	font-size: 18px; line-height: 20px;}
+h6{	font-size: 13px; line-height: 15px;}
+
+.bold{ font-weight: 700;}
+
+.color{ color: #cc0000;}
+.black{ color: #000;}
+.white{ color: #fff;}
+.grey{ color: #666;}
+
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #666;
+	margin: 0;
+	padding: 0;
+}
+
+p.big{ font-size: 15px;}
+p.copy{ font-size: 11px;}
+
+
+.expand { letter-spacing: 10px;}
+.line-big { line-height: 24px;}
+
+.separador {
+    border-bottom-width: 1px;
+    border-bottom-color: #CCC;
+    border-bottom-style: dotted;
+    margin: 20px 0;
+}
+
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+#header{
+	background-color: #fff;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 99991;
+}
+
+#header .content{
+  	height: 80px;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    z-index: 100;
+	left: 20px;
+}
+
+/* ==================================================
+   NUEVO MENU DESPLEGABLE
+================================================== */
+
+ul#nav {
+    margin: 0px;
+    padding: 0px;
+	height: 80px;
+}
+
+#nav {
+  	list-style:none;
+  	position: relative;
+  	text-align: center;
+}
+
+#nav li {
+	display: inline-block;
+	margin: auto;
+	text-align: left;
+}
+
+#nav a {
+	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #000;
+    padding: 10px 5px 13px 5px;
+    margin: 40px 15px 1px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 4px solid #fff;
+}
+
+#nav a:hover {
+    border-bottom: 4px solid #cc0000;
+}
+
+
+/* ==================================================
+   SOCIAL BUTTONS
+================================================== */
+
+ul#socialButtons {
+    margin: 0px;
+    padding: 0px;
+}
+
+#socialButtons {
+    list-style: none;
+    display: inline;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 42px;
+    z-index: 99999;
+}
+
+#socialButtons li{
+	float: left;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#socialButtons a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    color: #666;
+    padding: 10px 35px 10px 0px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+#socialButtons a span {
+    border-right: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+#userlogin {background-image: url(../images/ico-user.png);}
+
+#useraccount {background-image: url(../images/ico-user-active.png);}
+#useraccount .foto-perfil-small {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/* ==================================================
+  MAIN
+================================================== */
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f5f5f5;
+	padding: 0 0 40px 0;
+}
+
+/* ==================================================
+  GENERAL - CONTENT
+================================================== */
+
+.content{
+	max-width: 1280px;
+	position: relative;
+	overflow: hidden;
+	margin:	auto;
+	text-align: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+/* ==================================================
+   COLUMNAS
+================================================== */
+
+.columna .columna50 {
+    width: 50%;
+    float: left;
+}
+
+.columna .columna100{
+	width: 100%;
+	float: left;
+}
+
+.columna-content{
+	padding: 0;
+	margin: 0;
+	position: relative;
+	background-color: #f5f5f5;
+	background-image: url(../images/three-dots.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40px;
+}
+
+
+/* ==================================================
+   HOME INTRO
+================================================== */
+#home-intro{
+	width: 100%;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	margin-top: 80px;
+	text-align: center;
+	background-image: url(../images/header2.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.home-intro-info {
+    padding: 0;
+    display: table;
+    margin: auto;
+    height: 450px;
+}
+
+.home-intro-info-content {
+    padding: 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home-intro-info-content p {
+    max-width: 380px;
+	padding-left: 95px;
+}
+
+
+/* ==================================================
+   HOME PUBLICACIONES
+================================================== */
+
+#home-publicaciones{
+	width: 100%;
+	overflow: hidden;
+}
+
+#home-publicaciones .item {
+    padding: 30px 0px;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #ccc;
+	overflow: hidden;
+}
+
+#home-publicaciones .item-empresa {
+    width: 240px;
+	float: left;
+}
+
+#home-publicaciones .item-info {
+    width: calc(100% - 240px);
+	float: left;
+}
+
+#home-publicaciones .item-info h6 {
+    text-transform: uppercase;
+}
+
+ul#empresas {
+    margin: 0px;
+    padding: 0 30px 0 0px;
+    list-style: none;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#empresas li {
+	text-align: right;
+    width: 60px;
+    float: right;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+#empresas li img {
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 1px 3px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 3px 1px 3px 0px rgba(0,0,0,0.25);
+    box-shadow: 3px 1px 3px 0px rgba(0,0,0,0.25);
+}
+
+/* ==================================================
+   ACCORDION
+================================================== */
+
+button.accordion {
+	background-color: #f5f5f5;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	color: #000;
+	cursor: pointer;
+	padding: 5px 220px 0 0;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	text-transform: uppercase;
+	transition: 0.4s;
+	background-image: url(../images/trama-dot.gif);
+	background-repeat: repeat-y;
+	background-position: right 180px top 0px; 
+}
+
+button.accordion:hover {
+    color: #cc0000;
+}
+
+button.accordion.active {
+    color: #cc0000;
+}
+
+button.accordion span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding-top: 15px;
+    text-transform: none;
+}
+
+button.accordion:before {
+	content: 'REQUISITOS';
+	color: #fff;
+	float: right;
+	margin-right: -220px;
+	margin-top: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 13px;
+    font-weight: 400;
+    border-width: 0px;
+    background-color: #cc0000;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px 20px 5px 36px;
+    background-image: url(../images/ico-more.png);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+button.accordion.active:before {
+    content: "REQUISITOS";
+	background-image: url(../images/ico-more2.png);
+}
+
+div.panel {
+    padding: 0 220px 0px 0;
+    background-color: #f5f5f5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+div.panel h5 {
+    padding-top: 30px;
+}
+
+div.panel .info-panel {
+    padding-top: 30px;
+}
+
+ul#requisitos {
+    margin: 0px;
+    padding: 15px 0 30px 0;
+	list-style:none;
+  	text-align: left;
+	overflow: hidden;
+}
+
+#requisitos li {
+	display: inline-block;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #666;
+	margin: 0;
+	padding: 2px 0px;
+    width: 50%;
+    float: left;
+}
+
+span.tag {
+    color: #fff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    background-color: #999;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+#footer{
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+#footer .content {
+    text-align: center;
+}
+
+#button-top {
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #cc0000;
+	background-image: url(../images/button-top.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	bottom: 40px;
+    right: 40px;
+	border-radius: 4px;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#button-top:hover {
+	background-color: #b40000;
+}
+
+ul#navfooter {
+    margin: 0px;
+    padding: 20px 0 20px 0;
+}
+
+#navfooter {
+  	list-style:none;
+  	position: relative;
+  	text-align: center;
+}
+
+#navfooter li {
+	display: inline-block;
+	margin: auto;
+	text-align: left;
+}
+
+#navfooter a {
+	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #fff;
+    padding: 10px;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display:block;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#navfooter a:hover {
+    color: #ccc;
+}
+
+
+ul#brandsfooter {
+    margin: 0px;
+    padding: 0px;
+}
+
+#brandsfooter {
+  	list-style:none;
+  	position: relative;
+  	text-align: center;
+}
+
+#brandsfooter li {
+	display: inline-block;
+	margin: auto;
+	text-align: left;
+}
+
+#brandsfooter a {
+    margin: 0px 10px;
+    display:block;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#brandsfooter a:hover {
+	opacity: 0.8;
+}
+
+a.instagram-footer {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+/* ==================================================
+   Modal Dialog
+================================================== */
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.close {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50%;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+	opacity: 0.4;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+.close:hover {
+	opacity: 0.8;
+	
+}
+
+/* Login Modal */
+
+.loginModal-content {
+	max-width: 300px;
+	position: relative;
+	margin: 10% auto;
+	padding: 20px;
+	border-radius: 4px;
+	background: #fff;
+    -webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	text-align: center;
+}
+
+.loginModal-content h5 {
+    padding-bottom: 20px;
+}
+
+.loginModal-content input#form-button,
+.loginModal-content input#form-buttonlogin {
+	width: 100%;
+	margin: 10px 0;
+}
+
+
+/* ==================================================
+  FORM
+================================================== */
+
+.form-group {
+    position: relative;
+	overflow: hidden;
+	text-align: left;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    color: #666;
+    background-color: #fff;
+    margin: 0;
+    display: block;
+    padding: 0 0 8px 10px;
+	text-align: left;
+}
+
+.form100 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    color: #666666;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    width: 100%;
+	height: 34px;
+	display: block;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.form100:focus {
+    border: 1px solid #999;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.form-group .form100 {
+    padding-right: 40px;
+}
+
+.form-icon {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    z-index: 2;
+    width: 34px;
+    height: 24px;
+    pointer-events: none;
+	border-left: 1px solid #ccc;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.form-icon.mail { background-image: url(../images/form-ico/mail.png);}
+.form-icon.pass { background-image: url(../images/form-ico/pass.png);}
+.form-icon.user { background-image: url(../images/form-ico/user.png);}
+.form-icon.image { background-image: url(../images/form-ico/image.png);}
+.form-icon.document { background-image: url(../images/form-ico/document.png);}
+.form-icon.phone { background-image: url(../images/form-ico/phone.png);}
+.form-icon.archive { background-image: url(../images/form-ico/archive.png);}
+
+
+input#form-button,
+input#form-buttonlogin {
+	font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    display: block;
+	text-align: center;
+	color: #fff;
+	background: #cc0000;
+	border: 0;
+	cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+input#form-button:hover,
+input#form-buttonlogin:hover {
+    background: #b40000;
+}
+
+
+.radio-group {
+    position: relative;
+	overflow: hidden;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.radio-group input + label {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    color: #666666;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 24px;
+	margin: 0 -5px 0 0;
+	box-sizing: border-box;
+    border-radius: 4px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.radio-group label#first {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.radio-group label#last {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.radio-group input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+	position: absolute;
+}
+
+.radio-group input:hover + label {
+	background-color: #ccc;
+	color: #333;
+}
+
+.radio-group input:checked + label {
+	background-color: #666;
+	color: #fff;
+}
+
+
+.check-group {
+    position: relative;
+	overflow: hidden;
+	text-align: left;
+}
+
+.check-group label {
+  display: inline-block;
+  line-height: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  padding: 0 0 0px 5px;
+  margin: 0 0 5px 0;
+}
+
+/* ==================================================
+   Remuneracion
+================================================== */
+
+.panel label {
+    background-color: #f5f5f5;
+    padding-left: 0px;
+}
+
+input.remuneracioninput {
+    width: 160px;
+    padding-left: 46px;
+    padding-right: 6px !important;
+}
+
+.form-icon.remuneracion {
+    background-image: url(../images/form-ico/remuneracion.png);
+    left: 0;
+    border-right: 1px solid #ccc;
+}
+
+/* ==================================================
+   Radio Buttons
+================================================== */
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 8px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  outline: none;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.option-input::after {
+  border-radius: 50%;
+}
+
+.option-input:hover {
+  background: #ccc;
+}
+.option-input:checked {
+  background: #666;
+  border: 1px solid #666;
+}
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  line-height: 18px;
+}
+.option-input:checked::after {
+  background: #ccc;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+
+/* ==================================================
+   BOXFORMS
+================================================== */
+
+#box-forms{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 120px;
+}
+
+.box-forms-content{
+	max-width: 300px;
+	position: relative;
+	margin: auto;
+	padding: 20px;
+	border-radius: 6px;
+	background: #fff;
+	text-align: center;
+}
+
+#box-forms h4{
+	padding-bottom: 10px;
+}
+
+#box-forms input#form-button {
+    width: 100%;
+}
+
+#box-forms a.botones {
+    width: 100%;
+}
+
+/* ==================================================
+   BIGBOXFORMS
+================================================== */
+
+#bigbox-forms{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 120px;
+}
+
+.bigbox-forms-content{
+	max-width: 800px;
+	position: relative;
+	margin: auto;
+	padding: 20px;
+	border-radius: 6px;
+	background: #fff;
+	text-align: center;
+}
+
+#bigbox-forms h4{
+	padding-bottom: 10px;
+}
+
+#bigbox-forms input#form-button {
+    width: 100%;
+}
+
+/* ==================================================
+   BUTTON POSTULARME
+================================================== */
+
+#button-postularme::before {
+    content: 'Postularme';
+}
+
+#button-postularme.postularme-ok::before {
+    content: 'Postulado';
+}
+
+#button-postularme.postularme-ok {
+	background-color: #cc0000;
+    background-image: url(../images/check.png);
+    background-repeat: no-repeat;
+    background-position: right 15px top 7px;
+    padding: 8px 40px 8px 20px;
+}
+
+#button-postularme.postularme-ok:hover {
+    background: #b40000;
+	background-image: url(../images/check.png);
+    background-repeat: no-repeat;
+    background-position: right 15px top 7px;
+
+}
+
+/* ==================================================
+   USER PIC
+================================================== */
+
+.foto-perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+	margin: 0 0 5px 0;
+    background-image: url(../images/user.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.foto-perfil-content {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* ==================================================
+   USER NAV
+================================================== */
+
+#usernav {
+	position: fixed;
+    z-index: 99999;
+    right: -320px;
+    top: 0;
+    width: 260px;
+	height: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.usernav-open {
+    right: 0 !important;
+}
+
+#usernav .foto-perfil {
+    width: 90px;
+    height: 90px;
+}
+
+#usernav .foto-perfil-content {
+    width: 90px;
+    height: 90px;
+}
+
+#usernav h5 {
+    padding: 5px 0 0 0;
+}
+
+ul#userButtons {
+    margin: 0px;
+    padding: 0px;
+}
+
+#userButtons {
+    list-style: none;
+    display: inline;
+}
+
+#userButtons a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    color: #666;
+    padding: 10px 10px 10px 22px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+	background-repeat: no-repeat;
+	background-position: left center;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#userButtons a:hover{
+    color: #cc0000;
+}
+
+#nav-perfil a{ background-image: url(../images/nav-perfil.png);}
+#nav-postulaciones a{ background-image: url(../images/nav-postulaciones.png);}
+#nav-logout a{ background-image: url(../images/nav-logout.png);}
+
+/* ==================================================
+   INTRO TIT
+================================================== */
+
+#intro-tit {
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0 20px 0;
+}
+
+#intro-tit .content {
+    text-align: center;
+}
+
+
+/* ==================================================
+   MEDIA
+================================================== */
+
+@media only screen and (max-width: 1024px) {
+
+.home-intro-info { height: 350px;}
+	
+}
+
+
+@media only screen and (max-width: 800px) {
+
+#nav { display: none;}
+#logo { left: 50%; margin-left: -100px;}
+
+#home-publicaciones .item-empresa { width: 100%;}
+
+ul#empresas { padding: 0;}
+#empresas li { float: left;}
+
+#home-publicaciones .item-info { width: 100%; padding-top: 10px;}
+
+button.accordion { padding: 5px 0 0 0; background-image: none;}
+
+button.accordion:before { display: none;}
+
+button.accordion:after {
+    content: 'REQUISITOS';
+    color: #fff;
+    float: right;
+    margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    border-width: 0px;
+    background-color: #cc0000;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px 20px 5px 36px;
+    background-image: url(../images/ico-more.png);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+button.accordion.active:after {
+    content: "REQUISITOS";
+	background-image: url(../images/ico-more2.png);
+}
+
+div.panel { padding: 0;}
+div.panel h5 { padding-top: 20px;}
+ul#requisitos { padding: 10px 0 20px 0;}
+#requisitos li { width: 100%;}
+
+
+.home-intro-info { height: 300px; max-width: 80%;}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.home-intro-info { height: 250px; max-width: 90%;}
+	
+}
+
+
+@media only screen and (max-width: 380px) {
+
+.home-intro-info { height: 200px; max-width: 100%;}
+	
+}

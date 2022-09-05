@@ -2,7 +2,7 @@
     width: 100%;
     margin: auto;
     overflow: hidden;
-    background-color: #fff;
+    background-color: rgb(1, 18, 44);
     padding-top: 40px;
 }
 
@@ -291,19 +291,33 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav {
   *height: 0;
 }
-.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px; 
+  margin: -20px 0 0; 
+  display: block; 
+  background: url(../images/bg_direction_nav.png) no-repeat 0 0; 
+  position: absolute; 
+  top: 50%; cursor: pointer; 
+  text-indent: -9999px; 
+  opacity: 0; 
+  -webkit-transition-: all .3s ease;
+}
 
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
+
 .flex-direction-nav .flex-next {
   background-position: 100% 0;
   right: -50px;
 }
+
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px;
 }
+
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
@@ -1430,14 +1444,15 @@ html[xmlns] .flexslider .slides {
 
 .line-tit {
   text-align: center;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid wheat;
   width: 100%;
   margin: 15px 0 30px 0;
 }
 
 .line-tit h4 {
   display: inline-block;
-  background: white;
+  color: white;
+  background-color: rgb(1, 18, 44);
   padding: 0 15px;
   position: relative;
   top: 10px;
@@ -1755,7 +1770,7 @@ a.button-comprar:hover {
   overflow: hidden;
   padding: 0px 0;
   margin-bottom: 10px;
-height: 35px;
+  height: 10px;
 }
 .iconos-estado {
   float: left;

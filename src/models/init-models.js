@@ -1,5 +1,6 @@
 var DataTypes = require("sequelize").DataTypes;
 var _cart = require("./cart");
+var _contact = require("./contact");
 var _productCategory = require("./productCategory");
 var _productImages = require("./productImages");
 var _products = require("./products");
@@ -9,6 +10,7 @@ var _users = require("./users");
 
 function initModels(sequelize) {
   var cart = _cart(sequelize, DataTypes);
+  var contact = _contact(sequelize, DataTypes);
   var productCategory = _productCategory(sequelize, DataTypes);
   var productImages = _productImages(sequelize, DataTypes);
   var products = _products(sequelize, DataTypes);
@@ -29,6 +31,7 @@ function initModels(sequelize) {
 
   return {
     cart,
+    contact,
     productCategory,
     productImages,
     products,

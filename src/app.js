@@ -127,4 +127,4 @@ app.use('/comoRealizarTuPedido', comoRealizarTuPedidoRouter);
 
 /* Let application start listeting requests */
 
-app.listen(3001, ()=> {console.log('Servidor arriba en el puerto 3001')});
+app.listen(3002, ()=> {console.log('Servidor arriba en el puerto 3002')});

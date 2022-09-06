@@ -1,5 +1,5 @@
 const path = require('path');
-const db = require('../../models');
+const db = require(path.resolve('src/models'));
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 const moment = require('moment');

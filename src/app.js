@@ -21,6 +21,11 @@ const signinRouter = require('./routes/signinRouter');
 const logoutRouter = require('./routes/logoutRouter');
 const cartRouter = require('./routes/cartRouter');
 
+/* Import API modules */
+
+const apiProductsRouter = require('./routes/api/productsAPIRouter');
+const apiUsersRouter = require('./routes/api/usersAPIRouter');
+
 /* Define application variables */
 
 const app = express ();
@@ -44,12 +49,20 @@ app.use('/', mainRouter);
 app.use('/products', productRouter);
 app.use('/productos', productRouter);
 app.use('/cart', cartRouter);
+app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
 
 // User interaction routes
 
 app.use(['/signup'], signupRouter);
 app.use(['/signin'], signinRouter);
 app.use(['/logout'], logoutRouter);
+
+// API interaction routes
+
+app.use('/api/products',apiProductsRouter);
+app.use('/api/users',apiUsersRouter);
+
 
 // Protect product routes
 

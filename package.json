@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/itutil/grupo8fullstack#readme",
   "dependencies": {
+    "alert": "^5.1.1",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "cookies": "^0.8.0",

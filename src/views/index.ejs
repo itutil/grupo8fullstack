@@ -27,19 +27,21 @@
                     </li>
                     <%- include('./partials/signup-validated') %>
                     <%- include('./partials/signin') %>
-                    <%- include('./partials/signout') %>     
+                    <%- include('./partials/signout') %>
                     <li>
                         <div class="dropdown tooltip">
                             <span class="tooltiptext">Cart</span>
                             <button class="dropbtn">
                                 <a href="#"><i class="fa-solid fa-truck"></i></a></button>
-                        </div>
+                         </div>
                     </li>
                 </ul>
                 <form class="barra">
                     <input type="search" name="barra-busqueda" placeholder="Search for your favorite">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <%= userName %>
                 </form>
+
             </nav>
             <div class="banderas">
                 <a href="/productos"><img src="/images/spain.png" alt="ESP"></a>

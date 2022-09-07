@@ -1,5 +1,4 @@
 /* Import external modules */
-
 const path = require('path');
 const express = require('express');
 const methodOverride = require('method-override');
@@ -8,7 +7,8 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const { body, checkSchema, check, validationResult } = require('express-validator');
 const passport = require('./middleware/mypassport')
 const session = require('express-session')
-const timeLapse = 60; 
+const timeLapse = 60;
+const cors = require('cors');
 
 
 /* Import internal modules */
@@ -20,12 +20,20 @@ const signupRouter = require('./routes/signupRouter');
 const signinRouter = require('./routes/signinRouter');
 const logoutRouter = require('./routes/logoutRouter');
 const cartRouter = require('./routes/cartRouter');
-const loggedUserRouter = require('./routes/loggedUserRouter');
+const contactoRouter = require('./routes/contactoRouter');
+const storesRouter = require('./routes/storesRouter');
+const staffRouter = require('./routes/staffRouter');
+const comoRealizarTuPedidoRouter = require('./routes/comoRealizarTuPedidoRouter');
+const pagosYEnviosRouter = require('./routes/pagosYEnviosRouter');
+const terminosYCondicionesRouter = require('./routes/terminosYCondicionesRouter');
+const preguntasFrecuentesRouter = require('./routes/preguntasFrecuentesRouter');
+
 
 /* Import API modules */
 
-const apiProductsRouter = require('./routes/api/productsAPIRouter');
-const apiUsersRouter = require('./routes/api/usersAPIRouter');
+const apiProductsRouter = require('./routes/api/productsAPIrouter');
+const apiUsersRouter = require('./routes/api/usersAPIrouter');
+const categoriaRouter= require('./routes/api/categoryRouter');
 
 /* Define application variables */
 
@@ -34,6 +42,7 @@ const app = express ();
 /* Define paths configuration */
 
 app.use(express.static('public'));
+app.use(methodOverride('_method'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(session({
@@ -47,12 +56,21 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, './views'));
+app.use(cors());
 app.use('/', mainRouter);
 app.use('/products', productRouter);
 app.use('/productos', productRouter);
-app.use('/cart', cartRouter);
+//app.use('/cart', cartRouter);
 app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'));
+app.use(express.json());
+app.use('/contacto', contactoRouter);
+app.use('/stores', storesRouter);
+app.use('/staff', staffRouter);
+app.use('/pagosYEnvios', pagosYEnviosRouter);
+// app.use('/preguntasFrecuentes', preguntasFrecuentesRouter);
+app.use('/terminosYCondiciones', terminosYCondicionesRouter);
+app.use('/comoRealizarTuPedido', comoRealizarTuPedidoRouter);
+
 
 // User interaction routes
 
@@ -66,6 +84,7 @@ app.use(['/logged'], loggedUserRouter);
 
 app.use('/api/products',apiProductsRouter);
 app.use('/api/users',apiUsersRouter);
+app.use('/api/categoria', categoriaRouter);
 
 
 // Protect product routes
@@ -80,6 +99,9 @@ app.get('/product', ensureAuthenticated, function(req, res) {
   // Do something with user via req.user
   //res.redirect('/')
 });
+app.get('/cart', (req, res)=>{
+  res.render('cart')
+})
 
 /* Define application paths for requests */
 

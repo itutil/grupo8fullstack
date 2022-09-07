@@ -1,5 +1,4 @@
 /* Import external modules */
-
 const path = require('path');
 const express = require('express');
 const methodOverride = require('method-override');
@@ -8,7 +7,8 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const { body, checkSchema, check, validationResult } = require('express-validator');
 const passport = require('./middleware/mypassport')
 const session = require('express-session')
-const timeLapse = 60; 
+const timeLapse = 60;
+const cors = require('cors');
 
 
 /* Import internal modules */
@@ -33,6 +33,7 @@ const preguntasFrecuentesRouter = require('./routes/preguntasFrecuentesRouter');
 
 const apiProductsRouter = require('./routes/api/productsAPIrouter');
 const apiUsersRouter = require('./routes/api/usersAPIrouter');
+const categoriaRouter= require('./routes/api/categoryRouter');
 
 /* Define application variables */
 
@@ -54,11 +55,13 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, './views'));
+app.use(cors());
 app.use('/', mainRouter);
 app.use('/products', productRouter);
 app.use('/productos', productRouter);
-app.use('/cart', cartRouter);
+//app.use('/cart', cartRouter);
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 app.use('/contacto', contactoRouter);
 app.use('/stores', storesRouter);
 app.use('/staff', staffRouter);
@@ -78,6 +81,7 @@ app.use(['/logout'], logoutRouter);
 
 app.use('/api/products',apiProductsRouter);
 app.use('/api/users',apiUsersRouter);
+app.use('/api/categoria', categoriaRouter);
 
 
 // Protect product routes
@@ -92,6 +96,9 @@ app.get('/product', ensureAuthenticated, function(req, res) {
   // Do something with user via req.user
   //res.redirect('/')
 });
+app.get('/cart', (req, res)=>{
+  res.render('cart')
+})
 
 /* Define application paths for requests */
 

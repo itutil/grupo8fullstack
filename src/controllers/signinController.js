@@ -13,7 +13,8 @@ const signinController = {
             const validPassword = bcrypt.compare(body.password,user.password);
             if (validPassword) {
               //res.status(200).json({ message: "Valid password" });
-              req.session.inSession = user;           
+              req.session.inSession = user;
+              req.session.username = user.eMail;           
               //res.render('/',{"loggedUser":req.session.inSession.firstName})
               //res.redirect('/doctor-dashboard.html',{"user":username);
               //res.status(200).redirect('/',{"loggedUser":req.session.inSession.firstName}); 

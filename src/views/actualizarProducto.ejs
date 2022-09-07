@@ -2,19 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Detail</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/detail.css">
-
+    <link rel="stylesheet" href="/css/registerProducts.css" />
 </head>
 
 <body>
@@ -22,7 +21,7 @@
     <div id="preloader">
         <img src="/images/lego-loader.gif" alt="">
     </div>
-    
+
     <header>
         <div>
             <div class="logo">
@@ -36,7 +35,7 @@
                 <ul class="inicio">
                     <li>
                         <div class="dropdown tooltip">
-                            <span class="tooltiptext"><a href="/">Home</span>
+                            <span class="tooltiptext"><a href="/">Home</a></span>
                             <button class="dropbtn">
                                 <a href="#"><i class="fa-solid fa-house"></i></a></button>
                         </div>
@@ -136,109 +135,58 @@
             </ul>
         </div>
     </header>
-    <main>
-        <div class="card-wrapper">
-            <div class="card">
-                <!-- card left -->
-                <div class="product-imgs">
-                    <div class="img-display">
-                        <div class="img-showcase">
-                            <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                        </div>
-                    </div>
-                    <div class="img-select">
-                        <div class="img-item">
-                            <a href="#" data-id="1">
-                                <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            </a>
-                        </div>
-                        <div class="img-item">
-                            <a href="#" data-id="2">
-                                <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            </a>
-                        </div>
-                        <div class="img-item">
-                            <a href="#" data-id="3">
-                                <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            </a>
-                        </div>
-                        <div class="img-item">
-                            <a href="#" data-id="4">
-                                <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            </a>
-                        </div>
-                    </div>
+    
+    <main class="register">
+        <div class="contenedor">
+            <form class="plantilla" action="/products/update/<%=product.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <article class="normal">
+                    <h2 class="tituloNuevo"><label>Update Product</label></h2>
+                </article>
+
+                <div class="retro">
+                    <%if(locals.errors){ %>       
+                        <% errors.forEach(error =>{ %>
+                        <li><%=error.msg%></li>
+                    <% })%>
+                    <% } %>
                 </div>
-                <!-- cart right -->
-                <div class="product-content">
-                    <h2 class="product-title">
-                        <%=detail.model%> (<%=detail.tradeMark%>)
-                    </h2>
-                    <a href="/" class="product-link">8Technology</a>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                        <span>4.27(21)</span>
-                    </div>
-                    <div class="product-price">
-                        <p class="last-price">Discount: <span>15%</span></p>
-                        <p class="new-price">Current Price: <span><%=detail.price%></span></p>
-                    </div>
-                    <div class="product-detail">
-                        <h2>About this Item: </h2>
-                        <p><%=detail.details%></p>
-                        <ul>
-                            <li><i class="fa-solid fa-circle-check"></i> Color: <span class="verificado">All Color</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Availability: <span class="verificado">In stock (<%=detail.stock%>)</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Category: <span class="verificado"><%=detail.productCategory_id%></span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Shipping Area: <span class="verificado">All over the world</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Shiping Fee: <span class="verificado">Free</span></li>
-                        </ul>
-                    </div>
-                    <div class="purchase-info">
-                        <input type="number" min="0" value="1">
-                        <button type="button" class="btn" id="uno">
-                            Add to cart
-                        </button>
-                        <button type="button" class="btn" id="dos">
-                            Compare
-                        </button>
-                        <button type="button" class="btn" id="tres">
-                            Go to Cart
-                        </button>
-                    </div>
-                    <div class="social-links">
-                        <p>Share At:</p>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+                <article class="normal">
+                    <input type="text" name="tradeMark" placeholder="Marca" value="<%=product.tradeMark%>" id="tradeMark" id="" />
+                </article>
+                <article class="normal">
+                    <input type="text" name="model" placeholder="Modelo" id="model" value="<%=product.model%>" />
+                </article>
+                <article class="normal">
+                    <input type="text" name="details" placeholder="Detalle" id="details" value="<%=product.details%>" />
+                </article>
+                <article class="diferente">
+                    <h3 class="tituloLabel"><label for="pic" class="nuevaImagen">Product Picture</label></h3>
+                    <input type="file" name="pic" id="pic" accept=".jpg,.png,.webp" />
+                </article>
+                <article class="normal">
+                    <input type="text" name="stock" id="stock" placeholder="Stock" name="stock" value="<%=product.stock%>" />
+                </article>
+                <article class="diferente">
+                    <h3 class="tituloLabel"><label>Manfucture Date</label></h3>
+                    <input type="datetime" name="fechaManofactura" id="fechaManofactura" value="<%=product.dateManufactured%>" placeholder="mm/dd/yyyy" />
+                </article>
+                <article class="normal">
+                    <input type="number" name="price" id="price" value="<%=product.price%>" placeholder="Precio"/>
+                </article>
+                <article class="normal">
+                    <input type="text" name="category" id="category" placeholder= "Categoria(Numero)" value="<%=product.productCategory_id%>"/>
+                </article>
+                <article class="boton">
+                    <button type="submit" class="enviar">Send</button>
+                    <button type="reset">Erase</button>
+                </article>
+            </form>
         </div>
     </main>
-    
 
     <script src="/js/preloder.js"></script>
-
+    
 </body>
 
 </html>

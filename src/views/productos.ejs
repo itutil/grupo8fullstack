@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Products</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -13,10 +13,18 @@
     <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/productos.css">
+   
 </head>
 
+    <div id="preloader">
+        <img src="/images/lego-loader.gif" alt="">
+    </div>
+    
+
 <body>
+
     <header>
         <div>
             <div class="logo">
@@ -30,13 +38,74 @@
                 <ul class="inicio">
                     <li>
                         <div class="dropdown tooltip">
-                            <span class="tooltiptext">Home</span>
+                            <span class="tooltiptext"><a href="/">Home</a></span>
                             <button class="dropbtn">
                                 <a href="#"><i class="fa-solid fa-house"></i></a></button>
                         </div>
                     </li>
-                    <%- include('./partials/signup-validated') %>
-                    <%- include('./partials/signin') %>
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Sign up</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
+                            <div class="dropdown-content">
+                                <div class="login">
+                                    <form id="login" method="get" action="login.php">
+                                        <label><b>E-Mail
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Email" id="Email" placeholder="Email">
+                                        <br><br>
+                                        <label><b>User Name
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
+                                        <br><br>
+                                        <label><b>Password
+                                            </b>
+                                        </label>
+                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+                                        <br><br>
+                                        <input type="button" name="log" id="log" value="Log In Here">
+                                        <br><br>
+                                        <input type="checkbox" id="check">
+                                        <span>Remember me</span>
+                                        <br><br>
+                                        <a href="#">Forgot Password</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Log in</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
+                            <div class="dropdown-content">
+                                <div class="login">
+                                    <form id="login" method="get" action="login.php">
+                                        <label><b>User Name
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
+                                        <br><br>
+                                        <label><b>Password
+                                            </b>
+                                        </label>
+                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+                                        <br><br>
+                                        <input type="button" name="log" id="log" value="Log In Here">
+                                        <br><br>
+                                        <input type="checkbox" id="check">
+                                        <span>Remember me</span>
+                                        <br><br>
+                                        <a href="#">Forgot Password</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li>
                         <div class="dropdown tooltip">
                             <span class="tooltiptext">Cart</span>
@@ -62,64 +131,78 @@
 
                     <ul class="desplegable">
                         <li><a href="">Company Information</a></li>
-                        <li><a href="">Social Media</a></li>
+                        <li><a href="/products/admin">Admind (Restricted Area)</a></li>
 
                     </ul>
                 </li>
             </ul>
         </div>
-    </header>
+    </header> 
 
     <main>
         <section class="acordeon">
             <li class="item" id="mn1">
-                <a class="btn" href="#mn1">Marcas/Brands</a>
+                <a class="btn" href="#mn1">NortAmerican Featured </a>
                 <article class="submenu">
-                    <a href="#">Apple</a>
-                    <a href="#">Samgung</a>
-                    <a href="#">Huawei</a>
+                    <a href="/products/brand/apple">Apple</a>
+                    <a href="/products/brand/google">Google</a>
+                    <a href="/products/brand/hp">HP</a>
                 </article>
             </li>
             <li class="item" id="mn2">
-                <a class="btn" href="#mn2">Tipos/Types</a>
+                <a class="btn" href="#mn2">Korean Featured </a>
                 <article class="submenu">
-                    <a href="#">Celulares-Phones</a>
-                    <a href="#">Relojes-Watches</a>
-                    <a href="#">Tablets</a>
+                    <a href="/products/brand/samsung">Samsung</a>
+                    <a href="/products/brand/lg">LG</a>
                 </article>
             </li>
             <li class="item" id="mn3">
-                <a class="btn" href="#mn3">Modelo/Models</a>
+                <a class="btn" href="#mn3">Chinese Featured</a>
                 <article class="submenu">
-                    <a href="#">Mini</a>
-                    <a href="#">Plus</a>
-                    <a href="#">Pro</a>
+                    <a href="/products/brand/huawei">Huawei</a>
+                    <a href="/products/brand/xiaomi">Xiaomi</a>
                 </article>
             </li>
-        </section>
+            <li class="item" id="mn4">
+                <a class="btn" href="#mn4">Japanese Featured</a>
+                <article class="submenu">
+                    <a href="/products/brand/lenovo">Lenovo</a>
+                    <a href="/products/brand/toshiba">Toshiba</a>
+                </article>
+            </li>
+        </section> 
         <section class="superior">1</section>
         <section class="izquierda">2</section>
         <section class="centro">
-            <% products.forEach(product => {
-            %>    
-            <article class="productos">
-                <img src="<%=product.picture%>" alt="imagen del producto">
-                <article class="descripcion">
-                    <h4><%=product.tradeMark %></h4> 
-                    <h4><%=product.model%></h4>
-                    <p class="descripcion-producto"><%=product.details%></p>
-                    <p><%=product.price%></p>
-                </article>
-                <article class="enlaces">
-                    <article class="detalle">
-                        <a href="#">Ver Detalle</a>
+            <%products.forEach((product)=> {
+                %>
+                <article class="productos">
+                    <img src="/images/products/<%=product.imagenes%>" alt="imagen del producto">
+                   
+                    <article class="descripcion">
+                        <h4>
+                            <%=product.tradeMark %>
+                        </h4>
+                        <h4>
+                            <%=product.model%>
+                        </h4>
+                        <p class="descripcion-producto">
+                            <%=product.details%>
+                        </p>
+                        <p>
+                            <%=product.price%>
+                        </p>
                     </article>
-                    <article class="carrit">
-                        <a href="#">Al Carrito</a>
+                    <article class="enlaces">
+                        <article class="detalle">
+                            <a href="/products/<%=product.id%>">Go to Detail</a>
+                        </article>
+                        <article class="carrit">
+                            <a href="#">Go to Cart</a>
+                        </article>
                     </article>
                 </article>
-            </article>
-        <%})%>
+                <%})%>
         </section>
         <section class="derecha">
             <section class="derechaArriba">4</section>
@@ -127,6 +210,9 @@
         </section>
 
     </main>
+
+    <script src="/js/preloder.js"></script>
+
 </body>
 
 </html>

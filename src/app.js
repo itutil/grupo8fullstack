@@ -33,6 +33,7 @@ const app = express ();
 /* Define paths configuration */
 
 app.use(express.static('public'));
+app.use(methodOverride('_method'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(session({
@@ -50,7 +51,7 @@ app.use('/products', productRouter);
 app.use('/productos', productRouter);
 app.use('/cart', cartRouter);
 app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'));
+
 
 // User interaction routes
 

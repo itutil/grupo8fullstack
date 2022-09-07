@@ -5,24 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Detail</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/detail.css">
-
 </head>
 
-<body>
-
-    <div id="preloader">
-        <img src="/images/lego-loader.gif" alt="">
-    </div>
-    
+<body style="background-color: rgb(1, 18, 44)">
     <header>
         <div>
             <div class="logo">
@@ -38,7 +31,7 @@
                         <div class="dropdown tooltip">
                             <span class="tooltiptext"><a href="/">Home</span>
                             <button class="dropbtn">
-                                <a href="#"><i class="fa-solid fa-house"></i></a></button>
+                                <a href=""><i class="fa-solid fa-house"></i></a></button>
                         </div>
                     </li>
                     <li>
@@ -136,109 +129,12 @@
             </ul>
         </div>
     </header>
-    <main>
-        <div class="card-wrapper">
-            <div class="card">
-                <!-- card left -->
-                <div class="product-imgs">
-                    <div class="img-display">
-                        <div class="img-showcase">
-                            <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                        </div>
-                    </div>
-                    <div class="img-select">
-                        <div class="img-item">
-                            <a href="#" data-id="1">
-                                <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            </a>
-                        </div>
-                        <div class="img-item">
-                            <a href="#" data-id="2">
-                                <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            </a>
-                        </div>
-                        <div class="img-item">
-                            <a href="#" data-id="3">
-                                <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            </a>
-                        </div>
-                        <div class="img-item">
-                            <a href="#" data-id="4">
-                                <img src="/images/products/<%=detail.imagenes%>" alt="producto">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- cart right -->
-                <div class="product-content">
-                    <h2 class="product-title">
-                        <%=detail.model%> (<%=detail.tradeMark%>)
-                    </h2>
-                    <a href="/" class="product-link">8Technology</a>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                        <span>4.27(21)</span>
-                    </div>
-                    <div class="product-price">
-                        <p class="last-price">Discount: <span>15%</span></p>
-                        <p class="new-price">Current Price: <span><%=detail.price%></span></p>
-                    </div>
-                    <div class="product-detail">
-                        <h2>About this Item: </h2>
-                        <p><%=detail.details%></p>
-                        <ul>
-                            <li><i class="fa-solid fa-circle-check"></i> Color: <span class="verificado">All Color</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Availability: <span class="verificado">In stock (<%=detail.stock%>)</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Category: <span class="verificado"><%=detail.productCategory_id%></span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Shipping Area: <span class="verificado">All over the world</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> Shiping Fee: <span class="verificado">Free</span></li>
-                        </ul>
-                    </div>
-                    <div class="purchase-info">
-                        <input type="number" min="0" value="1">
-                        <button type="button" class="btn" id="uno">
-                            Add to cart
-                        </button>
-                        <button type="button" class="btn" id="dos">
-                            Compare
-                        </button>
-                        <button type="button" class="btn" id="tres">
-                            Go to Cart
-                        </button>
-                    </div>
-                    <div class="social-links">
-                        <p>Share At:</p>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-
-    <script src="/js/preloder.js"></script>
-
+    <div>
+        <h2 style="color: white;  text-align: center; margin-bottom: 25px; margin-top: 15px;">Wait up Smarty!!!!!!  This Page is Authorized Personnel Only.</h2>
+    </div>
+    <div style="text-align: center;">
+        <img src="/images/DuUrPjLgV_1256x620__1.webp" alt="Imagen">
+    </div>
 </body>
 
 </html>

@@ -5,8 +5,9 @@ const passport = require('../middleware/mypassport.js')
 
 const signinController = {
     index: async (req, res) => {
-        const body = req.body; // OK
-        const user = await User.findOne({where: { eMail : req.body.eMail},});
+        var loggedUser = req.session.inSession
+        const body = req.body; // OKvar loggedUser = req.session.inSession
+        const user = await User.findOne({where: { eMail : req.body.eMail},});        
         if (user) {
             // check user password with hashed password stored in the database
             const validPassword = bcrypt.compare(body.password,user.password);
@@ -16,7 +17,6 @@ const signinController = {
               //res.render('/',{"loggedUser":req.session.inSession.firstName})
               //res.redirect('/doctor-dashboard.html',{"user":username);
               //res.status(200).redirect('/',{"loggedUser":req.session.inSession.firstName}); 
-              var loggedUser = req.session.inSession.firstName;
               res.status(200).redirect('/');
             } else {
               res.status(400).redirect('/'); // this would be an error page or another error notification

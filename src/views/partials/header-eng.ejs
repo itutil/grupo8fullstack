@@ -17,39 +17,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown tooltip registrationSchema">
-                        <span class="tooltiptext">Sign up</span>
-                        <button class="dropbtn">
-                            <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
-                        <div class="dropdown-content">
-                            <div class="login">
-                                <form id="loginSignupEng" method="POST" action="/signup">
-                                    <label><b>First Name </b>
-                                    </label>
-                                    <input type="text" name="firstName" id="firstName" placeholder="Your first name">
-                                    <br><br>
-                                    <label><b>Last Name </b>
-                                    <input type="text" name="lastName" id="lastName" placeholder="Your last name">
-                                    <br><br>
-                                    <label><b>E-Mail </b>
-                                    </label>
-                                    <input type="text" name="eMail" id="eMail" placeholder="Email">
-                                    <br><br>
-                                    <label><b>Password </b>
-                                    <input type="password" name="password" id="password" placeholder="Password">
-                                    <br><br>
-                                        <div class="row p-2">
-                                            <div class="col p-2">
-                                    <input id="product-submit" class="btn btn-success col" type="submit" value="Submit">
-                                </div>
-                                <div class="col p-2">
-                                    <input class="btn btn-danger col" type="reset" value="Reset">
-                                </div>
-                                    <br><br>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <%- include('./partials/signup-validated') %>
+                    <%- include('./partials/signin') %>
+                    <%- include('./partials/signout') %>         
                 </li>
                 <li>
                     <div class="dropdown tooltip registrationSchema">

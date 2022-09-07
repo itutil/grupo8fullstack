@@ -20,6 +20,7 @@ const signupRouter = require('./routes/signupRouter');
 const signinRouter = require('./routes/signinRouter');
 const logoutRouter = require('./routes/logoutRouter');
 const cartRouter = require('./routes/cartRouter');
+const loggedUserRouter = require('./routes/loggedUserRouter');
 
 /* Import API modules */
 
@@ -39,7 +40,8 @@ app.use(session({
   secret: 'a super ultra hiper secret',
   saveUninitialized:true,
   cookie: { maxAge: timeLapse },
-  resave: false 
+  resave: false, 
+  secure: false
 }));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -57,6 +59,8 @@ app.use(methodOverride('_method'));
 app.use(['/signup'], signupRouter);
 app.use(['/signin'], signinRouter);
 app.use(['/logout'], logoutRouter);
+app.use(['/logged'], loggedUserRouter);
+
 
 // API interaction routes
 

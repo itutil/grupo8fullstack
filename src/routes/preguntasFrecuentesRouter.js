@@ -1,9 +1,10 @@
-const express = require('express');
-const router = express.Router();
-const comoRealizarTuPedidoController = require('../controllers/comoRealizarTuPedidoController');
+const controller = {
+    index: (req, res) => {
+        res.render('preguntasFrecuentes');      
+        res.redirect('/preguntasFrecuentes');
+    },
+}; 
+    
+    
 
-
-router.get('/', comoRealizarTuPedidoController.index);
-
-
-module.exports=router;
+module.exports = controller;

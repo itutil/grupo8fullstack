@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const comoRealizarTuPedidoController = require('../controllers/comoRealizarTuPedidoController');
+const pagosYEnviosController = require('../controllers/pagosYEnviosController');
 
 
-router.get('/', comoRealizarTuPedidoController.index);
+router.get('/', pagosYEnviosController.index);
 
 
 module.exports=router;

@@ -1,7 +1,7 @@
 const controller = {
     index: (req, res) => {
-        res.render('pagosYEnviosTuPedido');      
-        res.redirect('/pagosYEnviosTuPedido');
+        res.render('pagosYEnvios');      
+        res.redirect('/pagosYEnvios');
     },
 }; 
     

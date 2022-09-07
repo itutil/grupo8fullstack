@@ -20,11 +20,19 @@ const signupRouter = require('./routes/signupRouter');
 const signinRouter = require('./routes/signinRouter');
 const logoutRouter = require('./routes/logoutRouter');
 const cartRouter = require('./routes/cartRouter');
+const contactoRouter = require('./routes/contactoRouter');
+const storesRouter = require('./routes/storesRouter');
+const staffRouter = require('./routes/staffRouter');
+const comoRealizarTuPedidoRouter = require('./routes/comoRealizarTuPedidoRouter');
+const pagosYEnviosRouter = require('./routes/pagosYEnviosRouter');
+const terminosYCondicionesRouter = require('./routes/terminosYCondicionesRouter');
+const preguntasFrecuentesRouter = require('./routes/preguntasFrecuentesRouter');
+
 
 /* Import API modules */
 
-const apiProductsRouter = require('./routes/api/productsAPIRouter');
-const apiUsersRouter = require('./routes/api/usersAPIRouter');
+const apiProductsRouter = require('./routes/api/productsAPIrouter');
+const apiUsersRouter = require('./routes/api/usersAPIrouter');
 
 /* Define application variables */
 
@@ -51,6 +59,13 @@ app.use('/products', productRouter);
 app.use('/productos', productRouter);
 app.use('/cart', cartRouter);
 app.use(express.urlencoded({ extended: false }));
+app.use('/contacto', contactoRouter);
+app.use('/stores', storesRouter);
+app.use('/staff', staffRouter);
+app.use('/pagosYEnvios', pagosYEnviosRouter);
+// app.use('/preguntasFrecuentes', preguntasFrecuentesRouter);
+app.use('/terminosYCondiciones', terminosYCondicionesRouter);
+app.use('/comoRealizarTuPedido', comoRealizarTuPedidoRouter);
 
 
 // User interaction routes

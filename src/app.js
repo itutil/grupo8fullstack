@@ -1,5 +1,5 @@
 /* Import external modules */
-var userName = (userName === undefined) ? 'not logged in' : userName;
+
 const path = require('path');
 const express = require('express');
 const methodOverride = require('method-override');

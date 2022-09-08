@@ -40,10 +40,7 @@
                     <input type="search" name="barra-busqueda" placeholder="Search for your favorite">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     <script>var userName = (userName === undefined) ? 'not logged in' : userName;</script>
-                    <% if (typeof userName == 'object' && userName) { %>
-
-                        <% } %>
-       
+                    <%= locals.userName %>
                 </form>
 
             </nav>

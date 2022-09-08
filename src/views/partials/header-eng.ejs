@@ -17,38 +17,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown tooltip registrationSchema">
-                        <span class="tooltiptext">Sign up</span>
-                        <button class="dropbtn">
-                            <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
-                        <div class="dropdown-content">
-                            <div class="login">
-                                <form id="loginSignupEng" method="get" action="/register">
-                                    <label><b>E-Mail
-                                        </b>
-                                    </label>
-                                    <input type="text" name="emailSignupEng" id="emailSignupEng" placeholder="Email">
-                                    <br><br>
-                                    <label><b>User Name
-                                        </b>
-                                    </label>
-                                    <input type="text" name="unameSignupEng" id="unameSignupEng" placeholder="Username">
-                                    <br><br>
-                                    <label><b>Password
-                                        </b>
-                                    </label>
-                                    <input type="Password" name="passSignuEng" id="passSignupEng" placeholder="Password">
-                                    <br><br>
-                                    <input type="button" name="logSignupEng" id="logSignupEng" value="Log In Here">
-                                    <br><br>
-                                    <input type="checkbox" id="checkSignupEng">
-                                    <span>Remember me</span>
-                                    <br><br>
-                                    <a href="#">Forgot Password</a>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <%- include('./partials/signup-validated') %>
+                    <%- include('./partials/signin') %>
+                    <%- include('./partials/signout') %>         
                 </li>
                 <li>
                     <div class="dropdown tooltip registrationSchema">
@@ -57,23 +28,19 @@
                             <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
                         <div class="dropdown-content">
                             <div class="login">
-                                <form id="login" method="get" action="/login">
-                                    <label><b>User Name
+                                <form id="login" method="POST" action="/signin">
+                                    <label><b>E-Mail
                                         </b>
                                     </label>
-                                    <input type="text" name="unameLogin" id="unameLogin" placeholder="Username">
+                                    <input type="text" name="eMail" id="eMail" placeholder="E-Mail">
                                     <br><br>
                                     <label><b>Password
                                         </b>
                                     </label>
-                                    <input type="Password" name="passLogin" id="passLogin"" placeholder="Password">
+                                    <input type="password" name="password" id="password"" placeholder="Password">
                                     <br><br>
-                                    <input type="button" name="logLogin" id="logLogin" value="Log In Here">
+                                    <input id="submit" class="btn btn-success col" type="submit" value="Submit">
                                     <br><br>
-                                    <input type="checkbox" id="checkLogin">
-                                    <span>Remember me</span>
-                                    <br><br>
-                                    <a href="#">Forgot Password</a>
                                 </form>
                             </div>
                         </div>

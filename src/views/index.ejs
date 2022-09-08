@@ -25,84 +25,23 @@
                                 <a href="#"><i class="fa-solid fa-house"></i></a></button>
                         </div>
                     </li>
-                    <li>
-                        <div class="dropdown tooltip registrationSchema">
-                            <span class="tooltiptext">Sign up</span>
-                            <button class="dropbtn">
-                                <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
-                            <div class="dropdown-content">
-                                <div class="login">
-                                    <form id="loginSignupEng" method="get" action="/register">
-                                        <label><b>E-Mail
-                                            </b>
-                                        </label>
-                                        <input type="text" name="emailSignupEng" id="emailSignupEng"
-                                            placeholder="Email">
-                                        <br><br>
-                                        <label><b>User Name
-                                            </b>
-                                        </label>
-                                        <input type="text" name="unameSignupEng" id="unameSignupEng"
-                                            placeholder="Username">
-                                        <br><br>
-                                        <label><b>Password
-                                            </b>
-                                        </label>
-                                        <input type="Password" name="passSignuEng" id="passSignupEng"
-                                            placeholder="Password">
-                                        <br><br>
-                                        <input type="button" name="logSignupEng" id="logSignupEng" value="Log In Here">
-                                        <br><br>
-                                        <input type="checkbox" id="checkSignupEng">
-                                        <span>Remember me</span>
-                                        <br><br>
-                                        <a href="#">Forgot Password</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown tooltip registrationSchema">
-                            <span class="tooltiptext">Log in</span>
-                            <button class="dropbtn">
-                                <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
-                            <div class="dropdown-content">
-                                <div class="login">
-                                    <form id="login" method="get" action="/login">
-                                        <label><b>User Name
-                                            </b>
-                                        </label>
-                                        <input type="text" name="unameLogin" id="unameLogin" placeholder="Username">
-                                        <br><br>
-                                        <label><b>Password
-                                            </b>
-                                        </label>
-                                        <input type="Password" name="passLogin" id="passLogin"" placeholder=" Password">
-                                        <br><br>
-                                        <input type="button" name="logLogin" id="logLogin" value="Log In Here">
-                                        <br><br>
-                                        <input type="checkbox" id="checkLogin">
-                                        <span>Remember me</span>
-                                        <br><br>
-                                        <a href="#">Forgot Password</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    <%- include('./partials/signup-validated') %>
+                    <%- include('./partials/signin') %>
+                    <%- include('./partials/signout') %>
                     <li>
                         <div class="dropdown tooltip">
                             <span class="tooltiptext">Cart</span>
                             <button class="dropbtn">
                                 <a href="#"><i class="fa-solid fa-truck"></i></a></button>
-                        </div>
+                         </div>
                     </li>
                 </ul>
                 <form class="barra">
                     <input type="search" name="barra-busqueda" placeholder="Search for your favorite">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <%= userName %>
                 </form>
+
             </nav>
             <div class="banderas">
                 <a href="/productos"><img src="/images/spain.png" alt="ESP"></a>

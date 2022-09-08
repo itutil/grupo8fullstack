@@ -560,8 +560,9 @@
                             style="display: inline-block;"></div>
 
                         <div class="separador"></div>
-
-                        <input id="form-button" type="submit" name="submit" value="CONTINUAR" />
+                        <a onClick="validate();" style="cursor: pointer;"
+                        class="button-enviar" method="POST">SEND</a>
+                        <a href="/staff"><input id="form-button" type="submit" name="submit" value="CONTINUAR" /></a>
                         <input type="hidden" name="action" value="add">
                         <input type="hidden" name="id_user" id="id_user" value="">
                     </form>

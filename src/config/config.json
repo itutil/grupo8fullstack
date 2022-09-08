@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "db_dragonadmin",
+    "password": "!k*&8N97KjqwkRP",
+    "database": "db_8technology",
+    "host": "db4free.net",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "db_dragonadmin",
+    "password": "!k*&8N97KjqwkRP",
+    "database": "db_8technology",
+    "host": "db4free.net",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "db_dragonadmin",
+    "password": "!k*&8N97KjqwkRP",
+    "database": "db_8technology",
+    "host": "db4free.net",
+    "dialect": "mysql"
+  }
+}

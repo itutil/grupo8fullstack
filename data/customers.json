@@ -1,0 +1,26 @@
+[{
+		"fullName": "Juan Perez",
+		"password": "44714.0149135417D",
+		"eMail": "jp@nada.com"
+	},
+	{
+		"fullName": "Jorge Rodriguez",
+		"password": "44714.0149135417J",
+		"eMail": "jr@nadie.com"
+	},
+	{
+		"fullName": "Ernesto de los Palotes",
+		"password": "44714.0149135417K",
+		"eMail": "ep@pipo.org"
+	},
+	{
+		"fullName": "Carlos Solrak",
+		"password": "44714.0149135417D",
+		"eMail": "csol@hotmail.com"
+	},
+	{
+		"fullName": "Domingo Garcia",
+		"password": "44714.0149135417E",
+		"eMail": "mingo@live.com.ar"
+	}
+]

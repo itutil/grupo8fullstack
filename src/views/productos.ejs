@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59c9619fb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/productos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <img class="logo-imagen" src="/images/logo_products.png" alt="logo">
+                <div class="banderas-inicio">
+                    <a href="/productos"><img src="/images/spain.png" alt="ESP"></a>
+                    <a href="/products"><img src="/images/uk.png" alt="EN"></a>
+                </div>
+            </div>
+            <nav>
+                <ul class="inicio">
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Home</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-house"></i></a></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Sign up</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-pen-clip"></i></a></button>
+                            <div class="dropdown-content">
+                                <div class="login">
+                                    <form id="login" method="get" action="login.php">
+                                        <label><b>E-Mail
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Email" id="Email" placeholder="Email">
+                                        <br><br>
+                                        <label><b>User Name
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
+                                        <br><br>
+                                        <label><b>Password
+                                            </b>
+                                        </label>
+                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+                                        <br><br>
+                                        <input type="button" name="log" id="log" value="Log In Here">
+                                        <br><br>
+                                        <input type="checkbox" id="check">
+                                        <span>Remember me</span>
+                                        <br><br>
+                                        <a href="#">Forgot Password</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Log in</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-laptop"></i></a></button>
+                            <div class="dropdown-content">
+                                <div class="login">
+                                    <form id="login" method="get" action="login.php">
+                                        <label><b>User Name
+                                            </b>
+                                        </label>
+                                        <input type="text" name="Uname" id="Uname" placeholder="Username">
+                                        <br><br>
+                                        <label><b>Password
+                                            </b>
+                                        </label>
+                                        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+                                        <br><br>
+                                        <input type="button" name="log" id="log" value="Log In Here">
+                                        <br><br>
+                                        <input type="checkbox" id="check">
+                                        <span>Remember me</span>
+                                        <br><br>
+                                        <a href="#">Forgot Password</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown tooltip">
+                            <span class="tooltiptext">Cart</span>
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-solid fa-truck"></i></a></button>
+                        </div>
+                    </li>
+                </ul>
+                <form class="barra">
+                    <input type="search" name="barra-busqueda" placeholder="Search for your favorite">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </nav>
+            <div class="banderas">
+                <a href="/productos"><img src="/images/spain.png" alt="ESP"></a>
+                <a href="/products"><img src="/images/uk.png" alt="EN"></a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a class="icono" href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+
+                    <ul class="desplegable">
+                        <li><a href="">Company Information</a></li>
+                        <li><a href="">Social Media</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="acordeon">
+            <li class="item" id="mn1">
+                <a class="btn" href="#mn1">Marcas/Brands</a>
+                <article class="submenu">
+                    <a href="#">Apple</a>
+                    <a href="#">Samgung</a>
+                    <a href="#">Huawei</a>
+                </article>
+            </li>
+            <li class="item" id="mn2">
+                <a class="btn" href="#mn2">Tipos/Types</a>
+                <article class="submenu">
+                    <a href="#">Celulares-Phones</a>
+                    <a href="#">Relojes-Watches</a>
+                    <a href="#">Tablets</a>
+                </article>
+            </li>
+            <li class="item" id="mn3">
+                <a class="btn" href="#mn3">Modelo/Models</a>
+                <article class="submenu">
+                    <a href="#">Mini</a>
+                    <a href="#">Plus</a>
+                    <a href="#">Pro</a>
+                </article>
+            </li>
+        </section>
+        <section class="superior">1</section>
+        <section class="izquierda">2</section>
+        <section class="centro">
+            <% products.forEach(product => {
+            %>    
+            <article class="productos">
+                <img src="<%=product.picture%>" alt="imagen del producto">
+                <article class="descripcion">
+                    <h4><%=product.tradeMark %></h4> 
+                    <h4><%=product.model%></h4>
+                    <p class="descripcion-producto"><%=product.details%></p>
+                    <p><%=product.price%></p>
+                </article>
+                <article class="enlaces">
+                    <article class="detalle">
+                        <a href="#">Ver Detalle</a>
+                    </article>
+                    <article class="carrit">
+                        <a href="#">Al Carrito</a>
+                    </article>
+                </article>
+            </article>
+        <%})%>
+        </section>
+        <section class="derecha">
+            <section class="derechaArriba">4</section>
+            <section class="derechaAbajo">5</section>
+        </section>
+
+    </main>
+</body>
+
+</html>

@@ -77,7 +77,7 @@ app.use('/comoRealizarTuPedido', comoRealizarTuPedidoRouter);
 app.use(['/signup'], signupRouter);
 app.use(['/signin'], signinRouter);
 app.use(['/logout'], logoutRouter);
-app.use(['/logged'], loggedUserRouter);
+
 
 
 // API interaction routes

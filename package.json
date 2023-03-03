@@ -29,7 +29,7 @@
     "sql": "^0.78.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.21"
   },
   "browser": {
     "fs": false,
